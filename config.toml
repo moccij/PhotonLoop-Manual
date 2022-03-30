@@ -7,7 +7,7 @@ uglyurls = true
 favicon = '/favicon.ico'
 
 [markup.asciidocext]
-  workingFolderCurrent = true
+  workingFolderCurrent = false
   backend = 'html5'
 
 [params]
