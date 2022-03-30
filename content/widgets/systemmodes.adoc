@@ -1,0 +1,38 @@
+---
+title: System Modes
+date: 02/09/2021
+draft: false
+
+categories:
+    - "category1"
+tags:
+    - "tag1"
+    - "tag2"
+---
+
+:icons:
+:iconsdir: /icons/
+
+image:systemmodes.png[]
+
+The *system modes* widget shows the wavefront representation of all singular modes.
+
+Clicking with the *right* mouse button pops up the display *settings*:
+
+[%autowidth]
+|===
+|Item |Description
+
+|Scale
+|Determines the zoom level of the wavefront representation.
+
+|Representation
+|Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
+
+|Colormap
+|Determines the colormap of the wavefront.
+|=== 
+
+{{% notice note %}}
+The system widgets will become enabled once an interaction matrix has been *acquired*.
+{{% /notice %}}

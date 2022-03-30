@@ -1,0 +1,53 @@
+---
+title: Safety Instructions
+date: 02/09/2021
+draft: false
+
+weight: 1
+---
+
+:icons:
+:iconsdir: /icons/
+:toc: 
+
+{{% notice warning %}}
+Read carefully the information in this manual before installing and using the product. The producer is not responsible for damages and injury, which can occur due to false handling of the product and ignoring the safety instructions. All warranty will be spoiled in this case.
+{{% /notice %}}
+
+The tools provided by Dynamic Optics are intended to be used for wavefront sensing and compensation tasks.
+Please comply with the requirements for the proper use of this product. Failure to do so will render the warranty void.
+
+- The product is not authorized for use in security relevant applications. If it used in security relevant applications, the customer is responsible for the necessary approvals;
+- This product is not a toy and should be kept and operated out of reach of children;
+- If the product is modified or changed, the customer is responsible for ensuring product conformity;
+- Unauthorized opening of the camera housing, mirror/lens chassis or drive electronics voids the warranty. Dynamic Optics SRL assumes no liability for defects if the product was improperly disassembled, reworked, or repaired by the customer or a third party.
+
+=== Installation, operation, and maintenance
+
+{{% notice warning %}}
+Deformable mirrors have the properties to deflect light or to focus it at different propagation distances. Therefore, caution must be taken to avoid any direct or indirect illumination of users and/or materials, especially when using lasers.
+{{% /notice %}}
+
+The product must be connected, taken into operation and maintained only by appropriately qualified personnel. The error-free and safe operation of this product can only be ensured if it is properly transported, stored, set up and assembled, and operated and maintained with due care. The installation, inspection, maintenance, extension, and repair may only be done by authorized personnel.
+
+- The adaptive optics elements must be installed in such way that the specifications are met which are described in the manual;
+- Do not subject the products to direct sunlight, moisture or shock;
+- Lay cables in such way that no one can step on or they do not represent a trip hazard;
+- Before starting up, check if the electrical wiring corresponds to the specifications in this manual. Faulty wiring (overvoltage, undervoltage) can result in a damage in the electronics;
+
+=== Protection against electrostatic discharge (ESD)
+
+The rules for handling ESD-sensitive components are to be observed like e. g. by wearing ESD-protective clothes and shoes.
+
+- Make sure to avoid mechanical or electrical damage of the printed circuit board or its connections;
+- Do not touch the printed circuit board while it is powered;
+- Always hold the board by the edges to avoid the risk of electrostatic discharge damage.
+
+=== Transport
+
+- Only use ESD packaging for storage and transport of ESD-sensitive components;
+- Keep packing materials like films away from children. In case of abuse there is a risk of suffocation.
+
+=== Correct disposal
+
+- To prevent possible harm to the environment, separate the camera and accessory items from other types of waste. Dispose professionally the camera and accessory items to encourage the recycling of reusable material.

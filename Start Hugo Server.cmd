@@ -1,0 +1,1 @@
+hugo server --destination ./public

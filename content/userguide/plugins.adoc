@@ -1,0 +1,135 @@
+---
+title: Plugins 
+date: 02/09/2021
+draft: false
+
+weight: 6
+---
+
+:toc:
+:toclevels: 4
+
+The sensor, WFC and compensator sections of PhotonLoop are populated by *plugins*.
+Upon starting, PhotonLoop scans the plugin inside the *plugin folder* `+/plugins/+` located at the root of the PhotonLoop installation directory.
+
+{{% notice note %}}
+If a plugin is not listed then it is likely that some of its *dependencies* are not met. Be sure to install the appropriate drivers before starting PhotonLoop.
+{{% /notice %}}
+
+== Sensor Plugins
+
+Select the sensor driver from within the link:{{< ref "/widgets/sensor" >}}[*sensor settings* widget].
+
+[%autowidth]
+|===
+|Item | Description 
+
+|FileSensor 
+|Opens a 8bpp image file. Can continously check for changes in the image file (useful for getting the image output of third party software).
+
+|FirstLight
+|Interface for the FirstLight cameras.
+
+|IdsSensorDriver
+|Opens the iDS camera sensor connected via USB. In presence of multiple iDS camera connected, it tries to open the first one in cronological order that is not already opened.
+
+{{% notice tip %}}
+Select *external trigger* to sync the camera with an external signal.
+{{% /notice %}}
+
+|IMX174-DH
+|Interface for the Daheng Imaging cameras.
+
+|RawSensor
+|Opens a raw image file. Upon choosing the file, it is necessary to fill in the image properties. Can continously check for changes in the image file (useful for getting the image output of third party software).
+
+|RemoteSensor
+|Connects to a remote image provider.
+
+|ScreenCaptureSensor
+|Captures the desktop screen. Useful for getting the image output of third party software.
+
+|SPC3SensorPlugin 
+|Interface to the Micro Photon Device SPC3 camera
+
+|TestSensor
+|Sample image generation with multiple patterns and variations.
+
+|DirectShowWfs
+|Interface to the DirectShow Cameras.
+
+|OpenCvDriver
+|Opens a video file from the file system.
+
+|===
+
+== WFC Plugins
+
+Select the WFC driver from within the link:{{< ref "/widgets/wfc" >}}[*WFC settings* widget].
+
+{{% notice warning %}}
+Once a WFC plugin is loaded, please carefully set the *voltage limits* associated to the specific plugin and the specific adaptive optical element.
+{{% /notice %}}
+
+[%autowidth]
+|===
+|Item | Description 
+
+|PztMulti 
+|Interface to Dynamic Optics mirrors or lenses.
+
+|TestActuators
+|Controller for test purposes.
+
+|UsbHvDriver
+|Interface to Dynamic Optics mirrors or lenses.
+
+|IrisAOWfc 
+|Interface to IRIS mirrors.
+
+|OkotechMembraneWfc 
+|Interface to Okotech mirrors.
+
+|ThorlabsWfc 
+|Interface to THORLABS mirrors.
+
+|===
+
+== Compensator Plugins
+
+Select the compensator from within the link:{{< ref "/widgets/compensator" >}}[*compensator settings* widget].
+
+{{% notice warning %}}
+The parameters in this section must be adjusted very carefully. Some settings may lead to *self-oscillation*.
+{{% /notice %}}
+
+[%autowidth]
+|===
+|Item |Description 
+
+|PI Enhanced Compensator
+a|Compensator that implements a Proportional-Integrative controller with anti wind-up and optimization of saturated commands.
+
+[%autowidth]
+!===
+!Item !Description
+
+!kP
+!Proportional gain. The control action is proportional to the measured error. Larger coefficient values will make the system more reactive but also more sensitive to noise.
+
+!kI
+!Integral gain. The control action is proportional to the integral over time of the measured error. Larger coefficient values will minimize the error faster but will also introduce oscillations.
+
+!kB
+!Anti wind-up gain. The anti wind-up discharges the integral when the actuators are saturating, so that they do not build up indefinitely. Larger values will discharge the integral faster but will also produce discontinuities.
+
+!kA
+!Integral gain leakage. Determines the leakage ratio of the integrator, which is useful to avoid getting stuck in expensive actuator configurations. Smaller values (<< 1) will search for alternative configurations more aggressively but the error will not be completely zeroed out.
+
+!Optimize Saturated Commands
+!Enables the bounded optimization method. When actuators are saturating, this method computes the optimum actuators configuration to minimize the error.
+
+!Additional Optimization Polishing
+!In combination with the bounded optimization, performs a more aggressive optimization to improve the solution at the expense of computational complexity.
+!===
+|===

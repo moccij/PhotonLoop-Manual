@@ -1,0 +1,27 @@
+---
+title: Widgets 
+date: 02/09/2021
+draft: false
+
+weight: 7
+---
+
+This section lists the **widgets**
+
+== Quick description of User Interface
+
+The user interface can be divided in many panels, see figure below. First of all, you can find the main toolbox in the left (1) and the Shack-Hartmann image acquisition and display options toolbox on top (2). The first toolbox contains the connection buttons for camera and controller, measurements start/stop and button for the main AO operations such as closed and open loop mode.
+
+The panel Tab (3) contains four tabs: Settings, Calibrations, Controller and Utilities. In all these tabs you can find many parameters to set. We will explain them during the description of the functions. The space in the center of the window (4) is occupied by images and graphs depending on the tab selected in the right part.
+
+In the bottom part of the window are displayed the sensor statistics (5), the Zernike decomposition and the value of the selected mode (6), the actuators histogram (7) and the reconstruction of the wavefront (8). The status bar of PHOTONLOOP is displayed in a small horizontal space in the bottom of the window. 
+
+image:/img/image23.png[]
+
+The panels 6 and 7 are interactive and you can drag the histograms bars to change their value. In the Zernike coefficients Bar plot (6) it is possible to interact with the Zernike coefficients to add offset coefficients and to select Zernike modes. Set offsets with the left mouse button, reset offsets with the right mouse button and disable measured coefficients with the mouse wheel.
+
+The actuators histogram (7) is interactive and you can play with the single actuator to set any value. Graphs and various values are displayed when the pointer goes over the bar of the histograms. Offset, coefficient and phase representation of the mode are shown moving the mouse pointer on the bars in the histogram (6); Offsets, values and influence functionsfootnote:[Influence functions are calculated during calibration of the AO system. They will be described in the section dedicated to Calibration procedure.] are shown moving the mouse pointer on the actuators bar in the histogram (7).
+
+Also, in the panel 4, where the SHWFS spots are displayed in the WFS Tab, you can interact with measurement grid, the various options will be described in the next section relative to wavefront measurement.
+
+{{% children description="true" %}}

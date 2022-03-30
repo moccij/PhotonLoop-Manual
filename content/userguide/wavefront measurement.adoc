@@ -1,0 +1,66 @@
+---
+title: Wavefront Measurement 
+date: 02/09/2021
+draft: false
+
+weight: 3
+---
+
+:icons:
+:iconsdir: /icons/
+
+An accurate wavefront measurement is very important for metrology applications and for appropriate adaptive optics operation. Errors in measurements setting might causes system instability and if the relative errors are very high the system may not work.
+
+== Create measure grid and adjust camera settings
+
+All the buttons and options for these steps are in the following toolbox that you can find in the link:{{< ref "widgets//viewfinder" >}}[*viewfinder*] widget.
+
+To display spots and measurements grid click on icon:grid_ccd[] and icon:grid[] buttons respectively. Now you can create the measurements grid around the area of spots that you decide to consider. Click on icon:grid_resize[] and trace the grid over the spots.
+
+{{% notice tip %}}
+First off all you need to set the exposure of the camera until you see well defined spots image from the SHWFS, to set the exposure button and use the scroll bar in the Camera tab of the window that comes out.
+
+At this stage you can fine tune the exposure time and the filter threshold for spot detection. We suggest a 90% of saturation for pixels and a threshold on spot detection just above the background noise of the sensor. These settings are easily set with in PHOTONLOOP. 
+{{% /notice %}}
+
+image:/img/image29.png[]
+
+Use the button icon:grid_align[] in the main toolbox to automatically center the grid.
+
+Finally, you will see a grid like this:
+
+image:/img/image33.png[]
+
+If the aperture is circular like in the example used for this guide use the Force Circular Aperture button icon:grid_circle[] to exclude the area of the grid in the corner of the measured square.
+
+Now regulate exposure and gain of the camera in the Camera tab and set the options for centroid extraction in the relative tab.
+
+image:/img/image36.png[]
+
+The vertical line in the plot profile show the level and the shape of the threshold you are considering. The acquired images of the spots are analyzed to reconstruct the wavefront.
+
+If some spots are not well defined or blink, they may cause problems to the measurements. Use this button icon:centroids_remove[] to exclude them.
+
+Options for data elaboration can be found in Settings Tab and then Modal Tab.
+
+image:/img/image38.png[]
+
+Here you can set number of modes used for in the wavefront reconstruction. The oversampling sets the number of points for wavefront graphical representation. Finally you can choose if display Zernike Offsets, Real wavefront or both (Real+Offset) resulting wavefront.
+
+Now you can start the measurements process with icon:ref_abs[] button in the main toolbox, PHOTONLOOP will measure the wavefront inside the grid for each frame taken by the camera.
+
+The last three buttons icon:grid_ref[], icon:grid_main[] and icon:grid_quiver[] on the display toolbox are used to show the excluded spots, the considered spots and the slopes of the wavefront respectively.
+
+You can use the crop button icon:grid_crop[] to make an area of interest (AOI), this allow the system to work at a higher frame rate. To increase the frame rate, after pressing crop, put the new frequency in the WPS tab. If the frequency will be higher than the maximum allowed, the system will go to the maximum possible frequency.
+
+You can find more details about centroid calculation options in this paper:
+
+```
+S. Thomas et al, Comparison of centroid computation algorithms in a Shack-Hartmann sensor, Mon. Not. R. Astron. Soc. *371,* 323-336 (2006).
+```
+
+== Read measurements
+
+The results of wavefront measurements are displayed in the bottom part of the main window. Here you can see the Zernike decomposition in a histogram and the wavefront reconstruction. For both histogram and graph, you can choose display options like graph type, scale and color. Just click on the star button * in the bottom right corner of the graph areas.
+
+image:/img/image44.png[]
