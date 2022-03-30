@@ -21,8 +21,8 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
-    - name: Get build container
-      uses: tonynv/asciidoctor-action@master
+      - name: Get build container
+        uses: tonynv/asciidoctor-action@master
       
       - name: Build
         run: hugo --minify
