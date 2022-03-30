@@ -1,0 +1,39 @@
+---
+title: Singular Table
+date: 02/09/2021
+draft: false
+
+categories:
+    - "category1"
+tags:
+    - "tag1"
+    - "tag2"
+---
+
+:icons:
+:iconsdir: /icons/
+
+
+image:singulartable.png[]
+
+The *singular table* widget lists the singular values in a table, with each row representing a singular mode.
+
+{{% notice note %}}
+The system widgets will become enabled once an interaction matrix has been *acquired*.
+{{% /notice %}}
+
+[%autowidth]
+|===
+|Item |Description
+
+|#
+|Singular mode index.
+
+|Image
+|Singular mode wavefront representation.
+
+|Value
+|Singular value.
+|===
+
+include::table.adoc[lines=5..-1]

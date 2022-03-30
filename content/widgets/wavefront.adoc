@@ -1,0 +1,71 @@
+---
+title: Wavefront
+date: 02/09/2021
+draft: false
+
+categories:
+    - "category1"
+tags:
+    - "tag1"
+    - "tag2"
+---
+
+:icons: 
+:iconsdir: /icons/
+
+image:wavefront.png[]
+
+The *wavefront* widget shows the wavefront reconstructed from the measured modal terms.
+Refer to the *modal settings* widget to set the shape and resolution of the reconstructed wavefront.
+
+{{% notice note %}}
+The widget will be enabled once a valid *reference* has been taken.
+{{% /notice %}}
+
+
+== Adjusting the wavefront display 
+
+image:wavefrontsettings.png[]
+
+Hovering over the widget reveals the icon:settings[] settings button that can be clicked to show the widget settings.
+
+
+[%autowidth]
+|===
+|Item |Description
+
+|Scale
+|Scale of the colormap (in waves), from zero to either direction.
+If the wavefront amplitude is greater/lower than the scale, the colormap wraps.
+Does not apply when the representation type is Interferogram.
+
+|Autoscale
+|Dynamically scales the colormap to cover the entire amplitude of the wavefront.
+Does not apply when the representation type is Interferogram.
+
+|Type
+a|Representation type of the wavefront:
+
+[%autowidth]
+!===
+!Item !Description
+
+!Off !The wavefront is disabled;
+!Phase !Phase representation;
+!Smooth Phase !Phase representation, with pixel-wise interpolation;
+!Interferogram !Interferogram representation;
+!Smooth Interferogram !Interferogram representation, with pixel-wise interpolation;
+!Super Smooth Interferogram !Interferogram representation, with additional smoothing (computationally expensive);
+!PSF !(Experimental) Point Spread Function (PSF) representation.
+!===
+
+|Colormap
+|Colormap of the wavefront.
+
+|Show Actuators
+|Show the actuators positions and values over the wavefront surface.
+|===
+
+{{% notice note %}}
+The actuators positions are only available after a valid *calibration* has been performed/loaded.
+{{% /notice %}}

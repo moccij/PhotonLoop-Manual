@@ -1,0 +1,16 @@
+---
+title: Sensor Settings
+date: 02/09/2021
+draft: false
+
+categories:
+    - "category1"
+tags:
+    - "tag1"
+    - "tag2"
+---
+
+image:sensor.png[]
+
+The *sensor* widget manages the interface between PhotonLoop and a connected camera.
+Available cameras are listed as link:{{< ref "userguide//plugins#_sensor_plugins" >}}[*plugins*], with each plugin exposing different options.

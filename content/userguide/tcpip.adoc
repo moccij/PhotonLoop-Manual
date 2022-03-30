@@ -1,0 +1,42 @@
+---
+title: TCP-IP 
+date: 02/09/2021
+draft: false
+
+weight: 5
+---
+
+== System Requirements
+
+* PhotonLoop 1.5.8.3 (or later)
+* Matlab communication libraries
+
+image:/img/image70.png[]
+
+== Files
+
+In the Folder TCP_IP_PhotonLoop1.5.8.3:
+
+* PhotonLoopCommunication.dll C comunication library
+* PhotonLoopCommunication_lib.m MATLAB comunication library
+* PhotonLoopCommunication_interface.m MATLAB and lib.thunk interface
+* PhotonLoopCommunication_thunk_pcwin64.dll MATLAB and C library interface
+* TCPIPExample.m MATLAB example
+
+Here it is described the step by step procedure to modify the actuators of a deformable mirror with TCP-IP protocol without measuring or monitoring the wavefront in PhotonLoop.
+
+Refer to PhotonLoop and QuickstartGuide provided manuals for further details. You can find these manuals in the provided USB stick.
+
+== Connect the deformable mirror and modify actuators using TCP-IP protocol
+
+. Go to Utilities tab
+. Go to Network panel
+image:/img/image71.png[]
+. Activate the TCP-IP Server
+image:/img/image72.png[]
+. Open MATLAB
+. Set MATLAB path pointing the folder TCP_IP_PhotonLoop1.5.8.3:.
+. Write in MATLAB the command: `+h = PhotonLoopCommunication_lib()+`;
+. If everything is set up correctly the TCP-IP server says Connected;
+image:/img/image73.png[]
+. Now the code below can be run ant it will modify the first actuator of the mirror.
