@@ -1,0 +1,436 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>Viewfinder - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1648648779 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1648648779 rel=stylesheet>
+<link href=../css/hybrid.css?1648648779 rel=stylesheet>
+<link href=../css/featherlight.min.css?1648648779 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1648648779 rel=stylesheet>
+<link href=../css/auto-complete.css?1648648779 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1648648779 rel=stylesheet>
+<link href=../css/theme.css?1648648779 rel=stylesheet>
+<link href=../css/tabs.css?1648648779 rel=stylesheet>
+<link href=../css/hugo-theme.css?1648648779 rel=stylesheet>
+<link href=../css/theme-jm.css?1648648779 rel=stylesheet>
+<link href=../css/custom.css?1648648779 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1648648779></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../widgets/viewfinder.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1648648779></script>
+<script type=text/javascript src=../js/auto-complete.js?1648648779></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1648648779></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/userguide.html title="User Manual" class=dd-item>
+<a href=../userguide.html>
+User Manual
+</a>
+<ul>
+<li data-nav-id=/userguide/safety.html title="Safety Instructions" class=dd-item>
+<a href=../userguide/safety.html>
+Safety Instructions
+</a>
+</li>
+<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
+<a href=../userguide/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class=dd-item>
+<a href=../userguide/ao-setup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../userguide/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../userguide/compensation.html>
+Aberration Correction
+</a>
+</li>
+<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
+<a href=../userguide/tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
+<a href=../userguide/plugins.html>
+Plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class="dd-item
+parent">
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
+<a href=../widgets/actuatorsbars.html>
+Actuators Bars
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
+<a href=../widgets/actuatorsresponse.html>
+Actuators Response
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
+<a href=../widgets/actuatorstable.html>
+Actuators Table
+</a>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
+<a href=../widgets/modalbars.html>
+Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
+<a href=../widgets/modaltable.html>
+Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
+<a href=../widgets/singularbars.html>
+Singular Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
+<a href=../widgets/singulartable.html>
+Singular Table
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
+<a href=../widgets/singulartomodalbars.html>
+Singular To Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
+<a href=../widgets/singulartomodaltable.html>
+Singular To Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
+<a href=../widgets/systemmodes.html>
+System Modes
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class="dd-item active">
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../widgets.html>Widgets</a> > Viewfinder
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+<div class=tags>
+<a class=tag-link href=../tags/tag1>tag1</a>
+<a class=tag-link href=../tags/tag2>tag2</a>
+</div>
+</div>
+<div id=body-inner>
+<h1>
+Viewfinder
+</h1>
+<div class=paragraph>
+<p><span class=image><img src=viewfinder.png alt=viewfinder></span></p>
+</div>
+<div class=paragraph>
+<p>With the <strong>viewfinder</strong> widget it is possible to display the sensor image and set the <strong>RoI</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span> Draw tool</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>When this tool is selected, it is possible to edit the Region of Interest (RoI) of the image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_cross.png alt="grid cross"></span> Cross tool</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>When this tool is selected, a cross can be set and shown over the image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/gridZoom.png alt=gridZoom></span> Zoom tool</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>When this tool is selected, it is possible to zoom into the selected region of the image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_reset_zoom.png alt="grid reset zoom"></span> Zoom reset</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Resets the zoom level to its default value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/centroids_remove.png alt="centroids remove"></span> Remove centroids tool</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>When this tool is selected, it is possible to disable/enable lenslets within the RoI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_crop.png alt="grid crop"></span> Crop image</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Crops the sensor image to the boundaries defined by the RoI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/wfs_full.png alt="wfs full"></span> Uncrop image</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Restore the image to its original size.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_circle.png alt="grid circle"></span> Circular aperture</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Disables the centroids outside the circle inscribed into the RoI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_ccd.png alt="grid ccd"></span> Show image</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show/hide image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid.png alt=grid></span> Show grid</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show/hide grid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span> Show reference</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show/hide reference centroids.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_main.png alt="grid main"></span> Show centroids</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show/hide measured centroids.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/grid_quiver.png alt="grid quiver"></span> Show slopes</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show/hide measured slopes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/save.png alt=save></span> Save image</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Save the current image to file.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/settings.png alt=settings></span> Settings</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show additional settings.</p></td>
+</tr>
+</tbody>
+</table>
+<div class=sect1>
+<h2 id=_drawing_the_roi>Drawing the RoI</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p><span class=image><img src=viewfinderselection.png alt=viewfinderselection></span></p>
+</div>
+<div class=paragraph>
+<p>The RoI can be manipulated using the <strong>draw tool</strong> <span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span>.
+Hovering over the image reveals the RoI <strong>boundaries</strong> (dashed lines):</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>Clicking and dragging the mouse <strong>outside</strong> the RoI discards the currently set RoI and begins drawing a new one;</p>
+</li>
+<li>
+<p>Clicking and dragging the mouse on the <strong>edges</strong> or <strong>corners</strong> of the RoI (highlighted in blue) resizes the RoI;</p>
+</li>
+<li>
+<p>Clicking and dragging the mouse <strong>inside</strong> the RoI (highlighted in blue) moves the RoI.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_adjusting_the_image_display>Adjusting the image display</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p><span class=image><img src=viewfindersettings.png alt=viewfindersettings></span></p>
+</div>
+<div class=paragraph>
+<p>The viewfinder additional <strong>settings</strong> <span class=icon><img src=../icons/settings.png alt=settings width=16></span> are used to control how the image is displayed.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Black level</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Percentage of the maximum pixel intensity corresponding to the minimum colormap value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>White level</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Percentage of the maximum pixel intensity corresponding to the maximum colormap value.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Image colormap.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Slopes Scale</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Length ratio of the displayed slopes.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../widgets/twcog.html title="TWCoG Settings"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../widgets/wavefront.html title=Wavefront style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1648648779></script>
+<script src=../js/perfect-scrollbar.min.js?1648648779></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1648648779></script>
+<script src=../js/jquery.sticky.js?1648648779></script>
+<script src=../js/featherlight.min.js?1648648779></script>
+<script src=../js/highlight.pack.js?1648648779></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1648648779></script>
+<script src=../js/learn.js?1648648779></script>
+<script src=../js/hugo-learn.js?1648648779></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

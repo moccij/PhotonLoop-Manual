@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tag1 on PhotonLoop User Manual</title><link>/tags/tag1.html</link><description>Recent content in tag1 on PhotonLoop User Manual</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/tags/tag1/index.xml" rel="self" type="application/rss+xml"/><item><title>Actuators Bars</title><link>/widgets/actuatorsbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsbars.html</guid><description>The actuators bars widget gives the user a graphical representation of the actual state of the WFC actuators:
+The red bars display the actual WFC output commands;
+The orange slimmer bars display the command offsets.
+The Y range and baseline are fixed and are determined by the WFC specifications (minimum, maximum and center).
+An actuator is selected when hovering over its corresponding bar.</description></item><item><title>Actuators Response</title><link>/widgets/actuatorsresponse.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsresponse.html</guid><description>Actuators Response
+The actuators response widget shows the wavefront representation of all actuator responses.
+Clicking with the right mouse button pops up the display settings:
+Item Description Scale
+Determines the zoom level of the wavefront representation.
+Representation
+Determines how the wavefront relative to the selected bar is displayed into the preview snippet.</description></item><item><title>Actuators Table</title><link>/widgets/actuatorstable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorstable.html</guid><description>The actuators table widget presents the current state of the WFC actuators as a grid, with each row representing an actuator index.
+Item Description #
+Actuator index.
+Image
+Actuator response wavefront.
+Value
+Current actuator command output.
+Offset
+Actuator command offset.
+Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.</description></item><item><title>Calibration Settings</title><link>/widgets/calibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/calibration.html</guid><description>The calibration settings widget exposes the parameters used by the AO calibration routine.
+The calibration can only be performed once a reference has been taken and a WFC plugin is succesfully opened.
+Pattern configuration Poke pattern Item Description Influence Function (Individual Poke)
+One actuator is poked at once. Useful when the actuators exhibit strong non-linear behaviour.</description></item><item><title>Compensator Settings</title><link>/widgets/compensator.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/compensator.html</guid><description>Within the compensator settings widget it is possible to choose the control law, its parameters and additional robustness settings. Available compensators are listed as plugins.
+Robustness These parameters can help avoiding unexpected behaviors from the AO closed loop operations, such as to shut down the loop when the controller is self-oscillating or the sensor image is partially covered.
+Item Description Centroids Threshold Halt</description></item><item><title>Intensity Profile</title><link>/widgets/intensityprofile.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/intensityprofile.html</guid><description>The intensity profile widget shows the horizontal intensity profile of the viewfinder image. The horizontal line considered in the intensity profile widget can be set using the cross tool in the viewfinder widget.
+Within the profile plot are shown various items:
+The blue curve corresponds to the intensity over the horizontal line;
+The red curve corresponds to the intensity over the horizontal line that contains the pixel with the maximum intensity in each lenslet;</description></item><item><title>Log Toolbar</title><link>/widgets/log.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/log.html</guid><description>The log toolbar manages the logging/reporting utility to save both dynamic (real-time) and static data to disk.
+Item Description Log title
+Title of the log that will appear in the newly generated folder.
+Starts the log, creating a new folder. To stop the log, press the button again.</description></item><item><title>Modal Bars</title><link>/widgets/modalbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modalbars.html</guid><description>The modal bars widget gives the user a graphical representation of the actual state of the modal reconstruction:
+The green bars display the measured modes;
+The light green slimmer bars display the modal offsets;
+The red crosses indicate disabled modes.
+A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and mode wavefront representation of the currently selected mode index.</description></item><item><title>Modal Settings</title><link>/widgets/modal.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modal.html</guid><description>The modal settings widget shows the wavefront reconstrutor parameters.
+Item Description Basis
+Selects the basis used to project WFS measurements into modes:
+Item Description Zernike
+Zernike basis. Indicated for circular apertures;
+Zernike Orthogonal
+Basis obtained by orthogonalizing the Zernike basis;</description></item><item><title>Modal Table</title><link>/widgets/modaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modaltable.html</guid><description>The modal table widget presents the current state of the modal reconstruction as a grid, with each row representing a mode.
+#
+Mode index.
+Image
+Mode wavefront representation.
+Disabled
+Enable/disable the mode.
+Value
+Current measured mode.
+Offset
+Mode offset.
+Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.</description></item><item><title>Playback</title><link>/widgets/playback.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/playback.html</guid><description>The playback widget offers an interface to either reproduce a time series or execute a script.
+The script engine is deprecated in favor of the more flexible networking interface.
+Item Description Script
+Open a script file.
+Script
+Starts the script engine with the selected script file.
+Time Series</description></item><item><title>Reconstructor Settings</title><link>/widgets/reconstructor.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/reconstructor.html</guid><description>The reconstructor widget processes the AO interaction matrix acquired with the calibration or loaded from disk.
+Item Description System Modes Count
+Number of system modes to consider for the reconstructor.
+Singular to Modal Disabled
+Indexes of the modes to remove from the reconstructor matrix.
+* Format example: &amp;#34;2,5,7-11&amp;#34; means that the modes at index 2, 5, and in the interval between 7 and 11 are removed.</description></item><item><title>Sensor Settings</title><link>/widgets/sensor.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/sensor.html</guid><description>
+The sensor widget manages the interface between PhotonLoop and a connected camera. Available cameras are listed as plugins, with each plugin exposing different options.</description></item><item><title>Singular Bars</title><link>/widgets/singularbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singularbars.html</guid><description>The singular bars widget gives the user a graphical representation of the singular values extracted from the Singular Value Decomposition of the interaction matrix. Each bar represents an individual singular mode, with the height determined by its singular value.
+A singular mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the singular value and the wavefront representation of the currently selected index.</description></item><item><title>Singular Table</title><link>/widgets/singulartable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartable.html</guid><description>The singular table widget lists the singular values in a table, with each row representing a singular mode.
+The system widgets will become enabled once an interaction matrix has been acquired.
+Item Description #
+Singular mode index.
+Image
+Singular mode wavefront representation.
+Value
+Singular value.</description></item><item><title>Singular To Modal Bars</title><link>/widgets/singulartomodalbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodalbars.html</guid><description>The singular to modal bars widget gives an indication of the maximum modal amplitudes achievable by the AO system.
+The displayed amplitude is referred to individual modes.
+A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and actuator response of the currently selected mode index.
+Within the singular to modal bars widget it is possible to toggle the selected modes from the interaction matrix:</description></item><item><title>Singular To Modal Table</title><link>/widgets/singulartomodaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodaltable.html</guid><description>
+The singular to modal table widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
+Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.adoc[lines=5..-1]
+The system widgets will become enabled once an interaction matrix has been acquired.</description></item><item><title>Statistics</title><link>/widgets/statistics.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/statistics.html</guid><description>The statistics widget shows textual real-time informations about the wavefront measurements.
+Item Description RoI
+Size of the Region of Interest set into the viewfinder.
+Lenslets
+Number of lenslets in the grid inscribed into the RoI.
+Centroids
+Number of valid centroids detected by the WFS.
+Radius</description></item><item><title>System Modes</title><link>/widgets/systemmodes.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/systemmodes.html</guid><description>The system modes widget shows the wavefront representation of all singular modes.
+Clicking with the right mouse button pops up the display settings:
+Item Description Scale
+Determines the zoom level of the wavefront representation.
+Representation
+Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
+Colormap</description></item><item><title>Time Series</title><link>/widgets/timeseries.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/timeseries.html</guid><description>The time series widget displays the evolution over time of a scalar variable:
+The black curve represents the current measurement;
+The red thick curve represents the averaged current measurement.
+Item Description
+Resets the time series and the autoscale.
+Freezes the time series.</description></item><item><title>TWCoG Settings</title><link>/widgets/twcog.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/twcog.html</guid><description>The TWCoG widget exposes the parameters of the Thresholded Weighted Center of Gravity (TWCoG) algorithm implemented into the WFS centroids extraction routine.
+The plot shows the pixel intensity transformation map.
+Item Description Threshold Pixel
+Percentage of the pixel intensity below which the pixel is not considered.
+Threshold Lens
+Percentage of the sum of the pixel intensities in a lenslet below which the lenslet is invalid.</description></item><item><title>Viewfinder</title><link>/widgets/viewfinder.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/viewfinder.html</guid><description>With the viewfinder widget it is possible to display the sensor image and set the RoI.
+Item Description Draw tool
+When this tool is selected, it is possible to edit the Region of Interest (RoI) of the image.
+Cross tool
+When this tool is selected, a cross can be set and shown over the image.</description></item><item><title>Wavefront</title><link>/widgets/wavefront.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wavefront.html</guid><description>The wavefront widget shows the wavefront reconstructed from the measured modal terms. Refer to the modal settings widget to set the shape and resolution of the reconstructed wavefront.
+The widget will be enabled once a valid reference has been taken.
+Adjusting the wavefront display
+Hovering over the widget reveals the settings button that can be clicked to show the widget settings.</description></item><item><title>WFC Settings</title><link>/widgets/wfc.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wfc.html</guid><description>The WaveFront Corrector WFC widget manages the interface between PhotonLoop and a connected wavefront corrector. Available correctors are listed as plugins.
+Item Description Plugin
+Selects the desired plugin.
+Channels
+Number of channels to use.
+Some plugins automatically populate this field with the correct number of actuators.
+Minimum</description></item><item><title>WFS Calibration</title><link>/widgets/wfscalibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wfscalibration.html</guid><description>The wavefront sensor is delivered with the calibration file that can be loaded in PhotonLoop, and contains all the measured specifications. The calibration consists in a series of measurements of a spherical wavefront generated by a laser source at different distances between the SHWFS and source. The setup is very simple:
+Measure the spherical wavefront as described in Section 7. Draw a grid about 20x20 in dimensions, the maximum wavefront curvature is in the closest position to the source so be sure that the spots in the border of the considered aperture are inside their cell.</description></item><item><title>WFS Settings</title><link>/widgets/wfs.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wfs.html</guid><description>The WaveFront Sensor WFS widget defines the parameters to build the centroids extraction grid and the modal reconstruction.
+Item Description Pixel Size [m]
+Physical size of the camera pixels.
+Lenslet Size [m]
+Physical size of the lenslets of the Shack-Hartmann lenslet array.
+Divider
+If the camera operates in sub-sampling or binning mode, the pixel size must be updated accordingly by setting the divider (integer value).</description></item></channel></rss>

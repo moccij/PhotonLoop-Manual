@@ -1,0 +1,528 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=./images/favicon.png type=image/png>
+<title>Widgets - PhotonLoop User Manual</title>
+<link href=./css/nucleus.css?1648648779 rel=stylesheet>
+<link href=./css/fontawesome-all.min.css?1648648779 rel=stylesheet>
+<link href=./css/hybrid.css?1648648779 rel=stylesheet>
+<link href=./css/featherlight.min.css?1648648779 rel=stylesheet>
+<link href=./css/perfect-scrollbar.min.css?1648648779 rel=stylesheet>
+<link href=./css/auto-complete.css?1648648779 rel=stylesheet>
+<link href=./css/atom-one-dark-reasonable.css?1648648779 rel=stylesheet>
+<link href=./css/theme.css?1648648779 rel=stylesheet>
+<link href=./css/tabs.css?1648648779 rel=stylesheet>
+<link href=./css/hugo-theme.css?1648648779 rel=stylesheet>
+<link href=./css/theme-jm.css?1648648779 rel=stylesheet>
+<link href=./css/custom.css?1648648779 rel=stylesheet>
+<script src=./js/jquery-3.3.1.min.js?1648648779></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=./widgets.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=./PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=./js/lunr.min.js?1648648779></script>
+<script type=text/javascript src=./js/auto-complete.js?1648648779></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=./js/search.js?1648648779></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=./><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/userguide.html title="User Manual" class=dd-item>
+<a href=./userguide.html>
+User Manual
+</a>
+<ul>
+<li data-nav-id=/userguide/safety.html title="Safety Instructions" class=dd-item>
+<a href=./userguide/safety.html>
+Safety Instructions
+</a>
+</li>
+<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
+<a href=./userguide/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class=dd-item>
+<a href=./userguide/ao-setup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=./userguide/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
+<a href=./userguide/compensation.html>
+Aberration Correction
+</a>
+</li>
+<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
+<a href=./userguide/tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
+<a href=./userguide/plugins.html>
+Plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class="dd-item
+parent
+active">
+<a href=./widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
+<a href=./widgets/actuatorsbars.html>
+Actuators Bars
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
+<a href=./widgets/actuatorsresponse.html>
+Actuators Response
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
+<a href=./widgets/actuatorstable.html>
+Actuators Table
+</a>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=./widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=./widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=./widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=./widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
+<a href=./widgets/modalbars.html>
+Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=./widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
+<a href=./widgets/modaltable.html>
+Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=./widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=./widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=./widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
+<a href=./widgets/singularbars.html>
+Singular Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
+<a href=./widgets/singulartable.html>
+Singular Table
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
+<a href=./widgets/singulartomodalbars.html>
+Singular To Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
+<a href=./widgets/singulartomodaltable.html>
+Singular To Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=./widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
+<a href=./widgets/systemmodes.html>
+System Modes
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=./widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=./widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=./widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=./widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=./widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=./widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=./widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=./>Home</a> > Widgets
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Widgets
+</h1>
+<p>This section lists the <strong>widgets</strong></p>
+<p>== Quick description of User Interface</p>
+<p>The user interface can be divided in many panels, see figure below. First of all, you can find the main toolbox in the left (1) and the Shack-Hartmann image acquisition and display options toolbox on top (2). The first toolbox contains the connection buttons for camera and controller, measurements start/stop and button for the main AO operations such as closed and open loop mode.</p>
+<p>The panel Tab (3) contains four tabs: Settings, Calibrations, Controller and Utilities. In all these tabs you can find many parameters to set. We will explain them during the description of the functions. The space in the center of the window (4) is occupied by images and graphs depending on the tab selected in the right part.</p>
+<p>In the bottom part of the window are displayed the sensor statistics (5), the Zernike decomposition and the value of the selected mode (6), the actuators histogram (7) and the reconstruction of the wavefront (8). The status bar of PHOTONLOOP is displayed in a small horizontal space in the bottom of the window.</p>
+<p>image:/img/image23.png[]</p>
+<p>The panels 6 and 7 are interactive and you can drag the histograms bars to change their value. In the Zernike coefficients Bar plot (6) it is possible to interact with the Zernike coefficients to add offset coefficients and to select Zernike modes. Set offsets with the left mouse button, reset offsets with the right mouse button and disable measured coefficients with the mouse wheel.</p>
+<p>The actuators histogram (7) is interactive and you can play with the single actuator to set any value. Graphs and various values are displayed when the pointer goes over the bar of the histograms. Offset, coefficient and phase representation of the mode are shown moving the mouse pointer on the bars in the histogram (6); Offsets, values and influence functionsfootnote:[Influence functions are calculated during calibration of the AO system. They will be described in the section dedicated to Calibration procedure.] are shown moving the mouse pointer on the actuators bar in the histogram (7).</p>
+<p>Also, in the panel 4, where the SHWFS spots are displayed in the WFS Tab, you can interact with measurement grid, the various options will be described in the next section relative to wavefront measurement.</p>
+<ul class="children children-li">
+<li>
+<a href=./widgets/actuatorsbars.html>Actuators Bars</a>
+</li>
+<p>The actuators bars widget gives the user a graphical representation of the actual state of the WFC actuators:
+The red bars display the actual WFC output commands;
+The orange slimmer bars display the command offsets.
+The Y range and baseline are fixed and are determined by the WFC specifications (minimum, maximum and center).
+An actuator is selected when hovering over its corresponding bar.</p>
+<li>
+<a href=./widgets/actuatorsresponse.html>Actuators Response</a>
+</li>
+<p>Actuators Response
+The actuators response widget shows the wavefront representation of all actuator responses.
+Clicking with the right mouse button pops up the display settings:
+Item Description Scale
+Determines the zoom level of the wavefront representation.
+Representation
+Determines how the wavefront relative to the selected bar is displayed into the preview snippet.</p>
+<li>
+<a href=./widgets/actuatorstable.html>Actuators Table</a>
+</li>
+<p>The actuators table widget presents the current state of the WFC actuators as a grid, with each row representing an actuator index.
+Item Description #
+Actuator index.
+Image
+Actuator response wavefront.
+Value
+Current actuator command output.
+Offset
+Actuator command offset.
+Unresolved directive in &lt;stdin> - include::table.</p>
+<li>
+<a href=./widgets/calibration.html>Calibration Settings</a>
+</li>
+<p>The calibration settings widget exposes the parameters used by the AO calibration routine.
+The calibration can only be performed once a reference has been taken and a WFC plugin is succesfully opened.
+Pattern configuration Poke pattern Item Description Influence Function (Individual Poke)
+One actuator is poked at once. Useful when the actuators exhibit strong non-linear behaviour.</p>
+<li>
+<a href=./widgets/compensator.html>Compensator Settings</a>
+</li>
+<p>Within the compensator settings widget it is possible to choose the control law, its parameters and additional robustness settings. Available compensators are listed as plugins.
+Robustness These parameters can help avoiding unexpected behaviors from the AO closed loop operations, such as to shut down the loop when the controller is self-oscillating or the sensor image is partially covered.
+Item Description Centroids Threshold Halt</p>
+<li>
+<a href=./widgets/intensityprofile.html>Intensity Profile</a>
+</li>
+<p>The intensity profile widget shows the horizontal intensity profile of the viewfinder image. The horizontal line considered in the intensity profile widget can be set using the cross tool in the viewfinder widget.
+Within the profile plot are shown various items:
+The blue curve corresponds to the intensity over the horizontal line;
+The red curve corresponds to the intensity over the horizontal line that contains the pixel with the maximum intensity in each lenslet;</p>
+<li>
+<a href=./widgets/log.html>Log Toolbar</a>
+</li>
+<p>The log toolbar manages the logging/reporting utility to save both dynamic (real-time) and static data to disk.
+Item Description Log title
+Title of the log that will appear in the newly generated folder.
+Starts the log, creating a new folder. To stop the log, press the button again.</p>
+<li>
+<a href=./widgets/modalbars.html>Modal Bars</a>
+</li>
+<p>The modal bars widget gives the user a graphical representation of the actual state of the modal reconstruction:
+The green bars display the measured modes;
+The light green slimmer bars display the modal offsets;
+The red crosses indicate disabled modes.
+A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and mode wavefront representation of the currently selected mode index.</p>
+<li>
+<a href=./widgets/modal.html>Modal Settings</a>
+</li>
+<p>The modal settings widget shows the wavefront reconstrutor parameters.
+Item Description Basis
+Selects the basis used to project WFS measurements into modes:
+Item Description Zernike
+Zernike basis. Indicated for circular apertures;
+Zernike Orthogonal
+Basis obtained by orthogonalizing the Zernike basis;</p>
+<li>
+<a href=./widgets/modaltable.html>Modal Table</a>
+</li>
+<p>The modal table widget presents the current state of the modal reconstruction as a grid, with each row representing a mode.
+#
+Mode index.
+Image
+Mode wavefront representation.
+Disabled
+Enable/disable the mode.
+Value
+Current measured mode.
+Offset
+Mode offset.
+Unresolved directive in &lt;stdin> - include::table.</p>
+<li>
+<a href=./widgets/playback.html>Playback</a>
+</li>
+<p>The playback widget offers an interface to either reproduce a time series or execute a script.
+The script engine is deprecated in favor of the more flexible networking interface.
+Item Description Script
+Open a script file.
+Script
+Starts the script engine with the selected script file.
+Time Series</p>
+<li>
+<a href=./widgets/reconstructor.html>Reconstructor Settings</a>
+</li>
+<p>The reconstructor widget processes the AO interaction matrix acquired with the calibration or loaded from disk.
+Item Description System Modes Count
+Number of system modes to consider for the reconstructor.
+Singular to Modal Disabled
+Indexes of the modes to remove from the reconstructor matrix.
+* Format example: "2,5,7-11" means that the modes at index 2, 5, and in the interval between 7 and 11 are removed.</p>
+<li>
+<a href=./widgets/sensor.html>Sensor Settings</a>
+</li>
+<p>
+The sensor widget manages the interface between PhotonLoop and a connected camera. Available cameras are listed as plugins, with each plugin exposing different options.
+</p>
+<li>
+<a href=./widgets/singularbars.html>Singular Bars</a>
+</li>
+<p>The singular bars widget gives the user a graphical representation of the singular values extracted from the Singular Value Decomposition of the interaction matrix. Each bar represents an individual singular mode, with the height determined by its singular value.
+A singular mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the singular value and the wavefront representation of the currently selected index.</p>
+<li>
+<a href=./widgets/singulartable.html>Singular Table</a>
+</li>
+<p>The singular table widget lists the singular values in a table, with each row representing a singular mode.
+The system widgets will become enabled once an interaction matrix has been acquired.
+Item Description #
+Singular mode index.
+Image
+Singular mode wavefront representation.
+Value
+Singular value.</p>
+<li>
+<a href=./widgets/singulartomodalbars.html>Singular To Modal Bars</a>
+</li>
+<p>The singular to modal bars widget gives an indication of the maximum modal amplitudes achievable by the AO system.
+The displayed amplitude is referred to individual modes.
+A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and actuator response of the currently selected mode index.
+Within the singular to modal bars widget it is possible to toggle the selected modes from the interaction matrix:</p>
+<li>
+<a href=./widgets/singulartomodaltable.html>Singular To Modal Table</a>
+</li>
+<p>
+The singular to modal table widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
+Unresolved directive in &lt;stdin> - include::table.adoc[lines=5..-1]
+The system widgets will become enabled once an interaction matrix has been acquired.
+</p>
+<li>
+<a href=./widgets/statistics.html>Statistics</a>
+</li>
+<p>The statistics widget shows textual real-time informations about the wavefront measurements.
+Item Description RoI
+Size of the Region of Interest set into the viewfinder.
+Lenslets
+Number of lenslets in the grid inscribed into the RoI.
+Centroids
+Number of valid centroids detected by the WFS.
+Radius</p>
+<li>
+<a href=./widgets/systemmodes.html>System Modes</a>
+</li>
+<p>The system modes widget shows the wavefront representation of all singular modes.
+Clicking with the right mouse button pops up the display settings:
+Item Description Scale
+Determines the zoom level of the wavefront representation.
+Representation
+Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
+Colormap</p>
+<li>
+<a href=./widgets/timeseries.html>Time Series</a>
+</li>
+<p>The time series widget displays the evolution over time of a scalar variable:
+The black curve represents the current measurement;
+The red thick curve represents the averaged current measurement.
+Item Description
+Resets the time series and the autoscale.
+Freezes the time series.</p>
+<li>
+<a href=./widgets/twcog.html>TWCoG Settings</a>
+</li>
+<p>The TWCoG widget exposes the parameters of the Thresholded Weighted Center of Gravity (TWCoG) algorithm implemented into the WFS centroids extraction routine.
+The plot shows the pixel intensity transformation map.
+Item Description Threshold Pixel
+Percentage of the pixel intensity below which the pixel is not considered.
+Threshold Lens
+Percentage of the sum of the pixel intensities in a lenslet below which the lenslet is invalid.</p>
+<li>
+<a href=./widgets/viewfinder.html>Viewfinder</a>
+</li>
+<p>With the viewfinder widget it is possible to display the sensor image and set the RoI.
+Item Description Draw tool
+When this tool is selected, it is possible to edit the Region of Interest (RoI) of the image.
+Cross tool
+When this tool is selected, a cross can be set and shown over the image.</p>
+<li>
+<a href=./widgets/wavefront.html>Wavefront</a>
+</li>
+<p>The wavefront widget shows the wavefront reconstructed from the measured modal terms. Refer to the modal settings widget to set the shape and resolution of the reconstructed wavefront.
+The widget will be enabled once a valid reference has been taken.
+Adjusting the wavefront display
+Hovering over the widget reveals the settings button that can be clicked to show the widget settings.</p>
+<li>
+<a href=./widgets/wfc.html>WFC Settings</a>
+</li>
+<p>The WaveFront Corrector WFC widget manages the interface between PhotonLoop and a connected wavefront corrector. Available correctors are listed as plugins.
+Item Description Plugin
+Selects the desired plugin.
+Channels
+Number of channels to use.
+Some plugins automatically populate this field with the correct number of actuators.
+Minimum</p>
+<li>
+<a href=./widgets/wfscalibration.html>WFS Calibration</a>
+</li>
+<p>The wavefront sensor is delivered with the calibration file that can be loaded in PhotonLoop, and contains all the measured specifications. The calibration consists in a series of measurements of a spherical wavefront generated by a laser source at different distances between the SHWFS and source. The setup is very simple:
+Measure the spherical wavefront as described in Section 7. Draw a grid about 20x20 in dimensions, the maximum wavefront curvature is in the closest position to the source so be sure that the spots in the border of the considered aperture are inside their cell.</p>
+<li>
+<a href=./widgets/wfs.html>WFS Settings</a>
+</li>
+<p>The WaveFront Sensor WFS widget defines the parameters to build the centroids extraction grid and the modal reconstruction.
+Item Description Pixel Size [m]
+Physical size of the camera pixels.
+Lenslet Size [m]
+Physical size of the lenslets of the Shack-Hartmann lenslet array.
+Divider
+If the camera operates in sub-sampling or binning mode, the pixel size must be updated accordingly by setting the divider (integer value).</p>
+</ul>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=./userguide/plugins.html title=Plugins> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=./widgets/actuatorsbars.html title="Actuators Bars" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=./js/clipboard.min.js?1648648780></script>
+<script src=./js/perfect-scrollbar.min.js?1648648780></script>
+<script src=./js/perfect-scrollbar.jquery.min.js?1648648780></script>
+<script src=./js/jquery.sticky.js?1648648780></script>
+<script src=./js/featherlight.min.js?1648648780></script>
+<script src=./js/highlight.pack.js?1648648780></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=./js/modernizr.custom-3.6.0.js?1648648780></script>
+<script src=./js/learn.js?1648648780></script>
+<script src=./js/hugo-learn.js?1648648780></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>Log Toolbar - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1648648775 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1648648775 rel=stylesheet>
+<link href=../css/hybrid.css?1648648775 rel=stylesheet>
+<link href=../css/featherlight.min.css?1648648775 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1648648775 rel=stylesheet>
+<link href=../css/auto-complete.css?1648648775 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1648648775 rel=stylesheet>
+<link href=../css/theme.css?1648648775 rel=stylesheet>
+<link href=../css/tabs.css?1648648775 rel=stylesheet>
+<link href=../css/hugo-theme.css?1648648775 rel=stylesheet>
+<link href=../css/theme-jm.css?1648648775 rel=stylesheet>
+<link href=../css/custom.css?1648648775 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1648648775></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../widgets/log.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1648648775></script>
+<script type=text/javascript src=../js/auto-complete.js?1648648775></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1648648775></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/userguide.html title="User Manual" class=dd-item>
+<a href=../userguide.html>
+User Manual
+</a>
+<ul>
+<li data-nav-id=/userguide/safety.html title="Safety Instructions" class=dd-item>
+<a href=../userguide/safety.html>
+Safety Instructions
+</a>
+</li>
+<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
+<a href=../userguide/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class=dd-item>
+<a href=../userguide/ao-setup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../userguide/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../userguide/compensation.html>
+Aberration Correction
+</a>
+</li>
+<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
+<a href=../userguide/tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
+<a href=../userguide/plugins.html>
+Plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class="dd-item
+parent">
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
+<a href=../widgets/actuatorsbars.html>
+Actuators Bars
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
+<a href=../widgets/actuatorsresponse.html>
+Actuators Response
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
+<a href=../widgets/actuatorstable.html>
+Actuators Table
+</a>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class="dd-item active">
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
+<a href=../widgets/modalbars.html>
+Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
+<a href=../widgets/modaltable.html>
+Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
+<a href=../widgets/singularbars.html>
+Singular Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
+<a href=../widgets/singulartable.html>
+Singular Table
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
+<a href=../widgets/singulartomodalbars.html>
+Singular To Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
+<a href=../widgets/singulartomodaltable.html>
+Singular To Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
+<a href=../widgets/systemmodes.html>
+System Modes
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../widgets.html>Widgets</a> > Log Toolbar
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+<div class=tags>
+<a class=tag-link href=../tags/tag1>tag1</a>
+<a class=tag-link href=../tags/tag2>tag2</a>
+</div>
+</div>
+<div id=body-inner>
+<h1>
+Log Toolbar
+</h1>
+<div class=paragraph>
+<p><span class=image><img src=logtoolbar.png alt=logtoolbar></span></p>
+</div>
+<div class=paragraph>
+<p>The <strong>log</strong> toolbar manages the logging/reporting utility to save both <strong>dynamic</strong> (real-time) and <strong>static</strong> data to disk.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Log title</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Title of the log that will appear in the newly generated folder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/log_start.png alt="log start"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Starts the log, creating a new folder. To stop the log, press the button again.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/pause.png alt=pause></span></p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pauses the log. The <strong>index</strong> counter increments by one.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/log_snapshot.png alt="log snapshot"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Generates a log with only one sample into a new folder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/settings.png alt=settings></span></p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Opens the log settings.</p></td>
+</tr>
+</tbody>
+</table>
+<div class=sect1>
+<h2 id=_log_settings>Log Settings</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p><span class=image><img src=logsettings.png alt=logsettings></span></p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Folder</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Root folder in which newly generated logs are placed to.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Prepend Datetime</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Prepends the current date/time to the newly created folders.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Freeze Time when Paused</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Stops the measured time between pause/start log.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Format</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Data format. <strong>ASCII</strong> is preferred when an human readable form is needed, otherwise <strong>Binary</strong> is more accurate while minimizing used space.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>If greater than zero, determines the maximum log length in seconds. When the timeout expires, the log is automatically stopped.</p></td>
+</tr>
+</tbody>
+</table>
+<div class=sect2>
+<h3 id=_record_time_seriesstatic>Record Time Series/Static</h3>
+<div class=paragraph>
+<p>The checkboxes enable/disable saving individual kind of data.</p>
+</div>
+<div class=paragraph>
+<div class="notices note"><div class=paragraph>
+<p>Static data such as AO settings, reconstructor matrices, spot image and centroids are always saved to disk.</p>
+</div>
+</div>
+</div>
+<div class=paragraph>
+<p>With PHOTONLOOP you can save the current measurements and the related settings of the software and also record the measurements for a period of time.</p>
+</div>
+<div class=paragraph>
+<p>You can set the time for recording in the Timeout specifying the time in seconds. Then check the data that you want to save:</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>time in seconds</p>
+</li>
+<li>
+<p>slops are the wavefront gradient</p>
+</li>
+<li>
+<p>centroids are the x-y positions of spots</p>
+</li>
+<li>
+<p>moments</p>
+</li>
+<li>
+<p>Zernike are coefficients RMS in meter,</p>
+</li>
+<li>
+<p>Zernike offset in meter</p>
+</li>
+<li>
+<p>actuators value in normalized voltages</p>
+</li>
+<li>
+<p>actuators voltages offset</p>
+</li>
+<li>
+<p>wavefront phase to generate a file that can be loaded in Zemax</p>
+</li>
+<li>
+<p>html file report.</p>
+</li>
+</ul>
+</div>
+<div class=paragraph>
+<p>The saved files contain all the information to generate a report of the measurement and, for example, the centroids_reference.txt can be used to load the measurements grid in a second moment.</p>
+</div>
+<div class=paragraph>
+<p>To save the report click on the log button <span class=image><img src=../img/image45.png alt=image45></span>, a new window will open. In this window you can specify the type of data to record, the title of the folder and the saving path. Then press snapshot or record.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image46.png alt=image46></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_display_the_measurements>Display the measurements</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>You can immediately open the report clicking in the Open HTML Report…​ button in the log window, the browser will automatically start or you can display the report with the HTML file in the saved folder. We recommend Mozilla Firefox as browser. An example of report is in the next figure.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image47.png alt=image47></span></p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_load_wavefront_data_as_grid_phase_in_zemax>Load wavefront data as grid phase in Zemax</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>In this version it is also possible to save a file containing the wavefront data that can be loaded as a Grid Phase map in Zemax 13 and later version. The grid phase file can be saved in the log window, just flag on Generate Wavefront (Zemax) and press on the Snapshot button. The saved folder contains a file wavefront.dat with a series of data like this (units in millimeters):</p>
+</div>
+<div class=paragraph>
+<p>28 28 0.15 0.15 0 0 0<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0 0 0 0 1<br>
+0.620259 0 0 0<br>
+-0.270376 0 0 0<br>
+-0.863329 0 0 0<br>
+-1.19881 0 0 0<br>
+-1.30754 0 0 0<br>
+-1.20996 0 0 0</p>
+</div>
+<div class=paragraph>
+<p>In the first row, the first two numbers (28 in this case) indicate the number of measuring points, 28 by 28 for each side of the grid. 0.15 indicates the pitch in mm of the wavefront sensor. Starting from the second row the table contains the wavefront data. All the rows with zeros that follow are relative to the area of the frame out of the circular aperture, the number 1 in the end of the row indicates that the data point is now valid. The last few rows with a non zero value in the first column are the phase of the wavefront (in radiant). A better description of the file format can be found in the Zemax manual. Note that if you want to refer you wavefront data to the aperture of the optical system you need to consider the magnification factor the relay optics that re-image the aperture into the lenslet array. So, in this case if you want to refer the wavefront data to an aperture of 300 mm in diameter just chance 0.15 mm with 300/28=10.7 mm.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_load_the_measurement_grid>Load the measurement grid</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>The measurement grid used for the wavefront measurements is automatically saved with the snapshot button. To load the reference, go into the Utilities tab and then in the Load tab. Press the Load button and chose the folder (note that the Load button is available only if you turn off the button Measure Absolute Wavefront).</p>
+</div>
+<div class=paragraph>
+<p>If you want to load an image of spots saved with the snapshot and measure it with the saved reference, chose FileSensorVx.x from the Plugin menu in the settings of the WFS, then press the button for camera connection and chose the image to load. Now load the reference and the saved measure will be shown in PHOTONLOOP.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_playback>Playback</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>In the right part of the log window it is possible to load a Script or a Time series. You can write your own script file that can contains a series of actions that PHOTONLOOP can do during time, this can be useful for automatic measurements.</p>
+</div>
+<div class=paragraph>
+<p>The time series file that can be loaded contains actuators voltages or RMS Zernike coefficients that can be loaded at a specify frame rate to the deformable elements. A scale factor can be specified for the data in the time series. You can choose also a one-shot time series or loop mode. If you use the option Arm for recording, when you press the Record button, PHOTONLOOP will start the time series and record data in the same time. To run Script or time series just click on the respectively buttons in the bottom part of the window.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_analyze_photonloop_data_with_matlab>Analyze PHOTONLOOP data with MATLAB</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>Use the examples in the folder PHOTONLOOP data analysis example in order to upload and display the data.</p>
+</div>
+<div class=paragraph>
+<p>Launch the program Data_analysis_example.m to upload aberration data (use the data in the folder data_example).</p>
+</div>
+<div class=paragraph>
+<p>Launch the program Evaluate_Influence_Matrix_Example.m to upload the influence functions (use the data in the folder data_example).</p>
+</div>
+</div>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../widgets/intensityprofile.html title="Intensity Profile"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../widgets/modalbars.html title="Modal Bars" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1648648776></script>
+<script src=../js/perfect-scrollbar.min.js?1648648776></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1648648776></script>
+<script src=../js/jquery.sticky.js?1648648776></script>
+<script src=../js/featherlight.min.js?1648648776></script>
+<script src=../js/highlight.pack.js?1648648776></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1648648776></script>
+<script src=../js/learn.js?1648648776></script>
+<script src=../js/hugo-learn.js?1648648776></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

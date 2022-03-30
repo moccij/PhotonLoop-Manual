@@ -1,0 +1,377 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>TWCoG Settings - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1648648779 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1648648779 rel=stylesheet>
+<link href=../css/hybrid.css?1648648779 rel=stylesheet>
+<link href=../css/featherlight.min.css?1648648779 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1648648779 rel=stylesheet>
+<link href=../css/auto-complete.css?1648648779 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1648648779 rel=stylesheet>
+<link href=../css/theme.css?1648648779 rel=stylesheet>
+<link href=../css/tabs.css?1648648779 rel=stylesheet>
+<link href=../css/hugo-theme.css?1648648779 rel=stylesheet>
+<link href=../css/theme-jm.css?1648648779 rel=stylesheet>
+<link href=../css/custom.css?1648648779 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1648648779></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../widgets/twcog.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1648648779></script>
+<script type=text/javascript src=../js/auto-complete.js?1648648779></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1648648779></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/userguide.html title="User Manual" class=dd-item>
+<a href=../userguide.html>
+User Manual
+</a>
+<ul>
+<li data-nav-id=/userguide/safety.html title="Safety Instructions" class=dd-item>
+<a href=../userguide/safety.html>
+Safety Instructions
+</a>
+</li>
+<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
+<a href=../userguide/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class=dd-item>
+<a href=../userguide/ao-setup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../userguide/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../userguide/compensation.html>
+Aberration Correction
+</a>
+</li>
+<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
+<a href=../userguide/tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
+<a href=../userguide/plugins.html>
+Plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class="dd-item
+parent">
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
+<a href=../widgets/actuatorsbars.html>
+Actuators Bars
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
+<a href=../widgets/actuatorsresponse.html>
+Actuators Response
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
+<a href=../widgets/actuatorstable.html>
+Actuators Table
+</a>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
+<a href=../widgets/modalbars.html>
+Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
+<a href=../widgets/modaltable.html>
+Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
+<a href=../widgets/singularbars.html>
+Singular Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
+<a href=../widgets/singulartable.html>
+Singular Table
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
+<a href=../widgets/singulartomodalbars.html>
+Singular To Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
+<a href=../widgets/singulartomodaltable.html>
+Singular To Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
+<a href=../widgets/systemmodes.html>
+System Modes
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class="dd-item active">
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../widgets.html>Widgets</a> > TWCoG Settings
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+<div class=tags>
+<a class=tag-link href=../tags/tag1>tag1</a>
+<a class=tag-link href=../tags/tag2>tag2</a>
+</div>
+</div>
+<div id=body-inner>
+<h1>
+TWCoG Settings
+</h1>
+<div class=paragraph>
+<p><span class=image><img src=twcog.png alt=twcog></span></p>
+</div>
+<div class=paragraph>
+<p>The <strong>TWCoG</strong> widget exposes the parameters of the Thresholded Weighted Center of Gravity (TWCoG) algorithm implemented into the WFS centroids extraction routine.</p>
+</div>
+<div class=paragraph>
+<p>The <strong>plot</strong> shows the pixel intensity transformation map.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Threshold Pixel</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Percentage of the pixel intensity below which the pixel is not considered.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Threshold Lens</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Percentage of the sum of the pixel intensities in a lenslet below which the lenslet is invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Threshold Sigma</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Variance of the Gaussian shape applied to the threshold pixel values. The Gaussian is centered at the center of the RoI, and affects the threshold on a per-lenslet basis.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Saturation</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Percentage of the pixel intensity above which the pixel intensity is maximum.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Method</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Currently only the TWCoG method is implemented.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Weighting</p></td>
+<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
+<p>Weighting law of the pixel intensities.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Linear</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>The intensity is not weighted;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Quadratic</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>The intensity value is squared;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cubic</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>The intensity value is elevated at the power of 3.</p></td>
+</tr>
+</tbody>
+</table>
+<div class=paragraph>
+<p>Weighting the pixel intensities emphatizes high intensity values, leading to better signal to noise ratio.
+However, the measurement will no longer be linear.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Box Size</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Lenslet margin outside which pixels are not considered.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Second Order Moments</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Calculate second order moments.</p></td>
+</tr>
+</tbody>
+</table>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../widgets/timeseries.html title="Time Series"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../widgets/viewfinder.html title=Viewfinder style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1648648779></script>
+<script src=../js/perfect-scrollbar.min.js?1648648779></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1648648779></script>
+<script src=../js/jquery.sticky.js?1648648779></script>
+<script src=../js/featherlight.min.js?1648648779></script>
+<script src=../js/highlight.pack.js?1648648779></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1648648779></script>
+<script src=../js/learn.js?1648648779></script>
+<script src=../js/hugo-learn.js?1648648779></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

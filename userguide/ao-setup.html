@@ -1,0 +1,716 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>Optical Setup - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1648648772 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1648648772 rel=stylesheet>
+<link href=../css/hybrid.css?1648648772 rel=stylesheet>
+<link href=../css/featherlight.min.css?1648648772 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1648648772 rel=stylesheet>
+<link href=../css/auto-complete.css?1648648772 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1648648772 rel=stylesheet>
+<link href=../css/theme.css?1648648772 rel=stylesheet>
+<link href=../css/tabs.css?1648648772 rel=stylesheet>
+<link href=../css/hugo-theme.css?1648648772 rel=stylesheet>
+<link href=../css/theme-jm.css?1648648772 rel=stylesheet>
+<link href=../css/custom.css?1648648772 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1648648772></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../userguide/ao-setup.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1648648772></script>
+<script type=text/javascript src=../js/auto-complete.js?1648648772></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1648648772></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/userguide.html title="User Manual" class="dd-item
+parent">
+<a href=../userguide.html>
+User Manual
+</a>
+<ul>
+<li data-nav-id=/userguide/safety.html title="Safety Instructions" class=dd-item>
+<a href=../userguide/safety.html>
+Safety Instructions
+</a>
+</li>
+<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
+<a href=../userguide/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class="dd-item active">
+<a href=../userguide/ao-setup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../userguide/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../userguide/compensation.html>
+Aberration Correction
+</a>
+</li>
+<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
+<a href=../userguide/tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
+<a href=../userguide/plugins.html>
+Plugins
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class=dd-item>
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
+<a href=../widgets/actuatorsbars.html>
+Actuators Bars
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
+<a href=../widgets/actuatorsresponse.html>
+Actuators Response
+</a>
+</li>
+<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
+<a href=../widgets/actuatorstable.html>
+Actuators Table
+</a>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
+<a href=../widgets/modalbars.html>
+Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
+<a href=../widgets/modaltable.html>
+Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
+<a href=../widgets/singularbars.html>
+Singular Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
+<a href=../widgets/singulartable.html>
+Singular Table
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
+<a href=../widgets/singulartomodalbars.html>
+Singular To Modal Bars
+</a>
+</li>
+<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
+<a href=../widgets/singulartomodaltable.html>
+Singular To Modal Table
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
+<a href=../widgets/systemmodes.html>
+System Modes
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../userguide.html>User Manual</a> > Optical Setup
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#_closed_loop_ao_operation_principle>Closed loop AO operation principle</a></li>
+<li><a href=#_non_common_path_aberrations>Non common path aberrations</a></li>
+<li><a href=#_physical_connections>Physical connections</a>
+<ul>
+<li><a href=#_deformable_elements>Deformable elements</a></li>
+<li><a href=#_shack_hartmann_wave_front_sensor>Shack-Hartmann Wave Front Sensor</a></li>
+</ul>
+</li>
+<li><a href=#_how_to_build_your_own_ao_system>How to build your own AO system</a></li>
+<li><a href=#_photonloop_setup>PhotonLoop Setup</a>
+<ul>
+<li><a href=#_connect_to_the_camera>Connect to the camera</a></li>
+<li><a href=#_connect_to_deformable_mirror_or_lens>Connect to deformable mirror or lens</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Optical Setup
+</h1>
+<div class=paragraph>
+<p>A typical setup for adaptive optics includes a deformable optical element that could be a lens or a mirror connected to a controller, the feedback for the controller is provided by the wavefront sensor. In this configuration the AO system is working in closed loop. If the measurements of the wavefront is not used as a control feedback, the system is working in open loop. In the standard setup we offer a deformable lens or mirror controlled by a controller and a Shack-Hartmann wavefront sensor (SHWFS) for the feedback. Relay optical systems are necessary to conjugate all this element with the exit pupil of a generic optical system. The conjugation is very important for accurate measurements of the wavefront and proper AO operation. The relay system is also useful for beam reduction or expansion to adapt it to the clear aperture of the components.</p>
+</div>
+<div class=paragraph>
+<p>In the following picture is reported a typical AO setup. Yellow dashed lines represent the conjugated planes.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image21.png alt=image width=612 height=112></span></p>
+</div>
+<div class=paragraph>
+<p>The exit pupil in the figure is the image of the aperture or stop that limits the marginal ray of the generic optical system. The first relay optics conjugates the exit pupil to the deformable lens and the second relay optics conjugate the lens to lenslet array of the Shack-Hartmann wavefront sensor. The far field camera is not necessary for the AO operation but is usually used to monitor the Point Spread Function (PSF) and allow to have a visual feedback of the AO operation. If the optical system uses a point like source and the AO is working properly, you should see a diffraction limited PSF in the far field camera.</p>
+</div>
+<div class=paragraph>
+<p>The AO system with a deformable mirror instead of the deformable lens is very similar to that one reported before, the DM implies a deflection of the beam with a certain angle so, at least two folding static mirrors are necessary in between the first and the second relay optics.</p>
+</div>
+<div class=sect2>
+<h3 id=_closed_loop_ao_operation_principle>Closed loop AO operation principle</h3>
+<div class=paragraph>
+<p>A distorted wavefront comes into the system and is measured with the WFS, the control calculates the correction to feed the deformable element. We obtain a corrected wavefront and in the other side a residual error because new and uncorrelated aberration comes into the system.</p>
+</div>
+</div>
+<div class=sect2>
+<h3 id=_non_common_path_aberrations>Non common path aberrations</h3>
+<div class=paragraph>
+<p>In some cases, also in static configuration, it is not possible to obtain a perfect diffraction limited PSF in the far field camera due to non-common path aberration. This aberration are generated by the optical elements that are not in common between the sensing arm and the far field camera. The effect of non-common path aberrations is that to a flat wavefront does not correspond a diffraction limited PSF on the far field camera. This problem can be solved using better optical elements a careful alignment or setting some aberrations offset in the wavefront sensor controller as described in section10.</p>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_physical_connections>Physical connections</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>In a standard configuration you need just to connect the controller PZT Mini/Multi and the cameras to computer using the provided USB/Ethernet cable and connect the deformable element to the controller using the multi wire cable. The controller needs an external power supply.</p>
+</div>
+<div class=sect2>
+<h3 id=_deformable_elements>Deformable elements</h3>
+<div class=paragraph>
+<p>Deformable elements can be lenses or mirrors. Lenses are composed by thin glass windows with a fluid inside and are actuated by piezoelectric material. Mirror are composed by different reflecting surface depending on the application and piezoelectric actuators. The actuator moves when an electric field is applied. Typical voltage range is in between -62.5V/+125V.</p>
+</div>
+<div class=paragraph>
+<p>For more detailed in information see the literature list on:</p>
+</div>
+<div class=paragraph>
+<p><a href=https://dynamic-optics.eu/tech.php class=bare>https://dynamic-optics.eu/tech.php</a></p>
+</div>
+</div>
+<div class=sect2>
+<h3 id=_shack_hartmann_wave_front_sensor>Shack-Hartmann Wave Front Sensor</h3>
+<div class=paragraph>
+<p>The device is composed by a camera, typically a CMOS, and a lenslet array. The lenslet array is a series of identical micro lenses. The lenslet array sample in space domain the wavefront and produce a series of spots. The position of the spots center of mass is related to the local wavefront gradient. This information is used to reconstruct the wavefront via interpolation with the derivative of Zernike polynomials.</p>
+</div>
+<div class=paragraph>
+<p>The wavefront sensor is characterized by the focal length and the pitch of the lenslets array. These two parameters influence the sensitivity and dynamical range of the sensor.</p>
+</div>
+<div class=paragraph>
+<p>For more detailed in information see the literature list on:</p>
+</div>
+<div class=paragraph>
+<p><a href=https://dynamic-optics.eu/tech.php class=bare>https://dynamic-optics.eu/tech.php</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_how_to_build_your_own_ao_system>How to build your own AO system</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>We list the Thorlabs components that can be used to build your own AO system compatible with Dynamic Optic products. We refer to a standard setup as described before in this section with a deformable lens.</p>
+</div>
+<div class=paragraph>
+<p>The following image depicts a standard AO setup with a deformable lens.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image22.png alt=image22></span></p>
+</div>
+<div class=paragraph>
+<p>In the following table you will find all the components:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Manufacturer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Laser Diode</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>LDM635/5LJ</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Roithner Lasertechnik</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>SM1-Threaded Adapter</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AD12F</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate Adapter</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>LCP02/M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Lens (collimation)</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC508-200-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>LCP01/M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Adaptive lens</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1825</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Dynamic Optics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Lens (focusing)</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC508-200-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate 60 mm</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>LCP01/M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate Adapter</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>LCP02/M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Lens (collimation)</p></td>
+<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
+<p>1" Achromatic Doublet, SM1-Threaded Mount, ARC: 400-700nm. Depending on the MAL:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">MAL</th>
+<th class="tableblock halign-left valign-top">Part #</th>
+<th class="tableblock halign-left valign-top">f</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1825</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC254-040-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>40 mm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1816</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC254 060-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>60 mm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1810</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC254-100-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>100 mm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1805</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AC254-200-A-ML</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>200 mm</p></td>
+</tr>
+</tbody>
+</table></div></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate 30 mm</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>CP02/M - SM1</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Wavefront sensor</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>WFS1</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Dynamic Optics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate 30 mm</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>CP02/M - SM1</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Beam splitter</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>CCM1-BS013/M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>CMOS camera</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DCC1545M</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Cage Plate 30 mm</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>CP02/M - SM1</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Thorlabs</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_photonloop_setup>PhotonLoop Setup</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>As PhotonLoop is installed you are ready to connect the wavefront sensor and the controller PZT mini. These two devices come with their own calibration settings that must be loaded in Photonloop. At this stage, open PhotonLoop and follow the next two paragraphs for camera and controller connection. For these steps you just need to connect the sensor and the controller to the computer with the USB cable. The physical connections are described in details in the next section.</p>
+</div>
+<div class=sect2>
+<h3 id=_connect_to_the_camera>Connect to the camera</h3>
+<div class=paragraph>
+<p>To connect the camera of the wavefront sensor follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Connect the wavefront sensor with the provided USB cable to your PC. The cable is an USB 3, if you use another cable the frame rate would be reduced according to USB2 bandwidth;</p>
+</li>
+<li>
+<p>In PhotonLoop, select the appropriate driver (<a href=../widgets/sensor.html><strong>sensor settings</strong></a> widget);</p>
+</li>
+<li>
+<p>Load the camera profile contained in the file Snxxxxx.wfs in the USB stick. The serial number of your sensor Snxxxx is written on the camera.</p>
+</li>
+<li>
+<p>Click on the camera connection button <span class=icon><img src=../icons/in_camera.png alt="in camera"></span>.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>Now you can see the live image stream on the <a href=../widgets/viewfinder.html><strong>viewfinder</strong></a> widget.</p>
+</div>
+</div>
+<div class=sect2>
+<h3 id=_connect_to_deformable_mirror_or_lens>Connect to deformable mirror or lens</h3>
+<div class=paragraph>
+<p>The connection on the controller is a little bit longer than the procedure for camera connection, just follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Connect the USB cable of the PZT mini to your PC (do not connect to the adaptive lens to the controller with the multi-wire pin cable at this stage because you donÔÇÖt have the voltage control yet);</p>
+</li>
+<li>
+<p>The right LED on the PZT Mini switch ON if it is correctly connected;</p>
+</li>
+<li>
+<p>Open Zadig (2.2 or newer version, the executable is present in the memory stick);</p>
+</li>
+<li>
+<p>On the Options Tab press List All Devices;
+<span class=image><img src=../img/image16.png alt=image16></span></p>
+</li>
+<li>
+<p>Choose the HV-Driver rev.x device and replace the current driver with WinUSB driver;</p>
+</li>
+<li>
+<p>In PhotonLoop, select the appropriate driver (<a href=../widgets/wfc.html><strong>WFC settings</strong></a> widget);</p>
+</li>
+<li>
+<p>In Channels set the number of actuators of your deformable mirror or lens (this value depends on your device);</p>
+</li>
+<li>
+<p>Change the voltage Minimum and Maximum (see table below for values depending on the device).
+<div class="notices warning"><div class=paragraph>
+<p>It is important to set the voltage limits to prevent device breakdown. Please note that the PZT Mini is firmware limited according to your deformable mirror/lens limits.</p>
+</div>
+</div>
+</p>
+</li>
+<li>
+<p>Connect the DM or DL to PZT mini using the multi-wire cable. The cable has male connectors and the mirror, lens and controller have female, see picture below respectively for male and female connectors;</p>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<col style=width:50%>
+<col style=width:50%>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=image><img src=../img/image18.jpeg alt=image18></span></p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock><span class=image><img src=../img/image19.jpeg alt=image19></span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Click on the lens/mirror connection button <span class=icon><img src=../icons/wfc_device.png alt="wfc device"></span>.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>Now you can control the actuators voltage from the <a href=../widgets/actuatorsbars.html><strong>actuators bars</strong></a> and <a href=../widgets/actuatorstable.html><strong>actuators table</strong></a> widgets.</p>
+</div>
+<div class=paragraph>
+<p>Table below reports a list of standard settings for some deformable lens and mirror with different controller.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Device</th>
+<th class="tableblock halign-left valign-top">Controller</th>
+<th class="tableblock halign-left valign-top">Driver/Plugin</th>
+<th class="tableblock halign-left valign-top">Actuators</th>
+<th class="tableblock halign-left valign-top">Minimum</th>
+<th class="tableblock halign-left valign-top">Center</th>
+<th class="tableblock halign-left valign-top">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1810</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Mini</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>18</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>-0.5</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1816</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Mini</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>18</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>-0.8</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>AOL1825</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Mini</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>18</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>-0.8</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DM6425</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Mini</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>64</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>-0.5</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DM12820</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Multi</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>PZTMulti</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>128</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>-0.5</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DM12820</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Multi</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Titan</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>128</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0.25</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0.5</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DM3624</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Stack</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>36</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0.375</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0.75</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>DM1010</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pzt-Stack</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>UsbHvDriver</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>10</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>0.5</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>1</p></td>
+</tr>
+</tbody>
+</table>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Be sure to insert the correct values, verify in your deformable mirror/lens datasheet the limits of your device.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../userguide/installation.html title=Installation> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../userguide/wavefront-measurement.html title="Wavefront Measurement" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1648648772></script>
+<script src=../js/perfect-scrollbar.min.js?1648648772></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1648648772></script>
+<script src=../js/jquery.sticky.js?1648648772></script>
+<script src=../js/featherlight.min.js?1648648772></script>
+<script src=../js/highlight.pack.js?1648648772></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1648648772></script>
+<script src=../js/learn.js?1648648772></script>
+<script src=../js/hugo-learn.js?1648648772></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>
