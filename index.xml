@@ -72,7 +72,7 @@ Value
 Current measured mode.
 Offset
 Mode offset.
-Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.</description></item><item><title>Playback</title><link>/widgets/playback.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/playback.html</guid><description>The playback widget offers an interface to either reproduce a time series or execute a script.
+Editing the Table The table view is useful to enter precise values for the desired indexes.</description></item><item><title>Playback</title><link>/widgets/playback.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/playback.html</guid><description>The playback widget offers an interface to either reproduce a time series or execute a script.
 The script engine is deprecated in favor of the more flexible networking interface.
 Item Description Script
 Open a script file.
