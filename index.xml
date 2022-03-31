@@ -40,7 +40,7 @@ Value
 Current actuator command output.
 Offset
 Actuator command offset.
-Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.</description></item><item><title>Calibration Settings</title><link>/widgets/calibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/calibration.html</guid><description>The calibration settings widget exposes the parameters used by the AO calibration routine.
+Editing the Table The table view is useful to enter precise values for the desired indexes.</description></item><item><title>Calibration Settings</title><link>/widgets/calibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/calibration.html</guid><description>The calibration settings widget exposes the parameters used by the AO calibration routine.
 The calibration can only be performed once a reference has been taken and a WFC plugin is succesfully opened.
 Pattern configuration Poke pattern Item Description Influence Function (Individual Poke)
 One actuator is poked at once. Useful when the actuators exhibit strong non-linear behaviour.</description></item><item><title>Compensator Settings</title><link>/widgets/compensator.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/compensator.html</guid><description>Within the compensator settings widget it is possible to choose the control law, its parameters and additional robustness settings. Available compensators are listed as plugins.
