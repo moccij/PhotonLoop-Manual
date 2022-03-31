@@ -17,7 +17,7 @@ image:singulartomodaltable.png[]
 
 The *singular to modal table* widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
 
-include::table.adoc[lines=5..-1]
+include::content/widgets/table.adoc[lines=5..-1]
 
 {{% notice note %}}
 The system widgets will become enabled once an interaction matrix has been *acquired*.
