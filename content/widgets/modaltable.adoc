@@ -35,7 +35,7 @@ The *modal table* widget presents the current state of the modal reconstruction 
 |Mode offset.
 |===
 
-include::table.adoc[lines=5..-1]
+include::content/widgets/table.adoc[lines=5..-1]
 
 {{% notice note %}}
 The modal widgets will become enabled once a reference is taken.
