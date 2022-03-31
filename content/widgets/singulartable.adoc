@@ -36,4 +36,4 @@ The system widgets will become enabled once an interaction matrix has been *acqu
 |Singular value.
 |===
 
-include::table.adoc[lines=5..-1]
+include::content/widgets/table.adoc[lines=5..-1]
