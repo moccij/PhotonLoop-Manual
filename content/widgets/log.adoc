@@ -124,23 +124,3 @@ In this version it is also possible to save a file containing the wavefront data
 -1.20996 0 0 0
 
 In the first row, the first two numbers (28 in this case) indicate the number of measuring points, 28 by 28 for each side of the grid. 0.15 indicates the pitch in mm of the wavefront sensor. Starting from the second row the table contains the wavefront data. All the rows with zeros that follow are relative to the area of the frame out of the circular aperture, the number 1 in the end of the row indicates that the data point is now valid. The last few rows with a non zero value in the first column are the phase of the wavefront (in radiant). A better description of the file format can be found in the Zemax manual. Note that if you want to refer you wavefront data to the aperture of the optical system you need to consider the magnification factor the relay optics that re-image the aperture into the lenslet array. So, in this case if you want to refer the wavefront data to an aperture of 300 mm in diameter just chance 0.15 mm with 300/28=10.7 mm.
-
-== Load the measurement grid
-
-The measurement grid used for the wavefront measurements is automatically saved with the snapshot button. To load the reference, go into the Utilities tab and then in the Load tab. Press the Load button and chose the folder (note that the Load button is available only if you turn off the button Measure Absolute Wavefront).
-
-If you want to load an image of spots saved with the snapshot and measure it with the saved reference, chose FileSensorVx.x from the Plugin menu in the settings of the WFS, then press the button for camera connection and chose the image to load. Now load the reference and the saved measure will be shown in PHOTONLOOP.
-
-== Playback
-
-In the right part of the log window it is possible to load a Script or a Time series. You can write your own script file that can contains a series of actions that PHOTONLOOP can do during time, this can be useful for automatic measurements.
-
-The time series file that can be loaded contains actuators voltages or RMS Zernike coefficients that can be loaded at a specify frame rate to the deformable elements. A scale factor can be specified for the data in the time series. You can choose also a one-shot time series or loop mode. If you use the option Arm for recording, when you press the Record button, PHOTONLOOP will start the time series and record data in the same time. To run Script or time series just click on the respectively buttons in the bottom part of the window.
-
-== Analyze PHOTONLOOP data with MATLAB
-
-Use the examples in the folder PHOTONLOOP data analysis example in order to upload and display the data.
-
-Launch the program Data_analysis_example.m to upload aberration data (use the data in the folder data_example).
-
-Launch the program Evaluate_Influence_Matrix_Example.m to upload the influence functions (use the data in the folder data_example).
