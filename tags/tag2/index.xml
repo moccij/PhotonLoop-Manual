@@ -72,10 +72,9 @@ Value
 Singular value.</description></item><item><title>Singular To Modal Bars</title><link>/widgets/singulartomodalbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodalbars.html</guid><description>The singular to modal bars widget gives an indication of the maximum modal amplitudes achievable by the AO system.
 The displayed amplitude is referred to individual modes.
 A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and actuator response of the currently selected mode index.
-Within the singular to modal bars widget it is possible to toggle the selected modes from the interaction matrix:</description></item><item><title>Singular To Modal Table</title><link>/widgets/singulartomodaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodaltable.html</guid><description>
-The singular to modal table widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
-Unresolved directive in &amp;lt;stdin&amp;gt; - include::table.adoc[lines=5..-1]
-The system widgets will become enabled once an interaction matrix has been acquired.</description></item><item><title>Statistics</title><link>/widgets/statistics.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/statistics.html</guid><description>The statistics widget shows textual real-time informations about the wavefront measurements.
+Within the singular to modal bars widget it is possible to toggle the selected modes from the interaction matrix:</description></item><item><title>Singular To Modal Table</title><link>/widgets/singulartomodaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodaltable.html</guid><description>The singular to modal table widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
+Editing the Table The table view is useful to enter precise values for the desired indexes. There are also some utilities that can be exploited to ease the table editing:
+Enable/Disable offsets.</description></item><item><title>Statistics</title><link>/widgets/statistics.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/statistics.html</guid><description>The statistics widget shows textual real-time informations about the wavefront measurements.
 Item Description RoI
 Size of the Region of Interest set into the viewfinder.
 Lenslets
