@@ -28,7 +28,7 @@ Within the *singular to modal bars* widget it is possible to *toggle* the select
 * Clicking the *left* mouse button disables the mode. 
 * Clicking the *right* mouse button enables the mode. 
 
-include::bars.adoc[lines=5..-1]
+include::content/widgets/bars.adoc[lines=5..-1]
 
 
 {{% notice note %}}
