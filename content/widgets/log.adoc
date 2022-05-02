@@ -49,6 +49,9 @@ image:logsettings.png[]
 |===
 |Item |Description
 
+|Title
+|Title of the log that will appear in the newly generated folder.
+
 |Folder
 |Root folder in which newly generated logs are placed to.
 

@@ -90,14 +90,20 @@ The viewfinder additional *settings* icon:settings[width=16] are used to control
 |===
 |Item |Description
 
+|Save image
+|Save the current image to file.
+
+|Colormap
+|Image colormap.
+
 |Black level
 |Percentage of the maximum pixel intensity corresponding to the minimum colormap value.
 
 |White level
 |Percentage of the maximum pixel intensity corresponding to the maximum colormap value.
 
-|Colormap
-|Image colormap.
+|Cross X/Y Position
+|Current position of the cross (for profile measurement).
 
 |Slopes Scale
 |Length ratio of the displayed slopes.

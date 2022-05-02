@@ -13,27 +13,11 @@ tags:
 :icons:
 :iconsdir: /icons/
 
-== Actuators Response
-
 image:actuatorsresponse.png[]
 
-The *actuators response* widget shows the wavefront representation of all actuator responses.
+The *actuators response* widget shows the wavefront representation of all actuators responses.
 
-Clicking with the *right* mouse button pops up the display *settings*:
-
-[%autowidth]
-|===
-|Item |Description
-
-|Scale
-|Determines the zoom level of the wavefront representation.
-
-|Representation
-|Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
-
-|Colormap
-|Determines the colormap of the wavefront.
-|=== 
+include::content/widgets/imagegrid.adoc[lines=5..-1]
 
 {{% notice note %}}
 The system widgets will become enabled once an interaction matrix has been *acquired*.

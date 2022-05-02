@@ -14,12 +14,13 @@ tags:
 :iconsdir: /icons/
 
 image:wavefront.png[]
+image:wavefrontsurface.png[]
 
-The *wavefront* widget shows the wavefront reconstructed from the measured modal terms.
+The *wavefront* widgets show the wavefront reconstructed from the measured modal terms.
 Refer to the *modal settings* widget to set the shape and resolution of the reconstructed wavefront.
 
 {{% notice note %}}
-The widget will be enabled once a valid *reference* has been taken.
+The widgets will be enabled once a valid *reference* has been taken.
 {{% /notice %}}
 
 
@@ -27,7 +28,7 @@ The widget will be enabled once a valid *reference* has been taken.
 
 image:wavefrontsettings.png[]
 
-Hovering over the widget reveals the icon:settings[] settings button that can be clicked to show the widget settings.
+Hovering over the wavefront widget reveals the icon:settings[] settings button that can be clicked to show the widget settings.
 
 
 [%autowidth]
@@ -43,24 +44,25 @@ Does not apply when the representation type is Interferogram.
 |Dynamically scales the colormap to cover the entire amplitude of the wavefront.
 Does not apply when the representation type is Interferogram.
 
-|Type
-a|Representation type of the wavefront:
+
+|Colormap
+|Colormap of the wavefront.
+
+|Representation
+a|Representation of the wavefront:
 
 [%autowidth]
 !===
 !Item !Description
 
-!Off !The wavefront is disabled;
 !Phase !Phase representation;
-!Smooth Phase !Phase representation, with pixel-wise interpolation;
 !Interferogram !Interferogram representation;
-!Smooth Interferogram !Interferogram representation, with pixel-wise interpolation;
-!Super Smooth Interferogram !Interferogram representation, with additional smoothing (computationally expensive);
-!PSF !(Experimental) Point Spread Function (PSF) representation.
+!Smooth Interferogram !Interferogram representation, with additional smoothing (computationally expensive);
+!PSF !Point Spread Function representation.
 !===
 
-|Colormap
-|Colormap of the wavefront.
+|Interpolation
+|Enables linear interpolation.
 
 |Show Actuators
 |Show the actuators positions and values over the wavefront surface.
@@ -69,3 +71,53 @@ a|Representation type of the wavefront:
 {{% notice note %}}
 The actuators positions are only available after a valid *calibration* has been performed/loaded.
 {{% /notice %}}
+
+== Adjusting the wavefront surface display
+
+image:wavefrontsurfacesettings.png[]
+
+Hovering over the wavefront surface widget reveals the icon:settings[] settings button that can be clicked to show the widget settings.
+
+[%autowidth]
+|===
+|Item |Description
+
+|Scale
+|Z-axis scale of the displayed wavefront
+
+|Representation
+a|Wavefront representation:
+
+[%autowidth]
+!===
+!Item !Description
+
+!Phase !Phase representation;
+!PSF !Point Spread Function representation.
+!===
+|===
+
+The wavefront surface widget can also be manipulated with mouse and keyboard:
+
+[%autowidth]
+|===
+|Item |Description
+
+|Left mouse button
+|Rotation around X and Z axis
+
+|Left mouse button + SHIFT
+|Rotation around Y axis
+
+|Left mouse button + CTRL
+|Pan
+
+|Left mouse button + ALT
+|Stretch
+
+|Mouse wheel
+|Zoom
+
+|Mouse wheel + SHIFT
+|Z-axis scale
+|===

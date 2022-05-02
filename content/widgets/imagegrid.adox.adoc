@@ -3,7 +3,7 @@ _build:
     list: never
 ---
 
-== Adjusting the bars display
+== Adjusting the image grid display
 
 The visualization settings can be accessed by clicking on the *settings* icon:settings[] icon located on the top right of the bars plot. 
 
