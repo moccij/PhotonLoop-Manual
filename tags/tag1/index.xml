@@ -2,13 +2,12 @@
 The red bars display the actual WFC output commands;
 The orange slimmer bars display the command offsets.
 The Y range and baseline are fixed and are determined by the WFC specifications (minimum, maximum and center).
-An actuator is selected when hovering over its corresponding bar.</description></item><item><title>Actuators Response</title><link>/widgets/actuatorsresponse.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsresponse.html</guid><description>Actuators Response
-The actuators response widget shows the wavefront representation of all actuator responses.
-Clicking with the right mouse button pops up the display settings:
-Item Description Scale
-Determines the zoom level of the wavefront representation.
-Representation
-Determines how the wavefront relative to the selected bar is displayed into the preview snippet.</description></item><item><title>Actuators Table</title><link>/widgets/actuatorstable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorstable.html</guid><description>The actuators table widget presents the current state of the WFC actuators as a grid, with each row representing an actuator index.
+An actuator is selected when hovering over its corresponding bar.</description></item><item><title>Actuators Response</title><link>/widgets/actuatorsresponse.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsresponse.html</guid><description>The actuators response widget shows the wavefront representation of all actuators responses.
+Adjusting the image grid display Clicking with the right mouse button pops up the display settings:
+Item Description Representation
+Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
+Colormap
+Determines the colormap of the wavefront.</description></item><item><title>Actuators Table</title><link>/widgets/actuatorstable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorstable.html</guid><description>The actuators table widget presents the current state of the WFC actuators as a grid, with each row representing an actuator index.
 Item Description #
 Actuator index.
 Image
@@ -82,12 +81,11 @@ Number of lenslets in the grid inscribed into the RoI.
 Centroids
 Number of valid centroids detected by the WFS.
 Radius</description></item><item><title>System Modes</title><link>/widgets/systemmodes.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/systemmodes.html</guid><description>The system modes widget shows the wavefront representation of all singular modes.
-Clicking with the right mouse button pops up the display settings:
-Item Description Scale
-Determines the zoom level of the wavefront representation.
-Representation
+Adjusting the image grid display Clicking with the right mouse button pops up the display settings:
+Item Description Representation
 Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
-Colormap</description></item><item><title>Time Series</title><link>/widgets/timeseries.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/timeseries.html</guid><description>The time series widget displays the evolution over time of a scalar variable:
+Colormap
+Determines the colormap of the wavefront.</description></item><item><title>Time Series</title><link>/widgets/timeseries.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/timeseries.html</guid><description>The time series widget displays the evolution over time of a scalar variable:
 The black curve represents the current measurement;
 The red thick curve represents the averaged current measurement.
 Item Description
@@ -101,10 +99,10 @@ Percentage of the sum of the pixel intensities in a lenslet below which the lens
 Item Description Draw tool
 When this tool is selected, it is possible to edit the Region of Interest (RoI) of the image.
 Cross tool
-When this tool is selected, a cross can be set and shown over the image.</description></item><item><title>Wavefront</title><link>/widgets/wavefront.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wavefront.html</guid><description>The wavefront widget shows the wavefront reconstructed from the measured modal terms. Refer to the modal settings widget to set the shape and resolution of the reconstructed wavefront.
-The widget will be enabled once a valid reference has been taken.
+When this tool is selected, a cross can be set and shown over the image.</description></item><item><title>Wavefront</title><link>/widgets/wavefront.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wavefront.html</guid><description>The wavefront widgets show the wavefront reconstructed from the measured modal terms. Refer to the modal settings widget to set the shape and resolution of the reconstructed wavefront.
+The widgets will be enabled once a valid reference has been taken.
 Adjusting the wavefront display
-Hovering over the widget reveals the settings button that can be clicked to show the widget settings.</description></item><item><title>WFC Settings</title><link>/widgets/wfc.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wfc.html</guid><description>The WaveFront Corrector WFC widget manages the interface between PhotonLoop and a connected wavefront corrector. Available correctors are listed as plugins.
+Hovering over the wavefront widget reveals the settings button that can be clicked to show the widget settings.</description></item><item><title>WFC Settings</title><link>/widgets/wfc.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/wfc.html</guid><description>The WaveFront Corrector WFC widget manages the interface between PhotonLoop and a connected wavefront corrector. Available correctors are listed as plugins.
 Item Description Plugin
 Selects the desired plugin.
 Channels

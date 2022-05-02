@@ -7,19 +7,19 @@
 <meta name=author content="Jacopo Mocci">
 <link rel=icon href=../images/favicon.png type=image/png>
 <title>Wavefront - PhotonLoop User Manual</title>
-<link href=../css/nucleus.css?1651152531 rel=stylesheet>
-<link href=../css/fontawesome-all.min.css?1651152531 rel=stylesheet>
-<link href=../css/hybrid.css?1651152531 rel=stylesheet>
-<link href=../css/featherlight.min.css?1651152531 rel=stylesheet>
-<link href=../css/perfect-scrollbar.min.css?1651152531 rel=stylesheet>
-<link href=../css/auto-complete.css?1651152531 rel=stylesheet>
-<link href=../css/atom-one-dark-reasonable.css?1651152531 rel=stylesheet>
-<link href=../css/theme.css?1651152531 rel=stylesheet>
-<link href=../css/tabs.css?1651152531 rel=stylesheet>
-<link href=../css/hugo-theme.css?1651152531 rel=stylesheet>
-<link href=../css/theme-jm.css?1651152531 rel=stylesheet>
-<link href=../css/custom.css?1651152531 rel=stylesheet>
-<script src=../js/jquery-3.3.1.min.js?1651152531></script>
+<link href=../css/nucleus.css?1651483916 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1651483916 rel=stylesheet>
+<link href=../css/hybrid.css?1651483916 rel=stylesheet>
+<link href=../css/featherlight.min.css?1651483916 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1651483916 rel=stylesheet>
+<link href=../css/auto-complete.css?1651483916 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1651483916 rel=stylesheet>
+<link href=../css/theme.css?1651483916 rel=stylesheet>
+<link href=../css/tabs.css?1651483916 rel=stylesheet>
+<link href=../css/hugo-theme.css?1651483916 rel=stylesheet>
+<link href=../css/theme-jm.css?1651483916 rel=stylesheet>
+<link href=../css/custom.css?1651483916 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1651483916></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=../widgets/wavefront.html>
@@ -33,10 +33,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=../js/lunr.min.js?1651152531></script>
-<script type=text/javascript src=../js/auto-complete.js?1651152531></script>
+<script type=text/javascript src=../js/lunr.min.js?1651483916></script>
+<script type=text/javascript src=../js/auto-complete.js?1651483916></script>
 <script type=text/javascript>var baseurl=""</script>
-<script type=text/javascript src=../js/search.js?1651152531></script>
+<script type=text/javascript src=../js/search.js?1651483916></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -273,15 +273,16 @@ WFS Settings
 Wavefront
 </h1>
 <div class=paragraph>
-<p><span class=image><img src=wavefront.png alt=wavefront></span></p>
+<p><span class=image><img src=wavefront.png alt=wavefront></span>
+<span class=image><img src=wavefrontsurface.png alt=wavefrontsurface></span></p>
 </div>
 <div class=paragraph>
-<p>The <strong>wavefront</strong> widget shows the wavefront reconstructed from the measured modal terms.
+<p>The <strong>wavefront</strong> widgets show the wavefront reconstructed from the measured modal terms.
 Refer to the <strong>modal settings</strong> widget to set the shape and resolution of the reconstructed wavefront.</p>
 </div>
 <div class=paragraph>
 <div class="notices note"><div class=paragraph>
-<p>The widget will be enabled once a valid <strong>reference</strong> has been taken.</p>
+<p>The widgets will be enabled once a valid <strong>reference</strong> has been taken.</p>
 </div>
 </div>
 </div>
@@ -292,7 +293,7 @@ Refer to the <strong>modal settings</strong> widget to set the shape and resolut
 <p><span class=image><img src=wavefrontsettings.png alt=wavefrontsettings></span></p>
 </div>
 <div class=paragraph>
-<p>Hovering over the widget reveals the <span class=icon><img src=../icons/settings.png alt=settings></span> settings button that can be clicked to show the widget settings.</p>
+<p>Hovering over the wavefront widget reveals the <span class=icon><img src=../icons/settings.png alt=settings></span> settings button that can be clicked to show the widget settings.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <col>
@@ -316,9 +317,13 @@ Does not apply when the representation type is Interferogram.</p></td>
 Does not apply when the representation type is Interferogram.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Type</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap of the wavefront.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Representation</p></td>
 <td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
-<p>Representation type of the wavefront:</p>
+<p>Representation of the wavefront:</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <col>
@@ -331,16 +336,8 @@ Does not apply when the representation type is Interferogram.</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Off</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>The wavefront is disabled;</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Phase</p></td>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Phase representation;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Smooth Phase</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Phase representation, with pixel-wise interpolation;</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Interferogram</p></td>
@@ -348,22 +345,18 @@ Does not apply when the representation type is Interferogram.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Smooth Interferogram</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Interferogram representation, with pixel-wise interpolation;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Super Smooth Interferogram</p></td>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Interferogram representation, with additional smoothing (computationally expensive);</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class=tableblock>PSF</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>(Experimental) Point Spread Function (PSF) representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Point Spread Function representation.</p></td>
 </tr>
 </tbody>
 </table></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap of the wavefront.</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Interpolation</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Enables linear interpolation.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class=tableblock>Show Actuators</p></td>
@@ -379,6 +372,98 @@ Does not apply when the representation type is Interferogram.</p></td>
 </div>
 </div>
 </div>
+<div class=sect1>
+<h2 id=_adjusting_the_wavefront_surface_display>Adjusting the wavefront surface display</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p><span class=image><img src=wavefrontsurfacesettings.png alt=wavefrontsurfacesettings></span></p>
+</div>
+<div class=paragraph>
+<p>Hovering over the wavefront surface widget reveals the <span class=icon><img src=../icons/settings.png alt=settings></span> settings button that can be clicked to show the widget settings.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Scale</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Z-axis scale of the displayed wavefront</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Representation</p></td>
+<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
+<p>Wavefront representation:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Phase</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Phase representation;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>PSF</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Point Spread Function representation.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<div class=paragraph>
+<p>The wavefront surface widget can also be manipulated with mouse and keyboard:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<col>
+<col>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Left mouse button</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Rotation around X and Z axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Left mouse button + SHIFT</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Rotation around Y axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Left mouse button + CTRL</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Pan</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Left mouse button + ALT</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Stretch</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Mouse wheel</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Zoom</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Mouse wheel + SHIFT</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Z-axis scale</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <footer class=footline>
 </footer>
 </div>
@@ -391,16 +476,16 @@ Does not apply when the representation type is Interferogram.</p></td>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=../js/clipboard.min.js?1651152531></script>
-<script src=../js/perfect-scrollbar.min.js?1651152531></script>
-<script src=../js/perfect-scrollbar.jquery.min.js?1651152531></script>
-<script src=../js/jquery.sticky.js?1651152531></script>
-<script src=../js/featherlight.min.js?1651152531></script>
-<script src=../js/highlight.pack.js?1651152531></script>
+<script src=../js/clipboard.min.js?1651483917></script>
+<script src=../js/perfect-scrollbar.min.js?1651483917></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1651483917></script>
+<script src=../js/jquery.sticky.js?1651483917></script>
+<script src=../js/featherlight.min.js?1651483917></script>
+<script src=../js/highlight.pack.js?1651483917></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=../js/modernizr.custom-3.6.0.js?1651152531></script>
-<script src=../js/learn.js?1651152531></script>
-<script src=../js/hugo-learn.js?1651152531></script>
+<script src=../js/modernizr.custom-3.6.0.js?1651483917></script>
+<script src=../js/learn.js?1651483917></script>
+<script src=../js/hugo-learn.js?1651483917></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>

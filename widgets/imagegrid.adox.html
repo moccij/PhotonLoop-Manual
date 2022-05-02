@@ -6,23 +6,23 @@
 <meta name=description content="PhotonLoop User Manual">
 <meta name=author content="Jacopo Mocci">
 <link rel=icon href=../images/favicon.png type=image/png>
-<title>Playback - PhotonLoop User Manual</title>
-<link href=../css/nucleus.css?1651483914 rel=stylesheet>
-<link href=../css/fontawesome-all.min.css?1651483914 rel=stylesheet>
-<link href=../css/hybrid.css?1651483914 rel=stylesheet>
-<link href=../css/featherlight.min.css?1651483914 rel=stylesheet>
-<link href=../css/perfect-scrollbar.min.css?1651483914 rel=stylesheet>
-<link href=../css/auto-complete.css?1651483914 rel=stylesheet>
-<link href=../css/atom-one-dark-reasonable.css?1651483914 rel=stylesheet>
-<link href=../css/theme.css?1651483914 rel=stylesheet>
-<link href=../css/tabs.css?1651483914 rel=stylesheet>
-<link href=../css/hugo-theme.css?1651483914 rel=stylesheet>
-<link href=../css/theme-jm.css?1651483914 rel=stylesheet>
-<link href=../css/custom.css?1651483914 rel=stylesheet>
-<script src=../js/jquery-3.3.1.min.js?1651483914></script>
+<title> - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1651483912 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1651483912 rel=stylesheet>
+<link href=../css/hybrid.css?1651483912 rel=stylesheet>
+<link href=../css/featherlight.min.css?1651483912 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1651483912 rel=stylesheet>
+<link href=../css/auto-complete.css?1651483912 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1651483912 rel=stylesheet>
+<link href=../css/theme.css?1651483912 rel=stylesheet>
+<link href=../css/tabs.css?1651483912 rel=stylesheet>
+<link href=../css/hugo-theme.css?1651483912 rel=stylesheet>
+<link href=../css/theme-jm.css?1651483912 rel=stylesheet>
+<link href=../css/custom.css?1651483912 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1651483912></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=../widgets/playback.html>
+<body data-url=../widgets/imagegrid.adox.html>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -33,10 +33,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=../js/lunr.min.js?1651483914></script>
-<script type=text/javascript src=../js/auto-complete.js?1651483914></script>
+<script type=text/javascript src=../js/lunr.min.js?1651483912></script>
+<script type=text/javascript src=../js/auto-complete.js?1651483912></script>
 <script type=text/javascript>var baseurl=""</script>
-<script type=text/javascript src=../js/search.js?1651483914></script>
+<script type=text/javascript src=../js/search.js?1651483912></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -145,7 +145,7 @@ Modal Settings
 Modal Table
 </a>
 </li>
-<li data-nav-id=/widgets/playback.html title=Playback class="dd-item active">
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
 <a href=../widgets/playback.html>
 Playback
 </a>
@@ -239,7 +239,7 @@ WFS Settings
 <div>
 <div id=top-bar>
 <div id=top-github-link>
-<a class=github-link title="Edit this page" href=https://github.com/moccij/PhotonLoop-Manual/edit/main/content/widgets/playback.adoc target=blank>
+<a class=github-link title="Edit this page" href=https://github.com/moccij/PhotonLoop-Manual/edit/main/content/widgets/imagegrid.adox.adoc target=blank>
 <i class="fas fa-code-branch"></i>
 <span id=top-github-link-text>Edit this page</span>
 </a>
@@ -252,7 +252,7 @@ WFS Settings
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=../>Home</a> > <a href=../widgets.html>Widgets</a> > Playback
+<a href=../>Home</a> > <a href=../widgets.html>Widgets</a> >
 </span>
 </div>
 <div class=progress>
@@ -263,26 +263,18 @@ WFS Settings
 </div>
 </div>
 <div id=head-tags>
-<div class=tags>
-<a class=tag-link href=../tags/tag1>tag1</a>
-<a class=tag-link href=../tags/tag2>tag2</a>
-</div>
 </div>
 <div id=body-inner>
 <h1>
-Playback
 </h1>
+<div class=sect1>
+<h2 id=_adjusting_the_image_grid_display>Adjusting the image grid display</h2>
+<div class=sectionbody>
 <div class=paragraph>
-<p><span class=image><img src=playback.png alt=playback></span></p>
+<p>The visualization settings can be accessed by clicking on the <strong>settings</strong> <span class=icon>[settings]</span> icon located on the top right of the bars plot.</p>
 </div>
 <div class=paragraph>
-<p>The <strong>playback widget</strong> offers an interface to either reproduce a <strong>time series</strong> or execute a <strong>script</strong>.</p>
-</div>
-<div class=paragraph>
-<div class="notices warning"><div class=paragraph>
-<p>The script engine is <strong>deprecated</strong> in favor of the more flexible <strong>networking</strong> interface.</p>
-</div>
-</div>
+<p><span class=image><img src=barssettings.png alt=barssettings></span></p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <col>
@@ -295,141 +287,42 @@ Playback
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/folder.png alt=folder></span> Script</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Open a script file.</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Representation</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Determines how the wavefront relative to the selected bar is displayed into the preview snippet.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/script_start.png alt="script start"></span> Script</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Starts the script engine with the selected script file.</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Colormap</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Determines the colormap of the wavefront.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/folder.png alt=folder></span> Time Series</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Open a time series file.</p>
-<p class=tableblock>
-<div class="notices note"><div class=paragraph>
-<p>When a time series is loaded, the <strong>statistics</strong> section displays informations about the decoded data..</p>
-</div>
-</div>
-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Play as</p></td>
-<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
-<p>Target of the time series file:</p>
-</div>
-<table class="tableblock frame-all grid-all fit-content">
-<col>
-<col>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Item</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Zernike</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Play the time series as Zernike offsets;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Actuators</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Play the time series as actuators offsets.</p></td>
-</tr>
-</tbody>
-</table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Behaviour</p></td>
-<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
-<p>Determines the action after the time series finishes:</p>
-</div>
-<table class="tableblock frame-all grid-all fit-content">
-<col>
-<col>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Item</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>One-Shot</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Do not replay the time series;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Loop</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Replay the time series.</p></td>
-</tr>
-</tbody>
-</table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Sync to</p></td>
-<td class="tableblock halign-left valign-top"><div class=content><div class=paragraph>
-<p>Determines the clock to which the time series is synchronized:</p>
-</div>
-<table class="tableblock frame-all grid-all fit-content">
-<col>
-<col>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Item</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Custom</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Set the custom clock frequency;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Controller</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Use the control loop clock;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Timestamps</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock><strong>(unsupported)</strong> Advance each sample according to its associated timestamp.</p></td>
-</tr>
-</tbody>
-</table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Scale</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Scale of the time series. At 1, the time series is not scaled.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock><span class=icon><img src=../icons/script_start.png alt="script start"></span> Time Series</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Play the time series. Click the button again to stop the time series.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Start when Recording</p></td>
-<td class="tableblock halign-left valign-top"><p class=tableblock>Let the time series start right after a log operation started.</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Show Values</p></td>
+<td class="tableblock halign-left valign-top"><p class=tableblock>Displays the value axis on the left.</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=../widgets/modaltable.html title="Modal Table"> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=../widgets/reconstructor.html title="Reconstructor Settings" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-next" href=../userguide.html title="User Manual" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=../js/clipboard.min.js?1651483914></script>
-<script src=../js/perfect-scrollbar.min.js?1651483914></script>
-<script src=../js/perfect-scrollbar.jquery.min.js?1651483914></script>
-<script src=../js/jquery.sticky.js?1651483914></script>
-<script src=../js/featherlight.min.js?1651483914></script>
-<script src=../js/highlight.pack.js?1651483914></script>
+<script src=../js/clipboard.min.js?1651483912></script>
+<script src=../js/perfect-scrollbar.min.js?1651483912></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1651483912></script>
+<script src=../js/jquery.sticky.js?1651483912></script>
+<script src=../js/featherlight.min.js?1651483912></script>
+<script src=../js/highlight.pack.js?1651483912></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=../js/modernizr.custom-3.6.0.js?1651483914></script>
-<script src=../js/learn.js?1651483914></script>
-<script src=../js/hugo-learn.js?1651483914></script>
+<script src=../js/modernizr.custom-3.6.0.js?1651483912></script>
+<script src=../js/learn.js?1651483912></script>
+<script src=../js/hugo-learn.js?1651483912></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
