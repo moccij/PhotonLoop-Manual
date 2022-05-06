@@ -7,19 +7,19 @@
 <meta name=author content="Jacopo Mocci">
 <link rel=icon href=../images/favicon.png type=image/png>
 <title>Wavefront Measurement - PhotonLoop User Manual</title>
-<link href=../css/nucleus.css?1651833110 rel=stylesheet>
-<link href=../css/fontawesome-all.min.css?1651833110 rel=stylesheet>
-<link href=../css/hybrid.css?1651833110 rel=stylesheet>
-<link href=../css/featherlight.min.css?1651833110 rel=stylesheet>
-<link href=../css/perfect-scrollbar.min.css?1651833110 rel=stylesheet>
-<link href=../css/auto-complete.css?1651833110 rel=stylesheet>
-<link href=../css/atom-one-dark-reasonable.css?1651833110 rel=stylesheet>
-<link href=../css/theme.css?1651833110 rel=stylesheet>
-<link href=../css/tabs.css?1651833110 rel=stylesheet>
-<link href=../css/hugo-theme.css?1651833110 rel=stylesheet>
-<link href=../css/theme-jm.css?1651833110 rel=stylesheet>
-<link href=../css/custom.css?1651833110 rel=stylesheet>
-<script src=../js/jquery-3.3.1.min.js?1651833110></script>
+<link href=../css/nucleus.css?1651834961 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1651834961 rel=stylesheet>
+<link href=../css/hybrid.css?1651834961 rel=stylesheet>
+<link href=../css/featherlight.min.css?1651834961 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1651834961 rel=stylesheet>
+<link href=../css/auto-complete.css?1651834961 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1651834961 rel=stylesheet>
+<link href=../css/theme.css?1651834961 rel=stylesheet>
+<link href=../css/tabs.css?1651834961 rel=stylesheet>
+<link href=../css/hugo-theme.css?1651834961 rel=stylesheet>
+<link href=../css/theme-jm.css?1651834961 rel=stylesheet>
+<link href=../css/custom.css?1651834961 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1651834961></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=../userguide/wavefront-measurement.html>
@@ -33,10 +33,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=../js/lunr.min.js?1651833110></script>
-<script type=text/javascript src=../js/auto-complete.js?1651833110></script>
+<script type=text/javascript src=../js/lunr.min.js?1651834961></script>
+<script type=text/javascript src=../js/auto-complete.js?1651834961></script>
 <script type=text/javascript>var baseurl=""</script>
-<script type=text/javascript src=../js/search.js?1651833110></script>
+<script type=text/javascript src=../js/search.js?1651834961></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -273,8 +273,7 @@ Wavefront Measurement
 Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.</p>
 </div>
 <div class=paragraph>
-<div class=title>The PhotonLoop GUI</div>
-<p><span class=image><img src=../0%20-%20startup.png alt="0   startup"></span></p>
+<p><span class=image><img src=wfs/0%20-%20startup.png alt="0   startup"></span></p>
 </div>
 <div class=paragraph>
 <div class="notices warning"><div class=paragraph>
@@ -286,7 +285,7 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 <h2 id=_configure_the_sensor>Configure the sensor</h2>
 <div class=sectionbody>
 <div class=paragraph>
-<p>The first step to perform a measurement is to configure the sensor from the /widgets/sensor.html[<strong>sensor widget</strong>] and visualize it in the /widgets/viewfinder.html[<strong>viewfinder</strong>].</p>
+<p>The first step to perform a measurement is to configure the sensor from the <a href=../widgets/sensor.html><strong>sensor widget</strong></a> and visualize it in the <a href=../widgets/viewfinder.html><strong>viewfinder</strong></a>.</p>
 </div>
 <div class=paragraph>
 <p>To open the camera:</p>
@@ -302,15 +301,14 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 <li>
 <p>Verify that the camera image is correctly shown in the viewfinder widget (ensure that the Show Image button <span class=icon><img src=../icons/grid_ccd.png alt="grid ccd"></span> is selected);</p>
 <div class=paragraph>
-<div class=title>Opening the camera</div>
-<p><span class=image><img src=../1%20-%20Open%20Sensor.png alt="1   Open Sensor"></span></p>
+<p><span class=image><img src=wfs/1%20-%20Open%20Sensor.png alt="1   Open Sensor"></span></p>
 </div>
 </li>
 <li>
 <p>Select the Cross tool <span class=icon><img src=../icons/grid_cross.png alt="grid cross"></span> from the viewfinder and place the cross over the brightest pixels. If the spots are small, zoom into the image by selecting the Zoom tool <span class=icon><img src=../icons/gridZoom.png alt=gridZoom></span>;</p>
 </li>
 <li>
-<p>Inspect the intensity profile from the /widgets/intensityprofile.html[<strong>intensity profile widget</strong>].</p>
+<p>Inspect the intensity profile from the <a href=../widgets/intensityprofile.html><strong>intensity profile widget</strong></a>.</p>
 <div class=paragraph>
 <div class="notices tip"><div class=paragraph>
 <p>Tune the camera exposure until the maximum acquired intensity is below the intensity saturation limit.</p>
@@ -318,8 +316,7 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 </div>
 </div>
 <div class=paragraph>
-<div class=title>Configuring the camera</div>
-<p><span class=image><img src=../2%20-%20Adjust%20Exposure.png alt="2   Adjust Exposure"></span></p>
+<p><span class=image><img src=wfs/2%20-%20Adjust%20Exposure.png alt="2   Adjust Exposure"></span></p>
 </div>
 </li>
 </ol>
@@ -340,20 +337,18 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 <li>
 <p>Select the Draw AoI (Area of Interest) tool <span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span> and place the AoI over the target spots. Ensure that the Show Grid button <span class=icon><img src=../icons/grid.png alt=grid></span> in the viewfinder is selected: the AoI defines the extraction grid mapping each spot to a lenslet;</p>
 <div class=paragraph>
-<div class=title>Draw AoI</div>
-<p><span class=image><img src=../3%20-%20Draw%20AoI.png alt="3   Draw AoI"></span></p>
+<p><span class=image><img src=wfs/3%20-%20Draw%20AoI.png alt="3   Draw AoI"></span></p>
 </div>
 </li>
 <li>
-<p>Configure the extraction parameters from the /widgets/twcog.html[<strong>extraction settings widget</strong>]. Ensure that the Show Reference <span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span> and Centroids <span class=icon><img src=../icons/grid_main.png alt="grid main"></span> buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;</p>
+<p>Configure the extraction parameters from the <a href=../widgets/twcog.html><strong>extraction settings widget</strong></a>. Ensure that the Show Reference <span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span> and Centroids <span class=icon><img src=../icons/grid_main.png alt="grid main"></span> buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;</p>
 <div class=paragraph>
 <p>
 <div class="notices tip"><div class=paragraph>
 <p>Set the minimum intensity to just above the noise floor. Automatically remove faint lenslets by tweaking the minimum intensity sum.</p>
 </div>
 </div>
-.Configuring the extraction settings
-<span class=image><img src=../4%20-%20Adjust%20Extraction%20Settings.png alt="4   Adjust Extraction Settings"></span></p>
+<span class=image><img src=wfs/4%20-%20Adjust%20Extraction%20Settings.png alt="4   Adjust Extraction Settings"></span></p>
 </div>
 </li>
 <li>
@@ -372,7 +367,7 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 </div>
 </div>
 <div class="notices tip"><div class=paragraph>
-<p>Show slopes <span class=icon>[grid quiver]</span> in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.</p>
+<p>Show slopes in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.</p>
 </div>
 </div>
 </p>
@@ -398,17 +393,16 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 <li>
 <p>Start the wavefront measurement by fixing the reference with the Take Absolute Reference <span class=icon><img src=../icons/ref_abs.png alt="ref abs"></span> tool from the lateral toolbar. Now, all the modal-related widgets are available;</p>
 <div class=paragraph>
-<div class=title>Absolute Reference</div>
 <p><span class=image><img src=wfs/5%20-%20Take%20Reference.png alt="5   Take Reference"></span></p>
 </div>
 </li>
 <li>
-<p>If needed, further tweak the modal reconstruction settings from within the /widgets/modal.html[<strong>modal settings widget</strong>].</p>
+<p>If needed, further tweak the modal reconstruction settings from within the <a href=../widgets/modal.html><strong>modal settings widget</strong></a>.</p>
 </li>
 </ol>
 </div>
 <div class=paragraph>
-<p>The results of wavefront measurements are displayed in the /widgets/statistics.html[<strong>statistics widget</strong>], along with a summary about the current PhotonLoop settings.</p>
+<p>The results of wavefront measurements are displayed in the <a href=../widgets/statistics.html><strong>statistics widget</strong></a>, along with a summary about the current PhotonLoop settings.</p>
 </div>
 </div>
 </div>
@@ -424,16 +418,16 @@ Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=../js/clipboard.min.js?1651833112></script>
-<script src=../js/perfect-scrollbar.min.js?1651833112></script>
-<script src=../js/perfect-scrollbar.jquery.min.js?1651833112></script>
-<script src=../js/jquery.sticky.js?1651833112></script>
-<script src=../js/featherlight.min.js?1651833112></script>
-<script src=../js/highlight.pack.js?1651833112></script>
+<script src=../js/clipboard.min.js?1651834962></script>
+<script src=../js/perfect-scrollbar.min.js?1651834962></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1651834962></script>
+<script src=../js/jquery.sticky.js?1651834962></script>
+<script src=../js/featherlight.min.js?1651834962></script>
+<script src=../js/highlight.pack.js?1651834962></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=../js/modernizr.custom-3.6.0.js?1651833112></script>
-<script src=../js/learn.js?1651833112></script>
-<script src=../js/hugo-learn.js?1651833112></script>
+<script src=../js/modernizr.custom-3.6.0.js?1651834962></script>
+<script src=../js/learn.js?1651834962></script>
+<script src=../js/hugo-learn.js?1651834962></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
