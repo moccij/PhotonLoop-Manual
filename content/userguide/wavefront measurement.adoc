@@ -8,12 +8,12 @@ weight: 3
 
 :icons:
 :iconsdir: /icons/
+:imagesdir: wfs/
 
 An accurate wavefront measurement is the starting point for a succesful adaptive optics correction. 
 Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
 
-.The PhotonLoop GUI 
-image:/0 - startup.png[]
+image:0 - startup.png[]
 
 {{% notice warning %}}
 Sub-optimal measurement settings have a detrimental impact on the correction quality and might lead to an unstable system behavior.
@@ -22,7 +22,7 @@ Sub-optimal measurement settings have a detrimental impact on the correction qua
 
 == Configure the sensor
 
-The first step to perform a measurement is to configure the sensor from the {{< ref "widgets//sensor" >}}[*sensor widget*] and visualize it in the {{< ref "widgets//viewfinder" >}}[*viewfinder*].
+The first step to perform a measurement is to configure the sensor from the link:{{< ref "widgets/sensor" >}}[*sensor widget*] and visualize it in the link:{{< ref "widgets/viewfinder" >}}[*viewfinder*].
 
 To open the camera:
 
@@ -30,17 +30,15 @@ To open the camera:
 . Open the sensor by clicking on the icon:in_camera[] button;
 . Verify that the camera image is correctly shown in the viewfinder widget (ensure that the Show Image button icon:grid_ccd[] is selected);
 +
-.Opening the camera
-image:/1 - Open Sensor.png[]
+image:1 - Open Sensor.png[]
 . Select the Cross tool icon:grid_cross[] from the viewfinder and place the cross over the brightest pixels. If the spots are small, zoom into the image by selecting the Zoom tool icon:gridZoom[];
-. Inspect the intensity profile from the {{< ref "widgets//intensityprofile" >}}[*intensity profile widget*]. 
+. Inspect the intensity profile from the link:{{< ref "widgets//intensityprofile" >}}[*intensity profile widget*]. 
 +
 {{% notice tip %}}
 Tune the camera exposure until the maximum acquired intensity is below the intensity saturation limit.
 {{% /notice %}}
 +
-.Configuring the camera
-image:/2 - Adjust Exposure.png[]
+image:2 - Adjust Exposure.png[]
 
 == Configure the centroids extraction parameters
 
@@ -49,16 +47,14 @@ It is crucial to correctly compute the centroids positions for all the spots in 
 . From the WFS menu, load the WFS profile shipped within the provided camera (such profile contains the calibrated parameters for the WFS camera);
 . Select the Draw AoI (Area of Interest) tool icon:grid_resize[] and place the AoI over the target spots. Ensure that the Show Grid button icon:grid[] in the viewfinder is selected: the AoI defines the extraction grid mapping each spot to a lenslet;
 +
-.Draw AoI
-image:/3 - Draw AoI.png[]
+image:3 - Draw AoI.png[]
 
-. Configure the extraction parameters from the {{< ref "widgets//twcog" >}}[*extraction settings widget*]. Ensure that the Show Reference icon:grid_ref[] and Centroids icon:grid_main[] buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;
+. Configure the extraction parameters from the link:{{< ref "widgets//twcog" >}}[*extraction settings widget*]. Ensure that the Show Reference icon:grid_ref[] and Centroids icon:grid_main[] buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;
 +
 {{% notice tip %}}
 Set the minimum intensity to just above the noise floor. Automatically remove faint lenslets by tweaking the minimum intensity sum. 
 {{% /notice %}}
-.Configuring the extraction settings
-image:/4 - Adjust Extraction Settings.png[]
+image:4 - Adjust Extraction Settings.png[]
 . Remove the global tilt with the Align Grid icon:grid_align[] tool from the lateral toolbar.
 
 {{% notice tip %}}
@@ -68,7 +64,7 @@ On a well aligned optical system, each cell of the grid contains exactly one spo
 Iterate between extraction settings and grid alignment to achieve an optimal measurement.
 {{% /notice %}}
 {{% notice tip %}}
-Show slopes icon:grid_quiver[] in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.  
+Show slopes in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.  
 {{% /notice %}}
 
 You can find more details about centroid calculation options in this paper:
@@ -83,8 +79,7 @@ Once the centroids extraction settings are set up, PhotonLoop is ready to measur
 
 . Start the wavefront measurement by fixing the reference with the Take Absolute Reference icon:ref_abs[] tool from the lateral toolbar. Now, all the modal-related widgets are available;
 +
-.Absolute Reference
 image:5 - Take Reference.png[]
-. If needed, further tweak the modal reconstruction settings from within the {{< ref "widgets//modal" >}}[*modal settings widget*].
+. If needed, further tweak the modal reconstruction settings from within the link:{{< ref "widgets//modal" >}}[*modal settings widget*].
 
-The results of wavefront measurements are displayed in the {{< ref "widgets//statistics" >}}[*statistics widget*], along with a summary about the current PhotonLoop settings.
+The results of wavefront measurements are displayed in the link:{{< ref "widgets//statistics" >}}[*statistics widget*], along with a summary about the current PhotonLoop settings.
