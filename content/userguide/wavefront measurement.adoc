@@ -8,6 +8,7 @@ weight: 3
 
 :icons:
 :iconsdir: /icons/
+:imagesdir: wfs/
 
 An accurate wavefront measurement is the starting point for a succesful adaptive optics correction. 
 Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
