@@ -33,7 +33,7 @@ To open the camera:
 .Opening the camera
 image:/1 - Open Sensor.png[]
 . Select the Cross tool icon:grid_cross[] from the viewfinder and place the cross over the brightest pixels. If the spots are small, zoom into the image by selecting the Zoom tool icon:gridZoom[];
-. Inspect the intensity profile from the {{< ref "widgets//intensity" >}}[*intensity profile widget*]. 
+. Inspect the intensity profile from the {{< ref "widgets//intensityprofile" >}}[*intensity profile widget*]. 
 +
 {{% notice tip %}}
 Tune the camera exposure until the maximum acquired intensity is below the intensity saturation limit.
@@ -52,7 +52,7 @@ It is crucial to correctly compute the centroids positions for all the spots in 
 .Draw AoI
 image:/3 - Draw AoI.png[]
 
-. Configure the extraction parameters from the {{< ref "widgets//extraction" >}}[*extraction settings widget*]. Ensure that the Show Reference icon:grid_ref[] and Centroids icon:grid_main[] buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;
+. Configure the extraction parameters from the {{< ref "widgets//twcog" >}}[*extraction settings widget*]. Ensure that the Show Reference icon:grid_ref[] and Centroids icon:grid_main[] buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;
 +
 {{% notice tip %}}
 Set the minimum intensity to just above the noise floor. Automatically remove faint lenslets by tweaking the minimum intensity sum. 
@@ -85,6 +85,6 @@ Once the centroids extraction settings are set up, PhotonLoop is ready to measur
 +
 .Absolute Reference
 image:5 - Take Reference.png[]
-. If needed, further tweak the modal reconstruction settings from within the {{< ref "widgets//modalsettings" >}}[*modal settings widget*].
+. If needed, further tweak the modal reconstruction settings from within the {{< ref "widgets//modal" >}}[*modal settings widget*].
 
 The results of wavefront measurements are displayed in the {{< ref "widgets//statistics" >}}[*statistics widget*], along with a summary about the current PhotonLoop settings.
