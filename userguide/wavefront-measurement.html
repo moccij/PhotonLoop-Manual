@@ -7,19 +7,19 @@
 <meta name=author content="Jacopo Mocci">
 <link rel=icon href=../images/favicon.png type=image/png>
 <title>Wavefront Measurement - PhotonLoop User Manual</title>
-<link href=../css/nucleus.css?1651483910 rel=stylesheet>
-<link href=../css/fontawesome-all.min.css?1651483910 rel=stylesheet>
-<link href=../css/hybrid.css?1651483910 rel=stylesheet>
-<link href=../css/featherlight.min.css?1651483910 rel=stylesheet>
-<link href=../css/perfect-scrollbar.min.css?1651483910 rel=stylesheet>
-<link href=../css/auto-complete.css?1651483910 rel=stylesheet>
-<link href=../css/atom-one-dark-reasonable.css?1651483910 rel=stylesheet>
-<link href=../css/theme.css?1651483910 rel=stylesheet>
-<link href=../css/tabs.css?1651483910 rel=stylesheet>
-<link href=../css/hugo-theme.css?1651483910 rel=stylesheet>
-<link href=../css/theme-jm.css?1651483910 rel=stylesheet>
-<link href=../css/custom.css?1651483910 rel=stylesheet>
-<script src=../js/jquery-3.3.1.min.js?1651483910></script>
+<link href=../css/nucleus.css?1651832971 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1651832971 rel=stylesheet>
+<link href=../css/hybrid.css?1651832971 rel=stylesheet>
+<link href=../css/featherlight.min.css?1651832971 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1651832971 rel=stylesheet>
+<link href=../css/auto-complete.css?1651832971 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1651832971 rel=stylesheet>
+<link href=../css/theme.css?1651832971 rel=stylesheet>
+<link href=../css/tabs.css?1651832971 rel=stylesheet>
+<link href=../css/hugo-theme.css?1651832971 rel=stylesheet>
+<link href=../css/theme-jm.css?1651832971 rel=stylesheet>
+<link href=../css/custom.css?1651832971 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1651832971></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=../userguide/wavefront-measurement.html>
@@ -33,10 +33,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=../js/lunr.min.js?1651483910></script>
-<script type=text/javascript src=../js/auto-complete.js?1651483910></script>
+<script type=text/javascript src=../js/lunr.min.js?1651832971></script>
+<script type=text/javascript src=../js/auto-complete.js?1651832971></script>
 <script type=text/javascript>var baseurl=""</script>
-<script type=text/javascript src=../js/search.js?1651483910></script>
+<script type=text/javascript src=../js/search.js?1651832971></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -269,70 +269,113 @@ WFS Settings
 Wavefront Measurement
 </h1>
 <div class=paragraph>
-<p>An accurate wavefront measurement is very important for metrology applications and for appropriate adaptive optics operation. Errors in measurements setting might causes system instability and if the relative errors are very high the system may not work.</p>
+<p>An accurate wavefront measurement is the starting point for a succesful adaptive optics correction.
+Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.</p>
+</div>
+<div class=paragraph>
+<div class=title>The PhotonLoop GUI</div>
+<p><span class=image><img src=../0%20-%20startup.png alt="0   startup"></span></p>
+</div>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Sub-optimal measurement settings have a detrimental impact on the correction quality and might lead to an unstable system behavior.</p>
+</div>
+</div>
 </div>
 <div class=sect1>
-<h2 id=_create_measure_grid_and_adjust_camera_settings>Create measure grid and adjust camera settings</h2>
+<h2 id=_configure_the_sensor>Configure the sensor</h2>
 <div class=sectionbody>
 <div class=paragraph>
-<p>All the buttons and options for these steps are in the following toolbox that you can find in the <a href=../widgets/viewfinder.html><strong>viewfinder</strong></a> widget.</p>
+<p>The first step to perform a measurement is to configure the sensor from the /widgets/sensor.html[<strong>sensor widget</strong>] and visualize it in the /widgets/viewfinder.html[<strong>viewfinder</strong>].</p>
 </div>
 <div class=paragraph>
-<p>To display spots and measurements grid click on <span class=icon><img src=../icons/grid_ccd.png alt="grid ccd"></span> and <span class=icon><img src=../icons/grid.png alt=grid></span> buttons respectively. Now you can create the measurements grid around the area of spots that you decide to consider. Click on <span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span> and trace the grid over the spots.</p>
+<p>To open the camera:</p>
 </div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Select the sensor plugin corresponding to the installed camera;</p>
+</li>
+<li>
+<p>Open the sensor by clicking on the <span class=icon><img src=../icons/in_camera.png alt="in camera"></span> button;</p>
+</li>
+<li>
+<p>Verify that the camera image is correctly shown in the viewfinder widget (ensure that the Show Image button <span class=icon><img src=../icons/grid_ccd.png alt="grid ccd"></span> is selected);</p>
+<div class=paragraph>
+<div class=title>Opening the camera</div>
+<p><span class=image><img src=../1%20-%20Open%20Sensor.png alt="1   Open Sensor"></span></p>
+</div>
+</li>
+<li>
+<p>Select the Cross tool <span class=icon><img src=../icons/grid_cross.png alt="grid cross"></span> from the viewfinder and place the cross over the brightest pixels. If the spots are small, zoom into the image by selecting the Zoom tool <span class=icon><img src=../icons/gridZoom.png alt=gridZoom></span>;</p>
+</li>
+<li>
+<p>Inspect the intensity profile from the /widgets/intensityprofile.html[<strong>intensity profile widget</strong>].</p>
 <div class=paragraph>
 <div class="notices tip"><div class=paragraph>
-<p>First off all you need to set the exposure of the camera until you see well defined spots image from the SHWFS, to set the exposure button and use the scroll bar in the Camera tab of the window that comes out.</p>
-</div>
-<div class=paragraph>
-<p>At this stage you can fine tune the exposure time and the filter threshold for spot detection. We suggest a 90% of saturation for pixels and a threshold on spot detection just above the background noise of the sensor. These settings are easily set with in PHOTONLOOP.</p>
+<p>Tune the camera exposure until the maximum acquired intensity is below the intensity saturation limit.</p>
 </div>
 </div>
 </div>
 <div class=paragraph>
-<p><span class=image><img src=../img/image29.png alt=image29></span></p>
+<div class=title>Configuring the camera</div>
+<p><span class=image><img src=../2%20-%20Adjust%20Exposure.png alt="2   Adjust Exposure"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_configure_the_centroids_extraction_parameters>Configure the centroids extraction parameters</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>It is crucial to correctly compute the centroids positions for all the spots in the image:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>From the WFS menu, load the WFS profile shipped within the provided camera (such profile contains the calibrated parameters for the WFS camera);</p>
+</li>
+<li>
+<p>Select the Draw AoI (Area of Interest) tool <span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span> and place the AoI over the target spots. Ensure that the Show Grid button <span class=icon><img src=../icons/grid.png alt=grid></span> in the viewfinder is selected: the AoI defines the extraction grid mapping each spot to a lenslet;</p>
+<div class=paragraph>
+<div class=title>Draw AoI</div>
+<p><span class=image><img src=../3%20-%20Draw%20AoI.png alt="3   Draw AoI"></span></p>
+</div>
+</li>
+<li>
+<p>Configure the extraction parameters from the /widgets/twcog.html[<strong>extraction settings widget</strong>]. Ensure that the Show Reference <span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span> and Centroids <span class=icon><img src=../icons/grid_main.png alt="grid main"></span> buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;</p>
+<div class=paragraph>
+<p>
+<div class="notices tip"><div class=paragraph>
+<p>Set the minimum intensity to just above the noise floor. Automatically remove faint lenslets by tweaking the minimum intensity sum.</p>
+</div>
+</div>
+.Configuring the extraction settings
+<span class=image><img src=../4%20-%20Adjust%20Extraction%20Settings.png alt="4   Adjust Extraction Settings"></span></p>
+</div>
+</li>
+<li>
+<p>Remove the global tilt with the Align Grid <span class=icon><img src=../icons/grid_align.png alt="grid align"></span> tool from the lateral toolbar.</p>
+</li>
+</ol>
 </div>
 <div class=paragraph>
-<p>Use the button <span class=icon><img src=../icons/grid_align.png alt="grid align"></span> in the main toolbox to automatically center the grid.</p>
+<p>
+<div class="notices tip"><div class=paragraph>
+<p>On a well aligned optical system, each cell of the grid contains exactly one spot. If this is not the case, it is likely that the optical path introduces defocus. Adjust the optical elements to remove the defocus as much as possible.</p>
 </div>
-<div class=paragraph>
-<p>Finally, you will see a grid like this:</p>
 </div>
-<div class=paragraph>
-<p><span class=image><img src=../img/image33.png alt=image33></span></p>
+<div class="notices tip"><div class=paragraph>
+<p>Iterate between extraction settings and grid alignment to achieve an optimal measurement.</p>
 </div>
-<div class=paragraph>
-<p>If the aperture is circular like in the example used for this guide use the Force Circular Aperture button <span class=icon><img src=../icons/grid_circle.png alt="grid circle"></span> to exclude the area of the grid in the corner of the measured square.</p>
 </div>
-<div class=paragraph>
-<p>Now regulate exposure and gain of the camera in the Camera tab and set the options for centroid extraction in the relative tab.</p>
+<div class="notices tip"><div class=paragraph>
+<p>Show slopes <span class=icon>[grid quiver]</span> in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.</p>
 </div>
-<div class=paragraph>
-<p><span class=image><img src=../img/image36.png alt=image36></span></p>
 </div>
-<div class=paragraph>
-<p>The vertical line in the plot profile show the level and the shape of the threshold you are considering. The acquired images of the spots are analyzed to reconstruct the wavefront.</p>
-</div>
-<div class=paragraph>
-<p>If some spots are not well defined or blink, they may cause problems to the measurements. Use this button <span class=icon><img src=../icons/centroids_remove.png alt="centroids remove"></span> to exclude them.</p>
-</div>
-<div class=paragraph>
-<p>Options for data elaboration can be found in Settings Tab and then Modal Tab.</p>
-</div>
-<div class=paragraph>
-<p><span class=image><img src=../img/image38.png alt=image38></span></p>
-</div>
-<div class=paragraph>
-<p>Here you can set number of modes used for in the wavefront reconstruction. The oversampling sets the number of points for wavefront graphical representation. Finally you can choose if display Zernike Offsets, Real wavefront or both (Real+Offset) resulting wavefront.</p>
-</div>
-<div class=paragraph>
-<p>Now you can start the measurements process with <span class=icon><img src=../icons/ref_abs.png alt="ref abs"></span> button in the main toolbox, PHOTONLOOP will measure the wavefront inside the grid for each frame taken by the camera.</p>
-</div>
-<div class=paragraph>
-<p>The last three buttons <span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span>, <span class=icon><img src=../icons/grid_main.png alt="grid main"></span> and <span class=icon><img src=../icons/grid_quiver.png alt="grid quiver"></span> on the display toolbox are used to show the excluded spots, the considered spots and the slopes of the wavefront respectively.</p>
-</div>
-<div class=paragraph>
-<p>You can use the crop button <span class=icon><img src=../icons/grid_crop.png alt="grid crop"></span> to make an area of interest (AOI), this allow the system to work at a higher frame rate. To increase the frame rate, after pressing crop, put the new frequency in the WPS tab. If the frequency will be higher than the maximum allowed, the system will go to the maximum possible frequency.</p>
+</p>
 </div>
 <div class=paragraph>
 <p>You can find more details about centroid calculation options in this paper:</p>
@@ -345,13 +388,27 @@ Wavefront Measurement
 </div>
 </div>
 <div class=sect1>
-<h2 id=_read_measurements>Read measurements</h2>
+<h2 id=_reference_and_modal_reconstruction>Reference and Modal Reconstruction</h2>
 <div class=sectionbody>
 <div class=paragraph>
-<p>The results of wavefront measurements are displayed in the bottom part of the main window. Here you can see the Zernike decomposition in a histogram and the wavefront reconstruction. For both histogram and graph, you can choose display options like graph type, scale and color. Just click on the star button * in the bottom right corner of the graph areas.</p>
+<p>Once the centroids extraction settings are set up, PhotonLoop is ready to measure the wavefront.</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Start the wavefront measurement by fixing the reference with the Take Absolute Reference <span class=icon><img src=../icons/ref_abs.png alt="ref abs"></span> tool from the lateral toolbar. Now, all the modal-related widgets are available;</p>
+<div class=paragraph>
+<div class=title>Absolute Reference</div>
+<p><span class=image><img src=5%20-%20Take%20Reference.png alt="5   Take Reference"></span></p>
+</div>
+</li>
+<li>
+<p>If needed, further tweak the modal reconstruction settings from within the /widgets/modal.html[<strong>modal settings widget</strong>].</p>
+</li>
+</ol>
 </div>
 <div class=paragraph>
-<p><span class=image><img src=../img/image44.png alt=image44></span></p>
+<p>The results of wavefront measurements are displayed in the /widgets/statistics.html[<strong>statistics widget</strong>], along with a summary about the current PhotonLoop settings.</p>
 </div>
 </div>
 </div>
@@ -367,16 +424,16 @@ Wavefront Measurement
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=../js/clipboard.min.js?1651483911></script>
-<script src=../js/perfect-scrollbar.min.js?1651483911></script>
-<script src=../js/perfect-scrollbar.jquery.min.js?1651483911></script>
-<script src=../js/jquery.sticky.js?1651483911></script>
-<script src=../js/featherlight.min.js?1651483911></script>
-<script src=../js/highlight.pack.js?1651483911></script>
+<script src=../js/clipboard.min.js?1651832972></script>
+<script src=../js/perfect-scrollbar.min.js?1651832972></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1651832972></script>
+<script src=../js/jquery.sticky.js?1651832972></script>
+<script src=../js/featherlight.min.js?1651832972></script>
+<script src=../js/highlight.pack.js?1651832972></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=../js/modernizr.custom-3.6.0.js?1651483911></script>
-<script src=../js/learn.js?1651483911></script>
-<script src=../js/hugo-learn.js?1651483911></script>
+<script src=../js/modernizr.custom-3.6.0.js?1651832972></script>
+<script src=../js/learn.js?1651832972></script>
+<script src=../js/hugo-learn.js?1651832972></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
