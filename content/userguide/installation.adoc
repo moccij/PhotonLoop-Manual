@@ -81,14 +81,14 @@ PHOTONLOOP require at least the following specifications:
 
 === Installing PHOTONLOOP and drivers
 
-All what you need for installation is provided with the USB stick, drivers and PHOTONLOOP installer. To install PHOTONLOOP and the relative drivers follow these steps, it is not necessary to connect the hardware to the computer at this stage:
+All you need for the installation is in the USB Memory Stick provided with the hardware you purchased. To install PHOTONLOOP and its drivers, please follow the follwing steps: 
 
-. If not already present in your PC install the _iDS uEye driver package_ (4.80.2 or newer versions, the file is in the USB stick in the folder PHOTONLOOP/drivers);
-. If not already present in your PC install _Microsoft Visual Studio 2017 (v14) x64 Runtime Package_ (VC_redist.x64.exe file is in the USB stick in the folder PHOTONLOOP/drivers);
-. Run PHOTONLOOP Installer, it can be found in the PHOTONLOOP folder of the USB stick and follow the procedure:
+. If not already present in your PC, please install the _iDS uEye driver package_ (4.80.2 or newer versions, the file is in the USB stick in the folder PHOTONLOOP/drivers);
+. If not already present in your PC, please install _Microsoft Visual Studio 2017 (v14) x64 Runtime Package_ (VC_redist.x64.exe file is in the USB stick in the folder PHOTONLOOP/drivers);
+. Run PHOTONLOOP Installer found in the PHOTONLOOP folder wihtin the USB stick and follow this procedure (it is not necessary to connect the hardware to the computer):
 .. Chose the installation folder that you prefer
 image:/img/image11.png[image,width=377,height=226]
-. Select the component to install
+. Select the components to install
 image:/img/image12.png[image,width=377,height=226]
 . Read and accept the terms of usage, select the shortcuts location and proceed with the installation.
 image:/img/image13.png[image,width=377,height=226]
