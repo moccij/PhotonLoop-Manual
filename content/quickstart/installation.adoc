@@ -1,0 +1,95 @@
+---
+title: Installation
+date: 02/09/2021
+draft: false
+
+weight: 1
+---
+
+== Package Contents
+
+The devices supplied by Dynamic Optics for a standard adaptive optical system should include:
+
+[cols="25h,~"]
+|===
+|Item |Description
+
+|image:/img/image2.jpeg[width=128] 
+|PhotonLoop Dongle key.
+
+This key will permit you to run PhotonLoop.
+
+|image:/img/image3.jpeg[width=128]
+|USB Memory Stick
+
+Each product from Dynamic Optics is delivered with a USB key containing the principal information (manuals and datasheet, etc..) regarding the purchased products.
+
+|===
+
+Also, one or more *WaveFront Corrector* (WFC) as a Deformable Mirror (DM) orn Adaptive Optical Lens (AOL) should be included:
+
+[cols="25h,~"]
+|===
+|Item |Description
+
+|image:/img/image4.png[width=128] 
+|Deformable mirror (Bimorph)
+
+|image:/img/image5.png[width=128] 
+|Adaptive Optical Lens (Bimorph)
+
+|image:/img/image6.jpeg[width=128]
+|Deformable Mirror (Piezo Stack)
+
+|===
+
+A *controller* interfaces the PC to the WFC:
+
+[cols="25h,~"]
+|===
+|Item |Description
+
+|image:/img/image7.png[width=128] 
+|PZT-Mini (external), USB 2.0 connection.
+
+|image:/img/image8.jpeg[width=128] 
+|PZT-Multi (integrated or external), 10MB Ethernet connection.
+
+|image:/img/image9.jpeg[width=128] 
+|PZT-Stack (external), USB 2.0 connection.
+|===
+
+A *Shack-Hartmann camera* acts as the WaveFront Sensor (WFS) of the system:
+
+[cols="25h,~"]
+|===
+|Item |Description
+
+|image:/img/image10.png[width=128]
+|The WFS is equipped with its own USB 3.0 Cable. Its calibration profile is shipped within the provided USB memory stick.
+
+|===
+
+== PhotonLoop Installation
+
+=== System requirements
+
+PHOTONLOOP require at least the following specifications:
+
+* Dual Core Processor, 64 bit, 4GB ram;
+* Windows 7 Operating System.
+
+=== Installing PHOTONLOOP and drivers
+
+All you need for the installation is in the USB Memory Stick provided with the hardware you purchased. To install PHOTONLOOP and its drivers, please follow the follwing steps: 
+
+. If not already present in your PC, please install the _iDS uEye driver package_ (4.80.2 or newer versions, the file is in the USB stick in the folder PHOTONLOOP/drivers);
+. If not already present in your PC, please install _Microsoft Visual Studio 2017 (v14) x64 Runtime Package_ (VC_redist.x64.exe file is in the USB stick in the folder PHOTONLOOP/drivers);
+. Run PHOTONLOOP Installer found in the PHOTONLOOP folder wihtin the USB stick and follow this procedure (it is not necessary to connect the hardware to the computer):
+.. Chose the installation folder that you prefer
+image:/img/image11.png[image,width=377,height=226]
+. Select the components to install
+image:/img/image12.png[image,width=377,height=226]
+. Read and accept the terms of usage, select the shortcuts location and proceed with the installation.
+image:/img/image13.png[image,width=377,height=226]
+. Insert the provided dongle key to use PHOTONLOOP in your computer. You can use PHOTONLOOP in one computer a time.

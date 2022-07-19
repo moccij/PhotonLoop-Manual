@@ -17,7 +17,6 @@ image:logtoolbar.png[]
 
 The *log* toolbar manages the logging/reporting utility to save both *dynamic* (real-time) and *static* data to disk.
 
-
 [%autowidth]
 |===
 |Item |Description

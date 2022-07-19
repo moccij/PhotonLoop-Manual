@@ -16,7 +16,7 @@ tags:
 image:wfc.png[]
 
 The WaveFront Corrector *WFC* widget manages the interface between PhotonLoop and a connected wavefront corrector.
-Available correctors are listed as link:{{< ref "userguide/plugins#_wfc_plugins" >}}[*plugins*].
+Available correctors are listed as xref:..//plugins#_wfc_plugins[*plugins*].
 
 [%autowidth]
 |===

@@ -13,7 +13,7 @@ tags:
 image:compensator.png[]
 
 Within the *compensator settings* widget it is possible to choose the *control law*, its parameters and additional *robustness* settings.
-Available compensators are listed as link:{{< ref "userguide/plugins#_compensator_plugins" >}}[*plugins*].
+Available compensators are listed as xref:../plugins[*plugins*].
 
 == Robustness
 

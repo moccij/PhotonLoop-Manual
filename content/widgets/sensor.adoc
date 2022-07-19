@@ -13,4 +13,4 @@ tags:
 image:sensor.png[]
 
 The *sensor* widget manages the interface between PhotonLoop and a connected camera.
-Available cameras are listed as link:{{< ref "userguide//plugins#_sensor_plugins" >}}[*plugins*], with each plugin exposing different options.
+Available cameras are listed as xref:../plugins#_sensor_plugins[*plugins*], with each plugin exposing different options.

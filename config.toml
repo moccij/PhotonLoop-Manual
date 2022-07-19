@@ -73,5 +73,7 @@ favicon = '/favicon.ico'
 
   tocMode = "menu"
 
+  widgetsDir = "/userguide/widgets/"
+
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
