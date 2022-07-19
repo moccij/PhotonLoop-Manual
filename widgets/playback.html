@@ -7,19 +7,19 @@
 <meta name=author content="Jacopo Mocci">
 <link rel=icon href=../images/favicon.png type=image/png>
 <title>Playback - PhotonLoop User Manual</title>
-<link href=../css/nucleus.css?1657015823 rel=stylesheet>
-<link href=../css/fontawesome-all.min.css?1657015823 rel=stylesheet>
-<link href=../css/hybrid.css?1657015823 rel=stylesheet>
-<link href=../css/featherlight.min.css?1657015823 rel=stylesheet>
-<link href=../css/perfect-scrollbar.min.css?1657015823 rel=stylesheet>
-<link href=../css/auto-complete.css?1657015823 rel=stylesheet>
-<link href=../css/atom-one-dark-reasonable.css?1657015823 rel=stylesheet>
-<link href=../css/theme.css?1657015823 rel=stylesheet>
-<link href=../css/tabs.css?1657015823 rel=stylesheet>
-<link href=../css/hugo-theme.css?1657015823 rel=stylesheet>
-<link href=../css/theme-jm.css?1657015823 rel=stylesheet>
-<link href=../css/custom.css?1657015823 rel=stylesheet>
-<script src=../js/jquery-3.3.1.min.js?1657015823></script>
+<link href=../css/nucleus.css?1658239982 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1658239982 rel=stylesheet>
+<link href=../css/hybrid.css?1658239982 rel=stylesheet>
+<link href=../css/featherlight.min.css?1658239982 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1658239982 rel=stylesheet>
+<link href=../css/auto-complete.css?1658239982 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1658239982 rel=stylesheet>
+<link href=../css/theme.css?1658239982 rel=stylesheet>
+<link href=../css/tabs.css?1658239982 rel=stylesheet>
+<link href=../css/hugo-theme.css?1658239982 rel=stylesheet>
+<link href=../css/theme-jm.css?1658239982 rel=stylesheet>
+<link href=../css/custom.css?1658239982 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1658239982></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=../widgets/playback.html>
@@ -33,10 +33,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=../js/lunr.min.js?1657015823></script>
-<script type=text/javascript src=../js/auto-complete.js?1657015823></script>
+<script type=text/javascript src=../js/lunr.min.js?1658239982></script>
+<script type=text/javascript src=../js/auto-complete.js?1658239982></script>
 <script type=text/javascript>var baseurl=""</script>
-<script type=text/javascript src=../js/search.js?1657015823></script>
+<script type=text/javascript src=../js/search.js?1658239982></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -47,47 +47,47 @@
 </section>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/userguide.html title="User Manual" class=dd-item>
-<a href=../userguide.html>
-User Manual
-</a>
-<ul>
-<li data-nav-id=/userguide/safety.html title="Warranty & Safety Instructions" class=dd-item>
-<a href=../userguide/safety.html>
+<li data-nav-id=/safety.html title="Warranty & Safety Instructions" class=dd-item>
+<a href=../safety.html>
 Warranty & Safety Instructions
 </a>
 </li>
-<li data-nav-id=/userguide/installation.html title=Installation class=dd-item>
-<a href=../userguide/installation.html>
-Installation
-</a>
-</li>
-<li data-nav-id=/userguide/ao-setup.html title="Optical Setup" class=dd-item>
-<a href=../userguide/ao-setup.html>
+<li data-nav-id=/aosetup.html title="Optical Setup" class=dd-item>
+<a href=../aosetup.html>
 Optical Setup
 </a>
 </li>
-<li data-nav-id=/userguide/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
-<a href=../userguide/wavefront-measurement.html>
+<li data-nav-id=/quickstart.html title="Quick Start" class=dd-item>
+<a href=../quickstart.html>
+Quick Start
+</a>
+<ul>
+<li data-nav-id=/quickstart/installation.html title=Installation class=dd-item>
+<a href=../quickstart/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/quickstart/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../quickstart/wavefront-measurement.html>
 Wavefront Measurement
 </a>
 </li>
-<li data-nav-id=/userguide/compensation.html title="Aberration Correction" class=dd-item>
-<a href=../userguide/compensation.html>
+<li data-nav-id=/quickstart/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../quickstart/compensation.html>
 Aberration Correction
 </a>
 </li>
-<li data-nav-id=/userguide/tcpip.html title=TCP-IP class=dd-item>
-<a href=../userguide/tcpip.html>
-TCP-IP
-</a>
+</ul>
 </li>
-<li data-nav-id=/userguide/plugins.html title=Plugins class=dd-item>
-<a href=../userguide/plugins.html>
+<li data-nav-id=/plugins.html title=Plugins class=dd-item>
+<a href=../plugins.html>
 Plugins
 </a>
 </li>
-</ul>
+<li data-nav-id=/tcpip.html title=TCP-IP class=dd-item>
+<a href=../tcpip.html>
+TCP-IP
+</a>
 </li>
 <li data-nav-id=/widgets.html title=Widgets class="dd-item
 parent">
@@ -95,20 +95,32 @@ parent">
 Widgets
 </a>
 <ul>
-<li data-nav-id=/widgets/actuatorsbars.html title="Actuators Bars" class=dd-item>
-<a href=../widgets/actuatorsbars.html>
-Actuators Bars
+<li data-nav-id=/widgets/valueswidgets.html title="Values Widgets" class=dd-item>
+<a href=../widgets/valueswidgets.html>
+Values Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets/actuatorswidgets.html title="Actuators Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/actuatorswidgets.html>
+Actuators Widgets
 </a>
 </li>
-<li data-nav-id=/widgets/actuatorsresponse.html title="Actuators Response" class=dd-item>
-<a href=../widgets/actuatorsresponse.html>
-Actuators Response
+<li data-nav-id=/widgets/valueswidgets/modalwidgets.html title="Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/modalwidgets.html>
+Modal Widgets
 </a>
 </li>
-<li data-nav-id=/widgets/actuatorstable.html title="Actuators Table" class=dd-item>
-<a href=../widgets/actuatorstable.html>
-Actuators Table
+<li data-nav-id=/widgets/valueswidgets/singulartomodalwidgets.html title="Singular To Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singulartomodalwidgets.html>
+Singular To Modal Widgets
 </a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singularwidgets.html title="Singular Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singularwidgets.html>
+Singular Widgets
+</a>
+</li>
+</ul>
 </li>
 <li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
 <a href=../widgets/calibration.html>
@@ -130,19 +142,9 @@ Intensity Profile
 Log Toolbar
 </a>
 </li>
-<li data-nav-id=/widgets/modalbars.html title="Modal Bars" class=dd-item>
-<a href=../widgets/modalbars.html>
-Modal Bars
-</a>
-</li>
 <li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
 <a href=../widgets/modal.html>
 Modal Settings
-</a>
-</li>
-<li data-nav-id=/widgets/modaltable.html title="Modal Table" class=dd-item>
-<a href=../widgets/modaltable.html>
-Modal Table
 </a>
 </li>
 <li data-nav-id=/widgets/playback.html title=Playback class="dd-item active">
@@ -160,34 +162,9 @@ Reconstructor Settings
 Sensor Settings
 </a>
 </li>
-<li data-nav-id=/widgets/singularbars.html title="Singular Bars" class=dd-item>
-<a href=../widgets/singularbars.html>
-Singular Bars
-</a>
-</li>
-<li data-nav-id=/widgets/singulartable.html title="Singular Table" class=dd-item>
-<a href=../widgets/singulartable.html>
-Singular Table
-</a>
-</li>
-<li data-nav-id=/widgets/singulartomodalbars.html title="Singular To Modal Bars" class=dd-item>
-<a href=../widgets/singulartomodalbars.html>
-Singular To Modal Bars
-</a>
-</li>
-<li data-nav-id=/widgets/singulartomodaltable.html title="Singular To Modal Table" class=dd-item>
-<a href=../widgets/singulartomodaltable.html>
-Singular To Modal Table
-</a>
-</li>
 <li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
 <a href=../widgets/statistics.html>
 Statistics
-</a>
-</li>
-<li data-nav-id=/widgets/systemmodes.html title="System Modes" class=dd-item>
-<a href=../widgets/systemmodes.html>
-System Modes
 </a>
 </li>
 <li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
@@ -413,23 +390,23 @@ Playback
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=../widgets/modaltable.html title="Modal Table"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-prev" href=../widgets/modal.html title="Modal Settings"> <i class="fa fa-chevron-left"></i></a>
 <a class="nav nav-next" href=../widgets/reconstructor.html title="Reconstructor Settings" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=../js/clipboard.min.js?1657015823></script>
-<script src=../js/perfect-scrollbar.min.js?1657015823></script>
-<script src=../js/perfect-scrollbar.jquery.min.js?1657015823></script>
-<script src=../js/jquery.sticky.js?1657015823></script>
-<script src=../js/featherlight.min.js?1657015823></script>
-<script src=../js/highlight.pack.js?1657015823></script>
+<script src=../js/clipboard.min.js?1658239982></script>
+<script src=../js/perfect-scrollbar.min.js?1658239982></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1658239982></script>
+<script src=../js/jquery.sticky.js?1658239982></script>
+<script src=../js/featherlight.min.js?1658239982></script>
+<script src=../js/highlight.pack.js?1658239982></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=../js/modernizr.custom-3.6.0.js?1657015823></script>
-<script src=../js/learn.js?1657015823></script>
-<script src=../js/hugo-learn.js?1657015823></script>
+<script src=../js/modernizr.custom-3.6.0.js?1658239982></script>
+<script src=../js/learn.js?1658239982></script>
+<script src=../js/hugo-learn.js?1658239982></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>

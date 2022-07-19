@@ -1,0 +1,299 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=./images/favicon.png type=image/png>
+<title>Quick Start - PhotonLoop User Manual</title>
+<link href=./css/nucleus.css?1658239986 rel=stylesheet>
+<link href=./css/fontawesome-all.min.css?1658239986 rel=stylesheet>
+<link href=./css/hybrid.css?1658239986 rel=stylesheet>
+<link href=./css/featherlight.min.css?1658239986 rel=stylesheet>
+<link href=./css/perfect-scrollbar.min.css?1658239986 rel=stylesheet>
+<link href=./css/auto-complete.css?1658239986 rel=stylesheet>
+<link href=./css/atom-one-dark-reasonable.css?1658239986 rel=stylesheet>
+<link href=./css/theme.css?1658239986 rel=stylesheet>
+<link href=./css/tabs.css?1658239986 rel=stylesheet>
+<link href=./css/hugo-theme.css?1658239986 rel=stylesheet>
+<link href=./css/theme-jm.css?1658239986 rel=stylesheet>
+<link href=./css/custom.css?1658239986 rel=stylesheet>
+<script src=./js/jquery-3.3.1.min.js?1658239986></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=./quickstart.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=./PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=./js/lunr.min.js?1658239986></script>
+<script type=text/javascript src=./js/auto-complete.js?1658239986></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=./js/search.js?1658239986></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=./><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/safety.html title="Warranty & Safety Instructions" class=dd-item>
+<a href=./safety.html>
+Warranty & Safety Instructions
+</a>
+</li>
+<li data-nav-id=/aosetup.html title="Optical Setup" class=dd-item>
+<a href=./aosetup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/quickstart.html title="Quick Start" class="dd-item
+parent
+active">
+<a href=./quickstart.html>
+Quick Start
+</a>
+<ul>
+<li data-nav-id=/quickstart/installation.html title=Installation class=dd-item>
+<a href=./quickstart/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/quickstart/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=./quickstart/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/quickstart/compensation.html title="Aberration Correction" class=dd-item>
+<a href=./quickstart/compensation.html>
+Aberration Correction
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/plugins.html title=Plugins class=dd-item>
+<a href=./plugins.html>
+Plugins
+</a>
+</li>
+<li data-nav-id=/tcpip.html title=TCP-IP class=dd-item>
+<a href=./tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class=dd-item>
+<a href=./widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets.html title="Values Widgets" class=dd-item>
+<a href=./widgets/valueswidgets.html>
+Values Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets/actuatorswidgets.html title="Actuators Widgets" class=dd-item>
+<a href=./widgets/valueswidgets/actuatorswidgets.html>
+Actuators Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/modalwidgets.html title="Modal Widgets" class=dd-item>
+<a href=./widgets/valueswidgets/modalwidgets.html>
+Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singulartomodalwidgets.html title="Singular To Modal Widgets" class=dd-item>
+<a href=./widgets/valueswidgets/singulartomodalwidgets.html>
+Singular To Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singularwidgets.html title="Singular Widgets" class=dd-item>
+<a href=./widgets/valueswidgets/singularwidgets.html>
+Singular Widgets
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=./widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=./widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=./widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=./widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=./widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=./widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=./widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=./widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=./widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=./widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=./widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=./widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=./widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=./widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=./widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=./widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/moccij/PhotonLoop-Manual/edit/main/content/quickstart/_index.adoc target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=./>Home</a> > Quick Start
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Quick Start
+</h1>
+<div class=paragraph>
+<ul class="children children-li">
+<li>
+<a href=./quickstart/installation.html>Installation</a>
+</li>
+<p>Package Contents The devices supplied by Dynamic Optics for a standard adaptive optical system should include:
+Item Description
+PhotonLoop Dongle key.
+This key will permit you to run PhotonLoop.
+USB Memory Stick
+Each product from Dynamic Optics is delivered with a USB key containing the principal information (manuals and datasheet, etc..) regarding the purchased products.</p>
+<li>
+<a href=./quickstart/wavefront-measurement.html>Wavefront Measurement</a>
+</li>
+<p>An accurate wavefront measurement is the starting point for a succesful adaptive optics correction. Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.
+Sub-optimal measurement settings have a detrimental impact on the correction quality and might lead to an unstable system behavior.
+Configure the sensor The first step to perform a measurement is to configure the sensor from the sensor widget and visualize it in the viewfinder:</p>
+<li>
+<a href=./quickstart/compensation.html>Aberration Correction</a>
+</li>
+<p>PhotonLoop connects to both wavefront sensor and corrector, providing the means of compensating measured aberrations. This tutorial will show how to correctly carry out the AO calibration of the AO system and succesfully close the control loop.
+Please read the safety instructions carefully before operating with the WFC.
+This tutorial assumes that PhotonLoop is already configured to optimally measure the wavefront. Refer to the wavefront measurement tutorial for how to setup the measurements.</p>
+</ul>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=./aosetup.html title="Optical Setup"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=./quickstart/installation.html title=Installation style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=./js/clipboard.min.js?1658239986></script>
+<script src=./js/perfect-scrollbar.min.js?1658239986></script>
+<script src=./js/perfect-scrollbar.jquery.min.js?1658239986></script>
+<script src=./js/jquery.sticky.js?1658239986></script>
+<script src=./js/featherlight.min.js?1658239986></script>
+<script src=./js/highlight.pack.js?1658239986></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=./js/modernizr.custom-3.6.0.js?1658239986></script>
+<script src=./js/learn.js?1658239986></script>
+<script src=./js/hugo-learn.js?1658239986></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

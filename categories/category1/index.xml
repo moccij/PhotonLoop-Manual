@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>category1 on PhotonLoop User Manual</title><link>/categories/category1.html</link><description>Recent content in category1 on PhotonLoop User Manual</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/categories/category1/index.xml" rel="self" type="application/rss+xml"/><item><title>Actuators Bars</title><link>/widgets/actuatorsbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsbars.html</guid><description>The actuators bars widget gives the user a graphical representation of the actual state of the WFC actuators:
-The red bars display the actual WFC output commands;
-The orange slimmer bars display the command offsets.
-The Y range and baseline are fixed and are determined by the WFC specifications (minimum, maximum and center).
-An actuator is selected when hovering over its corresponding bar.</description></item><item><title>Actuators Response</title><link>/widgets/actuatorsresponse.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorsresponse.html</guid><description>The actuators response widget shows the wavefront representation of all actuators responses.
-Adjusting the image grid display Clicking with the right mouse button pops up the display settings:
-Item Description Representation
-Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
-Colormap
-Determines the colormap of the wavefront.</description></item><item><title>Actuators Table</title><link>/widgets/actuatorstable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/actuatorstable.html</guid><description>The actuators table widget presents the current state of the WFC actuators as a grid, with each row representing an actuator index.
-Item Description #
-Actuator index.
-Image
-Actuator response wavefront.
-Value
-Current actuator command output.
-Offset
-Actuator command offset.
-Editing the Table The table view is useful to enter precise values for the desired indexes.</description></item><item><title>Calibration Settings</title><link>/widgets/calibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/calibration.html</guid><description>The calibration settings widget exposes the parameters used by the AO calibration routine.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>category1 on PhotonLoop User Manual</title><link>/categories/category1.html</link><description>Recent content in category1 on PhotonLoop User Manual</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/categories/category1/index.xml" rel="self" type="application/rss+xml"/><item><title>Calibration Settings</title><link>/widgets/calibration.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/calibration.html</guid><description>The calibration settings widget exposes the parameters used by the AO calibration routine.
 The calibration can only be performed once a reference has been taken and a WFC plugin is succesfully opened.
 Pattern configuration Poke pattern Item Description Influence Function (Individual Poke)
 One actuator is poked at once. Useful when the actuators exhibit strong non-linear behaviour.</description></item><item><title>Compensator Settings</title><link>/widgets/compensator.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/compensator.html</guid><description>Within the compensator settings widget it is possible to choose the control law, its parameters and additional robustness settings. Available compensators are listed as plugins.
@@ -27,28 +9,13 @@ The blue curve corresponds to the intensity over the horizontal line;
 The red curve corresponds to the intensity over the horizontal line that contains the pixel with the maximum intensity in each lenslet;</description></item><item><title>Log Toolbar</title><link>/widgets/log.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/log.html</guid><description>The log toolbar manages the logging/reporting utility to save both dynamic (real-time) and static data to disk.
 Item Description Log title
 Title of the log that will appear in the newly generated folder.
-Starts the log, creating a new folder. To stop the log, press the button again.</description></item><item><title>Modal Bars</title><link>/widgets/modalbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modalbars.html</guid><description>The modal bars widget gives the user a graphical representation of the actual state of the modal reconstruction:
-The green bars display the measured modes;
-The light green slimmer bars display the modal offsets;
-The red crosses indicate disabled modes.
-A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and mode wavefront representation of the currently selected mode index.</description></item><item><title>Modal Settings</title><link>/widgets/modal.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modal.html</guid><description>The modal settings widget shows the wavefront reconstrutor parameters.
+Starts the log, creating a new folder. To stop the log, press the button again.</description></item><item><title>Modal Settings</title><link>/widgets/modal.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modal.html</guid><description>The modal settings widget shows the wavefront reconstrutor parameters.
 Item Description Basis
 Selects the basis used to project WFS measurements into modes:
 Item Description Zernike
 Zernike basis. Indicated for circular apertures;
 Zernike Orthogonal
-Basis obtained by orthogonalizing the Zernike basis;</description></item><item><title>Modal Table</title><link>/widgets/modaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/modaltable.html</guid><description>The modal table widget presents the current state of the modal reconstruction as a grid, with each row representing a mode.
-#
-Mode index.
-Image
-Mode wavefront representation.
-Disabled
-Enable/disable the mode.
-Value
-Current measured mode.
-Offset
-Mode offset.
-Editing the Table The table view is useful to enter precise values for the desired indexes.</description></item><item><title>Playback</title><link>/widgets/playback.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/playback.html</guid><description>The playback widget offers an interface to either reproduce a time series or execute a script.
+Basis obtained by orthogonalizing the Zernike basis;</description></item><item><title>Playback</title><link>/widgets/playback.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/playback.html</guid><description>The playback widget offers an interface to either reproduce a time series or execute a script.
 The script engine is deprecated in favor of the more flexible networking interface.
 Item Description Script
 Open a script file.
@@ -60,32 +27,14 @@ Number of system modes to consider for the reconstructor.
 Singular to Modal Disabled
 Indexes of the modes to remove from the reconstructor matrix.
 * Format example: &amp;#34;2,5,7-11&amp;#34; means that the modes at index 2, 5, and in the interval between 7 and 11 are removed.</description></item><item><title>Sensor Settings</title><link>/widgets/sensor.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/sensor.html</guid><description>
-The sensor widget manages the interface between PhotonLoop and a connected camera. Available cameras are listed as plugins, with each plugin exposing different options.</description></item><item><title>Singular Bars</title><link>/widgets/singularbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singularbars.html</guid><description>The singular bars widget gives the user a graphical representation of the singular values extracted from the Singular Value Decomposition of the interaction matrix. Each bar represents an individual singular mode, with the height determined by its singular value.
-A singular mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the singular value and the wavefront representation of the currently selected index.</description></item><item><title>Singular Table</title><link>/widgets/singulartable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartable.html</guid><description>The singular table widget lists the singular values in a table, with each row representing a singular mode.
-The system widgets will become enabled once an interaction matrix has been acquired.
-Item Description #
-Singular mode index.
-Image
-Singular mode wavefront representation.
-Value
-Singular value.</description></item><item><title>Singular To Modal Bars</title><link>/widgets/singulartomodalbars.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodalbars.html</guid><description>The singular to modal bars widget gives an indication of the maximum modal amplitudes achievable by the AO system.
-The displayed amplitude is referred to individual modes.
-A mode is selected when hovering over its corresponding bar. While hovering, the preview snippet shows the numerical values and actuator response of the currently selected mode index.
-Within the singular to modal bars widget it is possible to toggle the selected modes from the interaction matrix:</description></item><item><title>Singular To Modal Table</title><link>/widgets/singulartomodaltable.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/singulartomodaltable.html</guid><description>The singular to modal table widget lists the modes that can be observed and controlled by the current AO calibration, along with their amplitudes.
-Editing the Table The table view is useful to enter precise values for the desired indexes. There are also some utilities that can be exploited to ease the table editing:
-Enable/Disable offsets.</description></item><item><title>Statistics</title><link>/widgets/statistics.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/statistics.html</guid><description>The statistics widget shows textual real-time informations about the wavefront measurements.
+The sensor widget manages the interface between PhotonLoop and a connected camera. Available cameras are listed as plugins, with each plugin exposing different options.</description></item><item><title>Statistics</title><link>/widgets/statistics.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/statistics.html</guid><description>The statistics widget shows textual real-time informations about the wavefront measurements.
 Item Description RoI
 Size of the Region of Interest set into the viewfinder.
 Lenslets
 Number of lenslets in the grid inscribed into the RoI.
 Centroids
 Number of valid centroids detected by the WFS.
-Radius</description></item><item><title>System Modes</title><link>/widgets/systemmodes.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/systemmodes.html</guid><description>The system modes widget shows the wavefront representation of all singular modes.
-Adjusting the image grid display Clicking with the right mouse button pops up the display settings:
-Item Description Representation
-Determines how the wavefront relative to the selected bar is displayed into the preview snippet.
-Colormap
-Determines the colormap of the wavefront.</description></item><item><title>Time Series</title><link>/widgets/timeseries.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/timeseries.html</guid><description>The time series widget displays the evolution over time of a scalar variable:
+Radius</description></item><item><title>Time Series</title><link>/widgets/timeseries.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/timeseries.html</guid><description>The time series widget displays the evolution over time of a scalar variable:
 The black curve represents the current measurement;
 The red thick curve represents the averaged current measurement.
 Item Description

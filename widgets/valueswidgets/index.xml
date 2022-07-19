@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Values Widgets on PhotonLoop User Manual</title><link>/widgets/valueswidgets.html</link><description>Recent content in Values Widgets on PhotonLoop User Manual</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/widgets/valueswidgets/index.xml" rel="self" type="application/rss+xml"/><item><title>Actuators Widgets</title><link>/widgets/valueswidgets/actuatorswidgets.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/valueswidgets/actuatorswidgets.html</guid><description>The actuators widgets gives the user a graphical representation of the actual state of the WFC actuators:
+The values represent the command vector issued to the WFC;
+The offsets represent the command offsets;
+The images are the actuators response to the calibration.
+It is not possible to disable the actuators.</description></item><item><title>Modal Widgets</title><link>/widgets/valueswidgets/modalwidgets.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/valueswidgets/modalwidgets.html</guid><description>The modal bars widget gives the user a graphical representation of the actual state of the modal reconstruction:
+The green bars display the measured modes;
+The light green slimmer bars display the modal offsets;
+The red crosses indicate disabled modes.
+A mode is selected when hovering over its corresponding bar.</description></item><item><title>Singular To Modal Widgets</title><link>/widgets/valueswidgets/singulartomodalwidgets.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/valueswidgets/singulartomodalwidgets.html</guid><description>The singular to modal bars widgets gives the user a graphical representation of the modes that can be observed and controlled by the current AO calibration along with their theoretical maximum amplitudes achievable by the AO setup:
+The values represent the maximum amplitude achievable for a given index;
+The disabled values represent which term has been geometrically removed from the calibration;</description></item><item><title>Singular Widgets</title><link>/widgets/valueswidgets/singularwidgets.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/widgets/valueswidgets/singularwidgets.html</guid><description>The singular widget gives the user a graphical representation of the singular values extracted from the Singular Value Decomposition of the interaction matrix:
+The values represent the singular value amplitudes with respect to their singular modes;
+The disabled values represent the cutoff;
+The image represent the wavefront visualization of each singular mode.</description></item></channel></rss>

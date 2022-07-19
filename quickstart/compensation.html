@@ -1,0 +1,565 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>Aberration Correction - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1658239979 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1658239979 rel=stylesheet>
+<link href=../css/hybrid.css?1658239979 rel=stylesheet>
+<link href=../css/featherlight.min.css?1658239979 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1658239979 rel=stylesheet>
+<link href=../css/auto-complete.css?1658239979 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1658239979 rel=stylesheet>
+<link href=../css/theme.css?1658239979 rel=stylesheet>
+<link href=../css/tabs.css?1658239979 rel=stylesheet>
+<link href=../css/hugo-theme.css?1658239979 rel=stylesheet>
+<link href=../css/theme-jm.css?1658239979 rel=stylesheet>
+<link href=../css/custom.css?1658239979 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1658239979></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../quickstart/compensation.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1658239979></script>
+<script type=text/javascript src=../js/auto-complete.js?1658239979></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1658239979></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/safety.html title="Warranty & Safety Instructions" class=dd-item>
+<a href=../safety.html>
+Warranty & Safety Instructions
+</a>
+</li>
+<li data-nav-id=/aosetup.html title="Optical Setup" class=dd-item>
+<a href=../aosetup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/quickstart.html title="Quick Start" class="dd-item
+parent">
+<a href=../quickstart.html>
+Quick Start
+</a>
+<ul>
+<li data-nav-id=/quickstart/installation.html title=Installation class=dd-item>
+<a href=../quickstart/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/quickstart/wavefront-measurement.html title="Wavefront Measurement" class=dd-item>
+<a href=../quickstart/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/quickstart/compensation.html title="Aberration Correction" class="dd-item active">
+<a href=../quickstart/compensation.html>
+Aberration Correction
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/plugins.html title=Plugins class=dd-item>
+<a href=../plugins.html>
+Plugins
+</a>
+</li>
+<li data-nav-id=/tcpip.html title=TCP-IP class=dd-item>
+<a href=../tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class=dd-item>
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets.html title="Values Widgets" class=dd-item>
+<a href=../widgets/valueswidgets.html>
+Values Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets/actuatorswidgets.html title="Actuators Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/actuatorswidgets.html>
+Actuators Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/modalwidgets.html title="Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/modalwidgets.html>
+Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singulartomodalwidgets.html title="Singular To Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singulartomodalwidgets.html>
+Singular To Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singularwidgets.html title="Singular Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singularwidgets.html>
+Singular Widgets
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/moccij/PhotonLoop-Manual/edit/main/content/quickstart/compensation.adoc target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../quickstart.html>Quick Start</a> > Aberration Correction
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Aberration Correction
+</h1>
+<div class=paragraph>
+<p>PhotonLoop connects to both wavefront sensor and corrector, providing the means of compensating measured aberrations.
+This tutorial will show how to correctly carry out the AO calibration of the AO system and succesfully close the control loop.</p>
+</div>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Please read the <a href=../userguide/safety.html><strong>safety instructions</strong></a> carefully before operating with the WFC.</p>
+</div>
+</div>
+</div>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>This tutorial assumes that PhotonLoop is already configured to optimally measure the wavefront. Refer to the <a href="../userguide/wavefront measurement.html"><strong>wavefront measurement tutorial</strong></a> for how to setup the measurements.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_configure_the_wfc>Configure the WFC</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>The WaveFront Controller (WFC) is the optical deformable element in charge of the wavefront manipulation. It is managed within the <a href=../userguide/widgets//wfc.html><strong>wfc settings widget</strong></a>:</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=correction/0%20-%20Open%20WFC%20Detail.png alt="0   Open WFC Detail"></span></p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Connect the WFC to the computer (refer to the <a href=../userguide/installation.html><strong>installation</strong></a> guide on how to do it);</p>
+</li>
+<li>
+<p>Load the WFC profile from the WFC menù. The profile is shipped along with the provided WFC device;</p>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Do not load profiles meant for different WFC devices.</p>
+</div>
+</div>
+</div>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Only edit the WFC parameters if specifically instructed to do so.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Energize the physical device;</p>
+</li>
+<li>
+<p>Open the WFC by clicking on the <span class=icon><img src=../../static/icons/wfc_device.png alt="wfc device"></span> button.</p>
+</li>
+<li>
+<p>Apply the Flat Commands <span class=icon><img src=../../static/icons/vflat.png alt=vflat></span> to flatten the WFC.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>If the steps were succesful, the WFC related widgets are now active.
+Test the WFC by either performing a relax routine using the Relax <span class=icon><img src=../../static/icons/wfc_relax.png alt="wfc relax"></span> button or manually moving actuators using the <a href=../userguide/widgets//actuatorsbars.html><strong>actuators bars widget</strong></a>. The WFC response should be observed within the <a href=../userguide/widgets//wavefront.html><strong>wavefront widget</strong></a>.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=correction/1%20-%20Actuator%20Test.png alt="1   Actuator Test"></span></p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_configure_the_ao_reconstructor>Configure the AO reconstructor</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>The AO system must be calibrated as a whole before attempting to close the control loop. The calibration consists in gathering the actuators response to poke patterns (i.e. interaction matrix), yielding to a map from the WFC shape to the measured wavefront:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Check the calibration settings from within the <a href=../userguide/widgets//calibration.html><strong>calibration settings widget</strong></a>;</p>
+</li>
+<li>
+<p>Start the calibration with the Perform Calibration <span class=icon><img src=../../static/icons/wfc_calibration.png alt="wfc calibration"></span> command;</p>
+<div class=paragraph>
+<p><span class=image><img src=correction/2%20-%20Calibration.png alt="2   Calibration"></span></p>
+</div>
+</li>
+<li>
+<p>The resulting actuators responses are shown in the <a href=../userguide/widgets//actuatorsresponse.html><strong>actuators response widget</strong></a>.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>To map a target wavefront to the WFC shape, the interaction matrix must be pseudo-inverted into the control matrix. PhotonLoop exploits the Singular Values Decomposition (SVD) to reveal the interaction matrix rank and manipulate the resulting system modes:</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>The system modes are shown in <a href=../userguide/widgets//systemmodes.html><strong>system modes widget</strong></a>, whereas the singular values are shown in the <a href=../userguide/widgets//singularbars.html><strong>system modes bars widget</strong></a>;</p>
+</li>
+<li>
+<p>Advanced reconstructor settings are listed in the <a href=../userguide/widgets//reconstructor.html><strong>reconstructor settings widget</strong></a>.</p>
+</li>
+</ul>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=correction/3%20-%20Correction%20Detail.png alt="3   Correction Detail"></span></p>
+</div>
+<div class=paragraph>
+<p>From the <a href=../userguide/widgets//compensator.html><strong>compensator settings widget</strong></a>, select a compensator plugin and then close the loop with the <span class=icon><img src=../../static/icons/loop_closed.png alt="loop closed"></span> command.
+<div class="notices warning"><div class=paragraph>
+<p>By default, smaller system modes are removed from the reconstructor, and the compensator gain is low. While such initial parameters were proven to be safe for the average AO system, care must be taken to avoid instabilities.</p>
+</div>
+</div>
+</p>
+</div>
+<div class=paragraph>
+<p>It is possible to tweak the number of considered system modes and the compensator gain to achieve higher temporal and spatial performance. The <a href=../userguide/widgets//timeseries.html><strong>time series widgets</strong></a> can be consulted to evaluate the performance in real-time.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=correction/4%20-%20Performance.png alt="4   Performance"></span></p>
+</div>
+<div class=paragraph>
+<p>The correlation graph is shown by entering in the Inspect calibration icon:. This graph reveals graphically the degree of orthogonality of the elements. If the diagonal is well defined it means that we have a good separation.</p>
+</div>
+<div class=paragraph>
+<div class="notices tip"><div class=paragraph>
+<p>Smaller singular values are associated to poorly represented system modes (affected by noise, unreachable) that might cause instabilities and are as such removed from the reconstructor. However, removing too many modes lowers the achievable spatial resolution.</p>
+</div>
+</div>
+</div>
+<div class=paragraph>
+<p>You can save the calibration in the log window, when you take a snapshot the control matrix and influence function will be saved in the specified folder. You can load the calibration with Load Calibration button.</p>
+</div>
+<div class=paragraph>
+<p>Each mode of the mirror/lens has its own gain that is related to the dynamic range used by the deformable element to generate the mode itself. Low order modes have a higher gain, it means that the system will use a smaller dynamic range to generate that mode. The last modes with a smaller gain belong to high order and they require a lot of dynamic when the deformable element try to reproduce them. Once the Calibration is terminated the program will automatically display the System tab showing the SVD<sup class=footnote>[<a id=_footnoteref_1 class=footnote href=#_footnotedef_1 title="View footnote.">1</a>]</sup> window accessible from the right of the main page.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image50.png alt=image50></span></p>
+</div>
+<div class=paragraph>
+<p>When the histogram is displayed the modes can be added or removed using the SVD modes selection block:</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>Leave Remove Piston unselected. This setting must be selected before performing the calibration and only in the case of mirrors that integrates the Piezo-Stack technology.</p>
+</li>
+<li>
+<p>Select Remove Global Tilt if you wish to exclude tip-tilt mode from the calibration.</p>
+</li>
+<li>
+<p>System modes are the number of modes selected from the user.</p>
+</li>
+<li>
+<p>SVD threshold set a threshold on the SVD gain in percentage. Below this value the modes are neglected.</p>
+</li>
+<li>
+<p>SVD threshold set a threshold on the SVD gain in percentage. Below this value the modes are neglected.</p>
+</li>
+<li>
+<p>Clicking on Discrete Selection of System Modes the user can remove (restore) selected modes clicking on the bars of the representation with the right (left).</p>
+</li>
+<li>
+<p>Clicking on Reset Selection of System Modes the user will restore all the removed discrete modes.</p>
+</li>
+</ul>
+</div>
+<div class=paragraph>
+<p>Here in the figure below you can see an example of a System modes diagram without the SVD mode selection (left) and with the SVD threshold set to 10% and some discrete modes eliminated (right).</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image51.png alt=image51></span>
+<span class=image><img src=../img/image52.png alt=image52></span></p>
+</div>
+<div class=paragraph>
+<p>In this case is clear that deleting SVD modes reduce considerably the actuators efforts (red bars) but the optical quality of the wavefront is considerably reduced as well. In general, to preserve the optical quality increasing actuators dynamic, it is better to remove only the last SVD modes introducing only a threshold.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_closed_loop>Closed Loop</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>After the calibration it is possible to close the loop of the adaptive optic system. The wavefront data are used to control the deformable element. Go in the Controller Tab and Compensator Tab and you find the parameters for the controller. The parameters are:</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>Ki is the gain of the control system integrator, it goes from 0 to 1, but it can be forced to be more than one, this may be useful for system with low latency value.</p>
+</li>
+<li>
+<p>Kb is the anti-wind-up of the integrator. It is important when actuators saturate. Without Kb the controller keeps on increase voltages over saturation value. Kb limits this effect deflating the exceeding voltage. In this way the controller is more reactive to exit the saturation zone. Initially set Kb to 0.</p>
+</li>
+<li>
+<p>KAis theintegrator leakage. The controller accumulates numerical errors while is working that cause voltage signal to be more and more high to compensate aberrations. Ka is a loss factors that deflates the integrator to keep the dynamic at the initial value. The cost of this actions is that the control system does not executes perfectly the set point. Initially set Ka to 1.</p>
+</li>
+</ul>
+</div>
+<div class=paragraph>
+<p>Set the Ki parameter to low value, this is the gain of the closed loop, a high value means fast response of the system but it can also introduce instability.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image53.png alt=image53></span></p>
+</div>
+<div class=paragraph>
+<p>Be sure that the wavefront measurements is fine and then click on this icon <span class=icon><img src=../../static/icons/loop_closed.png alt="loop closed"></span> to start the closed loop operation. The wavefront will be flatten down and you can read the residual RMS in the bottom right part of the main window in the wavefront reconstruction graph. Typical residual RMS value is around 0.04 waves.</p>
+</div>
+<div class=paragraph>
+<p>In closed loop is possible to generate Zernike modes. Act on the mode value in the histogram or insert the mode value in the utilities window. The deformable element will produce the indicated mode with a maximum strength defined by the dynamic of the devices. Below we can see the generation of the astigmatism and coma.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image55.png alt=image55></span>
+<span class=image><img src=../img/image56.png alt=image56></span></p>
+</div>
+<div class=paragraph>
+<p>For this figure the wavefront display option in the above figure is set to Real. Change the display option from the panel below the modes representation as described in the next figure.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image57.png alt=image57></span></p>
+</div>
+<div class=paragraph>
+<p>The display options available to be selected are:</p>
+</div>
+<div class=ulist>
+<ul>
+<li>
+<p>Real (It will represent the real state of the wavefront)</p>
+</li>
+<li>
+<p>Both (it will display the wavefront considering the real wavefront with the offset subtracted)</p>
+</li>
+<li>
+<p>Offset (it will display the wavefront considering only the offset introduced by the user)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_save_flat_voltage_array_and_apply_to_device>Save flat voltage array and apply to device</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>When you start the closed loop PHOTONLOOP will try to produce a flat wavefront. When this condition is reached it is possible to save the value of actuators (we call it Vflat) that level the deformable optics to zero phase shift. Now click on this icon <span class=icon><img src=../../static/icons/log_snapshot.png alt="log snapshot"></span> and save the actuator value with the snapshot button.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image59.png alt=image59></span></p>
+</div>
+<div class=paragraph>
+<p>To load the flat voltage array, go to Controller Tab and chose to load (<span class=icon><img src=../../static/icons/folder.png alt=folder></span>) the folder containing file with voltage vector then press Apply Vflat. The flat voltage settings will always be added to start from a better initial wavefront. To remove the voltage flat click again on Apply Vflat. The V<sub>flat</sub> array can be used in Open Loop mode where you donÔÇÖt use the wavefront as a control feedback, see next section. Click on Mode offsets or Actuators offset if you want to load the Zernike modes or the Actuators voltages that level the lens, respectively.</p>
+</div>
+<div class=paragraph>
+<p>Another way to apply the Vflat is directly applying the actuator offsets from the saved file actuators .txt that can be found in the Vflat folder. In order to do so, go to Utilities then select Actuators Panel and then load (<span class=icon><img src=../../static/icons/folder.png alt=folder></span>) the actuators.txt file present in the Vflat folder. After <span class=icon><img src=../../static/icons/power.png alt=power></span> is pressed the actuators offset will be applied. And the lens will be flat. This method can be used also to load the actuators voltages for any kind of pre-generated and saved optical deformation of the lens.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image62.png alt=image62></span></p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_open_loop>Open Loop</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p><strong>If you do NOT have the wavefront sensor start here</strong>, (if you have the wavefront sensor skip this section). Go to WFS tab and in the menu of the driver choose File sensor Vx.x. From Version 1.5.1 select Test sensor. Then press the camera connection button and select any white image in .jpg format of any size. Draw a new grid, select a circle aperture and start the measurements. To operate the system without the wavefront sensor feedback you have to upload the preset voltage flat (V<sub>flat)</sub> and the influence functions. 1) Load the voltage set of the actuator that flatten the deformable element as describe above. 2) Go to Calibration, press Load calibration and select the folder where your calibration has been saved. The press relax and press open loop button and the wavefront will be flat, see figure below:</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image63.png alt=image63></span></p>
+</div>
+<div class=paragraph>
+<p>Now, as in the case of closed loop, clicking on the green histogram you can change the modes offsets and generate it. Few examples are shown below for coma term (In this measure the wavefront sensor was used only as observer):</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image64.png alt=image64></span></p>
+</div>
+<div class=paragraph>
+<p>and for trefoil:</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=../img/image65.png alt=image65></span></p>
+</div>
+<div class=paragraph>
+<p>You can also use the Utilities Modes to select the modes inserting the values manually. The amount are in waves RMS.</p>
+</div>
+<div class=paragraph>
+<p><strong>If you have the wavefront sensor start here</strong></p>
+</div>
+<div class=paragraph>
+<p>Just click on the open loop button an interact with the Zernike modes histogram to generate the wavefront shape that you desire.</p>
+</div>
+</div>
+</div>
+<div id=footnotes>
+<hr>
+<div class=footnote id=_footnotedef_1>
+<a href=#_footnoteref_1>1</a>. SVD: singular value decomposition. See: <a href=https://en.wikipedia.org/wiki/Singular_value_decomposition class=bare>https://en.wikipedia.org/wiki/Singular_value_decomposition</a>
+</div>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../quickstart/wavefront-measurement.html title="Wavefront Measurement"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../plugins.html title=Plugins style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1658239981></script>
+<script src=../js/perfect-scrollbar.min.js?1658239981></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1658239981></script>
+<script src=../js/jquery.sticky.js?1658239981></script>
+<script src=../js/featherlight.min.js?1658239981></script>
+<script src=../js/highlight.pack.js?1658239981></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1658239981></script>
+<script src=../js/learn.js?1658239981></script>
+<script src=../js/hugo-learn.js?1658239981></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

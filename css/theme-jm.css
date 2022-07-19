@@ -152,9 +152,14 @@ img[src*="#imageBackground"] {
     display: inline-block;
     vertical-align: middle;
     box-shadow: 2px 2px 5px black;
+    background-color: rgb(70,70,70);
 }
 
 .image > a > img
 {
     box-shadow: 4px 4px 10px black;
+}
+
+.main-content-wrap{
+    max-width: 640px
 }

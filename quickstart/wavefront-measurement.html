@@ -1,0 +1,408 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content="PhotonLoop User Manual">
+<meta name=author content="Jacopo Mocci">
+<link rel=icon href=../images/favicon.png type=image/png>
+<title>Wavefront Measurement - PhotonLoop User Manual</title>
+<link href=../css/nucleus.css?1658239979 rel=stylesheet>
+<link href=../css/fontawesome-all.min.css?1658239979 rel=stylesheet>
+<link href=../css/hybrid.css?1658239979 rel=stylesheet>
+<link href=../css/featherlight.min.css?1658239979 rel=stylesheet>
+<link href=../css/perfect-scrollbar.min.css?1658239979 rel=stylesheet>
+<link href=../css/auto-complete.css?1658239979 rel=stylesheet>
+<link href=../css/atom-one-dark-reasonable.css?1658239979 rel=stylesheet>
+<link href=../css/theme.css?1658239979 rel=stylesheet>
+<link href=../css/tabs.css?1658239979 rel=stylesheet>
+<link href=../css/hugo-theme.css?1658239979 rel=stylesheet>
+<link href=../css/theme-jm.css?1658239979 rel=stylesheet>
+<link href=../css/custom.css?1658239979 rel=stylesheet>
+<script src=../js/jquery-3.3.1.min.js?1658239979></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=../quickstart/wavefront-measurement.html>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<img src=../PhotonLoop_logo.png alt="Dynamic Optics">
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=../js/lunr.min.js?1658239979></script>
+<script type=text/javascript src=../js/auto-complete.js?1658239979></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=../js/search.js?1658239979></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=../><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/safety.html title="Warranty & Safety Instructions" class=dd-item>
+<a href=../safety.html>
+Warranty & Safety Instructions
+</a>
+</li>
+<li data-nav-id=/aosetup.html title="Optical Setup" class=dd-item>
+<a href=../aosetup.html>
+Optical Setup
+</a>
+</li>
+<li data-nav-id=/quickstart.html title="Quick Start" class="dd-item
+parent">
+<a href=../quickstart.html>
+Quick Start
+</a>
+<ul>
+<li data-nav-id=/quickstart/installation.html title=Installation class=dd-item>
+<a href=../quickstart/installation.html>
+Installation
+</a>
+</li>
+<li data-nav-id=/quickstart/wavefront-measurement.html title="Wavefront Measurement" class="dd-item active">
+<a href=../quickstart/wavefront-measurement.html>
+Wavefront Measurement
+</a>
+</li>
+<li data-nav-id=/quickstart/compensation.html title="Aberration Correction" class=dd-item>
+<a href=../quickstart/compensation.html>
+Aberration Correction
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/plugins.html title=Plugins class=dd-item>
+<a href=../plugins.html>
+Plugins
+</a>
+</li>
+<li data-nav-id=/tcpip.html title=TCP-IP class=dd-item>
+<a href=../tcpip.html>
+TCP-IP
+</a>
+</li>
+<li data-nav-id=/widgets.html title=Widgets class=dd-item>
+<a href=../widgets.html>
+Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets.html title="Values Widgets" class=dd-item>
+<a href=../widgets/valueswidgets.html>
+Values Widgets
+</a>
+<ul>
+<li data-nav-id=/widgets/valueswidgets/actuatorswidgets.html title="Actuators Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/actuatorswidgets.html>
+Actuators Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/modalwidgets.html title="Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/modalwidgets.html>
+Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singulartomodalwidgets.html title="Singular To Modal Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singulartomodalwidgets.html>
+Singular To Modal Widgets
+</a>
+</li>
+<li data-nav-id=/widgets/valueswidgets/singularwidgets.html title="Singular Widgets" class=dd-item>
+<a href=../widgets/valueswidgets/singularwidgets.html>
+Singular Widgets
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/widgets/calibration.html title="Calibration Settings" class=dd-item>
+<a href=../widgets/calibration.html>
+Calibration Settings
+</a>
+</li>
+<li data-nav-id=/widgets/compensator.html title="Compensator Settings" class=dd-item>
+<a href=../widgets/compensator.html>
+Compensator Settings
+</a>
+</li>
+<li data-nav-id=/widgets/intensityprofile.html title="Intensity Profile" class=dd-item>
+<a href=../widgets/intensityprofile.html>
+Intensity Profile
+</a>
+</li>
+<li data-nav-id=/widgets/log.html title="Log Toolbar" class=dd-item>
+<a href=../widgets/log.html>
+Log Toolbar
+</a>
+</li>
+<li data-nav-id=/widgets/modal.html title="Modal Settings" class=dd-item>
+<a href=../widgets/modal.html>
+Modal Settings
+</a>
+</li>
+<li data-nav-id=/widgets/playback.html title=Playback class=dd-item>
+<a href=../widgets/playback.html>
+Playback
+</a>
+</li>
+<li data-nav-id=/widgets/reconstructor.html title="Reconstructor Settings" class=dd-item>
+<a href=../widgets/reconstructor.html>
+Reconstructor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/sensor.html title="Sensor Settings" class=dd-item>
+<a href=../widgets/sensor.html>
+Sensor Settings
+</a>
+</li>
+<li data-nav-id=/widgets/statistics.html title=Statistics class=dd-item>
+<a href=../widgets/statistics.html>
+Statistics
+</a>
+</li>
+<li data-nav-id=/widgets/timeseries.html title="Time Series" class=dd-item>
+<a href=../widgets/timeseries.html>
+Time Series
+</a>
+</li>
+<li data-nav-id=/widgets/twcog.html title="TWCoG Settings" class=dd-item>
+<a href=../widgets/twcog.html>
+TWCoG Settings
+</a>
+</li>
+<li data-nav-id=/widgets/viewfinder.html title=Viewfinder class=dd-item>
+<a href=../widgets/viewfinder.html>
+Viewfinder
+</a>
+</li>
+<li data-nav-id=/widgets/wavefront.html title=Wavefront class=dd-item>
+<a href=../widgets/wavefront.html>
+Wavefront
+</a>
+</li>
+<li data-nav-id=/widgets/wfc.html title="WFC Settings" class=dd-item>
+<a href=../widgets/wfc.html>
+WFC Settings
+</a>
+</li>
+<li data-nav-id=/widgets/wfscalibration.html title="WFS Calibration" class=dd-item>
+<a href=../widgets/wfscalibration.html>
+WFS Calibration
+</a>
+</li>
+<li data-nav-id=/widgets/wfs.html title="WFS Settings" class=dd-item>
+<a href=../widgets/wfs.html>
+WFS Settings
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/moccij/PhotonLoop-Manual/edit/main/content/quickstart/wavefront%20measurement.adoc target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=../>Home</a> > <a href=../quickstart.html>Quick Start</a> > Wavefront Measurement
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents></nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Wavefront Measurement
+</h1>
+<div class=paragraph>
+<p>An accurate wavefront measurement is the starting point for a succesful adaptive optics correction.
+Follow this tutorial to grasp the basics of wavefront sensing within PhotonLoop.</p>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=wfs/0%20-%20startup.png alt="0   startup"></span></p>
+</div>
+<div class=paragraph>
+<div class="notices warning"><div class=paragraph>
+<p>Sub-optimal measurement settings have a detrimental impact on the correction quality and might lead to an unstable system behavior.</p>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_configure_the_sensor>Configure the sensor</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>The first step to perform a measurement is to configure the sensor from the <a href=../userguide/widgets//sensor.adoc}><strong>sensor widget</strong></a> and visualize it in the <a href=../userguide/widgets//viewfinder.html><strong>viewfinder</strong></a>:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Select the sensor plugin corresponding to the installed camera;</p>
+</li>
+<li>
+<p>Open the sensor by clicking on the <span class=icon><img src=../icons/in_camera.png alt="in camera"></span> button;</p>
+</li>
+<li>
+<p>Verify that the camera image is correctly shown in the viewfinder widget (ensure that the Show Image button <span class=icon><img src=../icons/grid_ccd.png alt="grid ccd"></span> is selected);</p>
+<div class=paragraph>
+<p><span class=image><img src=wfs/1%20-%20Open%20Sensor.png alt="1   Open Sensor"></span></p>
+</div>
+</li>
+<li>
+<p>Select the Cross tool <span class=icon><img src=../icons/grid_cross.png alt="grid cross"></span> from the viewfinder and place the cross over the brightest pixels. If the spots are small, zoom into the image by selecting the Zoom tool <span class=icon><img src=../icons/gridZoom.png alt=gridZoom></span>;</p>
+</li>
+<li>
+<p>Inspect the intensity profile from the <a href=../userguide/widgets//intensityprofile.html><strong>intensity profile widget</strong></a>.</p>
+<div class=paragraph>
+<div class="notices tip"><div class=paragraph>
+<p>Tune the camera exposure until the maximum acquired intensity is below the intensity saturation limit.</p>
+</div>
+</div>
+</div>
+<div class=paragraph>
+<p><span class=image><img src=wfs/2%20-%20Adjust%20Exposure.png alt="2   Adjust Exposure"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_configure_the_centroids_extraction_parameters>Configure the centroids extraction parameters</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>It is crucial to correctly compute the centroids positions for all the spots in the image:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>From the WFS menu, load the WFS profile shipped within the provided camera (such profile contains the calibrated parameters for the WFS camera);</p>
+</li>
+<li>
+<p>Select the Draw AoI (Area of Interest) tool <span class=icon><img src=../icons/grid_resize.png alt="grid resize"></span> and place the AoI over the target spots. Ensure that the Show Grid button <span class=icon><img src=../icons/grid.png alt=grid></span> in the viewfinder is selected: the AoI defines the extraction grid mapping each spot to a lenslet;</p>
+<div class=paragraph>
+<p><span class=image><img src=wfs/3%20-%20Draw%20AoI.png alt="3   Draw AoI"></span></p>
+</div>
+</li>
+<li>
+<p>Configure the extraction parameters from the <a href=../userguide/widgets//twcog.html><strong>extraction settings widget</strong></a>. Ensure that the Show Reference <span class=icon><img src=../icons/grid_ref.png alt="grid ref"></span> and Centroids <span class=icon><img src=../icons/grid_main.png alt="grid main"></span> buttons in the viewfinder are selected: adjust the parameters until all the spots are correctly identified;</p>
+<div class=paragraph>
+<p>
+<div class="notices tip"><div class=paragraph>
+<p>Set the minimum intensity to just above the noise floor. Automatically remove faint lenslets by tweaking the minimum intensity sum.</p>
+</div>
+</div>
+<span class=image><img src=wfs/4%20-%20Adjust%20Extraction%20Settings.png alt="4   Adjust Extraction Settings"></span></p>
+</div>
+</li>
+<li>
+<p>Remove the global tilt with the Align Grid <span class=icon><img src=../icons/grid_align.png alt="grid align"></span> tool from the lateral toolbar.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>
+<div class="notices tip"><div class=paragraph>
+<p>On a well aligned optical system, each cell of the grid contains exactly one spot. If this is not the case, it is likely that the optical path introduces defocus. Adjust the optical elements to remove the defocus as much as possible.</p>
+</div>
+</div>
+<div class="notices tip"><div class=paragraph>
+<p>Iterate between extraction settings and grid alignment to achieve an optimal measurement.</p>
+</div>
+</div>
+<div class="notices tip"><div class=paragraph>
+<p>Show slopes in the viewfinder to quickly inspect the wavefront gradient. The arrows are directly proportional to the error between the measured and ideal flat wavefront.</p>
+</div>
+</div>
+</p>
+</div>
+<div class=paragraph>
+<p>You can find more details about centroid calculation options in this paper:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code>S. Thomas et al, Comparison of centroid computation algorithms in a Shack-Hartmann sensor, Mon. Not. R. Astron. Soc. *371,* 323-336 (2006).</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class=sect1>
+<h2 id=_reference_and_modal_reconstruction>Reference and Modal Reconstruction</h2>
+<div class=sectionbody>
+<div class=paragraph>
+<p>Once the centroids extraction settings are set up, PhotonLoop is ready to measure the wavefront.</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Start the wavefront measurement by fixing the reference with the Take Absolute Reference <span class=icon><img src=../icons/ref_abs.png alt="ref abs"></span> tool from the lateral toolbar. Now, all the modal-related widgets are available;</p>
+<div class=paragraph>
+<p><span class=image><img src=wfs/5%20-%20Take%20Reference.png alt="5   Take Reference"></span></p>
+</div>
+</li>
+<li>
+<p>If needed, further tweak the modal reconstruction settings from within the <a href=../userguide/widgets//modal.html><strong>modal settings widget</strong></a>.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>The results of wavefront measurements are displayed in the <a href=../userguide/widgets//statistics.html><strong>statistics widget</strong></a>, along with a summary about the current PhotonLoop settings.</p>
+</div>
+</div>
+</div>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=../quickstart/installation.html title=Installation> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../quickstart/compensation.html title="Aberration Correction" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=../js/clipboard.min.js?1658239981></script>
+<script src=../js/perfect-scrollbar.min.js?1658239981></script>
+<script src=../js/perfect-scrollbar.jquery.min.js?1658239981></script>
+<script src=../js/jquery.sticky.js?1658239981></script>
+<script src=../js/featherlight.min.js?1658239981></script>
+<script src=../js/highlight.pack.js?1658239981></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=../js/modernizr.custom-3.6.0.js?1658239981></script>
+<script src=../js/learn.js?1658239981></script>
+<script src=../js/hugo-learn.js?1658239981></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>
